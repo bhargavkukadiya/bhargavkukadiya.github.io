@@ -7,6 +7,7 @@ Innovative and self-motivated Software Engineer offering 8+ years of expertise i
 
 ## Experience
 ### Software Engineer at [Civica](https://www.civica.com/en-in/).
+**Location:** Vadodara, GJ  
 **Duration:** March 2020 - Present  
 **Responsibilities:**
 - Supported and improved the existing codebase by investigating, solving, and testing software problems, and coding new features
@@ -14,6 +15,7 @@ Innovative and self-motivated Software Engineer offering 8+ years of expertise i
 - Enhanced product quality through code reviews, effective unit testing, collaboration with QA for automation testing, and integrating APIs
 
 ### Senior Consultant at [Narola Infotech](https://www.narolainfotech.com/)
+**Location:** Surat, GJ  
 **Duration:** January 2016 - March 2020  
 **Responsibilities:**
 - Developed in-depth knowledge and experience with Objective-C and Swift, including UIKit, Cocoa Touch, and various iOS frameworks like Core Data, Core Location, and Core Animation
