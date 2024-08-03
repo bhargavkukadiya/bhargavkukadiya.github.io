@@ -1,3 +1,7 @@
+## Contact Information
+- **Email:** [bhargavkukadiya007@gmail.com](mailto:bhargavkukadiya007@gmail.com)
+- **Location:** Surat, GJ 395009
+
 ## Summary
 Innovative and self-motivated Software Engineer offering 8+ years of expertise in iOS application and front-end application development. Seasoned professional with a background in full software development lifecycle. Quickly learns and masters new technologies while working in both team and self-directed settings.
 
