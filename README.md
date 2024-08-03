@@ -37,15 +37,7 @@ Innovative and self-motivated Software Engineer offering 8+ years of expertise i
 **CGPA:**: 7.07
 
 ## Projects
-### Project 1: E-commerce Website
-**Description:** Developed a fully functional e-commerce website using React for the frontend and Node.js for the backend. Implemented features such as user authentication, product search, and shopping cart.  
-**Technologies Used:** React, Node.js, MongoDB  
-**GitHub Repository:** [E-commerce Website](https://github.com/username/e-commerce-website)
-
-### Project 2: Personal Blog
-**Description:** Created a personal blog platform where users can create, edit, and delete blog posts. Integrated a WYSIWYG editor for ease of content creation.  
-**Technologies Used:** HTML, CSS, JavaScript, Firebase  
-**GitHub Repository:** [Personal Blog](https://github.com/username/personal-blog)
+Project details can be provided upon request. Please feel free to reach out via email for more information about my projects and contributions.
 
 ## Certificates
 ### Full-Stack Web Development Certification
