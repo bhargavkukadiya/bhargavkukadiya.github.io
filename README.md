@@ -27,7 +27,7 @@ Innovative and self-motivated Software Engineer offering 8+ years of expertise i
 ## Education
 ### Master of Computer Applications (MCA)
 **Institution:** [Sardar Patel University](https://www.universityoftechnology.edu)
-**Duration:** 2013 - 2016  
+**Duration:** 2013 - 2016
 **CGPA:**: 7.07
 
 ## Projects
