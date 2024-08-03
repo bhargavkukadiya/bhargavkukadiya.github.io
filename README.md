@@ -2,22 +2,20 @@
 Innovative and self-motivated Software Engineer offering 8+ years of expertise in iOS application and front-end application development. Seasoned professional with a background in full software development lifecycle. Quickly learns and masters new technologies while working in both team and self-directed settings.
 
 ## Experience
-### Software Engineer at Civica.
+### Software Engineer at [Civica](https://www.civica.com/en-in/).
 **Duration:** March 2020 - Present  
 **Responsibilities:**
 - Supported and improved the existing codebase by investigating, solving, and testing software problems, and coding new features
 - Worked with the scrum team to communicate technical details, translate client requirements into user stories, and document tasks
 - Enhanced product quality through code reviews, effective unit testing, collaboration with QA for automation testing, and integrating APIs
-- [Company Website](https://www.civica.com/en-in/)
 
-### Senior Consultant at Narola Infotech
+### Senior Consultant at [Narola Infotech](https://www.narolainfotech.com/)
 **Duration:** January 2016 - March 2020  
 **Responsibilities:**
 - Developed in-depth knowledge and experience with Objective-C and Swift, including UIKit, Cocoa Touch, and various iOS frameworks like Core Data, Core Location, and Core Animation
 - Familiar with MVC and MVVM architectures and proficient in using XCTest for unit testing, building, and testing applications
 - Skilled in using SVN and GitHub for source code versioning, and experienced in working with auto-layout and size classes for iPhone and iPad applications with orientation support
 - Experienced in web service integration using JSON, XML, and REST APIs, and knowledgeable about APNS and Firebase push notifications
-- [Company Website](https://www.narolainfotech.com/)
 
 ## Skills
 - **Programming Languages:** Swift, Objective-C, JavaScript, C#
@@ -28,14 +26,9 @@ Innovative and self-motivated Software Engineer offering 8+ years of expertise i
 
 ## Education
 ### Master of Computer Applications (MCA)
-**Institution:** Sardar Patel University  
+**Institution:** [Sardar Patel University](https://www.universityoftechnology.edu)
 **Duration:** 2013 - 2016  
-**Relevant Coursework:**
-- Data Structures and Algorithms
-- Web Development
-- Database Systems
-- Software Engineering
-- [University Website](https://www.universityoftechnology.edu)
+**CGPA:**: 7.07
 
 ## Projects
 ### Project 1: E-commerce Website
