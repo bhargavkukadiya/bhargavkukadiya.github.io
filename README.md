@@ -60,7 +60,7 @@ Acquired skills to build RESTful web services using ,NET Core 6. Topics included
 **Date:** 2023  
 Completed a comprehensive SQL Certification, which included the following courses:
 #### [Designing and Implementing SQL Server Tables and Views](https://app.pluralsight.com/library/courses/sqlserver-tables-view-designing-implementing/table-of-contents)
-Acquired skills in designing and implementing efficient SQL Server tables and views. Covered topics such as normalization, constraints, indexing strategies, and optimizing table structures for performance
+Acquired skills in designing and implementing efficient SQL Server tables and views. Covered topics such as normalization, constraints, indexing strategies, and optimizing table structures for performance.
 #### [Programming SQL Server Database Stored Procedures](https://app.pluralsight.com/library/courses/sql-server-database-programming-stored-procedures/table-of-contents)
 Learned how to program and manage SQL Server stored procedures. This course covered creating, modifying, and optimizing stored procedures to enhance database performance and ensure code reusability.
 #### [SQL Server Fundamentals](https://app.pluralsight.com/library/courses/sql-server-fundamentals/table-of-contents)
@@ -69,3 +69,18 @@ Gained a strong foundation in SQL Server fundamentals, including understanding t
 Developed expertise in programming SQL Server triggers and functions. Covered the creation and use of triggers to automate tasks and enforce business rules, as well as user-defined functions to encapsulate reusable logic.
 #### [Designing and Implementing SQL Server Database Indexes](https://app.pluralsight.com/library/courses/design-build-sql-server-indexes/table-of-contents)
 Mastered the design and implementation of SQL Server indexes to improve query performance. This course included strategies for indexing, understanding index internals, and techniques to maintain index efficiency.
+
+### SSDLC Certificate
+**Institution:** Pluralsight  
+**Date:** 2020  
+Completed a comprehensive Secure Software Development Life Cycle (SSDLC) certification, which included the following courses:
+#### [Security for Hackers and Developers: Overview](https://app.pluralsight.com/library/courses/security-hackers-developers/table-of-contents)
+Gained a foundational understanding of key security concepts from both a hacker and developer perspective. Covered threat modeling, secure coding practices, and the importance of integrating security into the software development process.
+#### [The Information Security Big Picture](https://app.pluralsight.com/library/courses/information-security-big-picture/table-of-contents)
+Explored the broader landscape of information security, including risk management, security policies, and compliance. This course provided insights into how security fits within the overall business context.
+#### [Web Security and the OWASP Top 10: The Big Picture](https://app.pluralsight.com/library/courses/web-security-owasp-top10-big-picture/table-of-contents)
+Studied the OWASP Top 10 web application security risks and how to mitigate them. Emphasized the importance of understanding and addressing common vulnerabilities such as SQL injection, cross-site scripting (XSS), and cross-site request forgery (CSRF).
+#### [What's New in the OWASP Top 10 for 2013](https://app.pluralsight.com/library/courses/owasp-top-10-whats-new-2013/table-of-contents)
+Reviewed the updates to the OWASP Top 10 list from 2013, focusing on new vulnerabilities and the evolving threat landscape. Enhanced knowledge of emerging security challenges and updated mitigation strategies.
+#### [Secure Coding: Preventing Insecure Deserialization](https://app.pluralsight.com/library/courses/secure-coding-insecure-deserialization-preventing/table-of-contents)
+Learned techniques to prevent insecure deserialization, a critical vulnerability that can lead to severe security breaches. This course covered secure coding practices and the importance of input validation and serialization.
