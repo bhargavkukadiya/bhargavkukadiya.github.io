@@ -80,6 +80,26 @@ Developed expertise in programming SQL Server triggers and functions. Covered th
 **Certificate:** <a href="./resources/certificates/SQL/certificate5.pdf" target="_blank">View</a>  
 Mastered the design and implementation of SQL Server indexes to improve query performance. This course included strategies for indexing, understanding index internals, and techniques to maintain index efficiency.
 
+### JavaScript Certification
+**Institution:** Pluralsight  
+**Date:** 2020  
+Completed an in-depth JavaScript Core Language certification, which included the following courses:
+#### [JavaScript: Getting Started](https://app.pluralsight.com/library/courses/javascript-getting-started/table-of-contents)
+**Certificate:** <a href="./resources/certificates/JavaScriptCertificate/certificate1.pdf" target="_blank">View</a>  
+Established a strong foundation in JavaScript, covering the basics of the language, including syntax, data types, and control flow. This course laid the groundwork for more advanced JavaScript concepts.
+#### [JavaScript 7 Syntax and Operators](https://app.pluralsight.com/library/courses/javascript-syntax-operators/table-of-contents)
+**Certificate:** <a href="./resources/certificates/JavaScriptCertificate/certificate2.pdf" target="_blank">View</a>  
+Explored the modern syntax and operators introduced in JavaScript ES7 and beyond. This course covered new language features, including advanced operators and expressions to write more concise and efficient code.
+#### [JavaScript 2018 Variables and Types](https://app.pluralsight.com/library/courses/javascript-variables-types/table-of-contents)
+**Certificate:** <a href="./resources/certificates/JavaScriptCertificate/certificate3.pdf" target="_blank">View</a>  
+Gained expertise in working with variables and types in JavaScript, focusing on ES6+ features like let, const, and the latest type coercion mechanisms. This course also covered best practices for variable declaration and usage.
+#### [JavaScript Objects, Prototypes, and Classes](https://app.pluralsight.com/library/courses/javascript-objects-prototypes-classes/table-of-contents)
+**Certificate:** <a href="./resources/certificates/JavaScriptCertificate/certificate4.pdf" target="_blank">View</a>  
+Mastered object-oriented programming in JavaScript, including object creation, prototyping, and the use of ES6+ classes. The course provided insights into how JavaScript's prototype chain works and how to use classes to structure code.
+#### [JavaScript: Functions](https://app.pluralsight.com/library/courses/javascript-functions/table-of-contents)
+**Certificate:** <a href="./resources/certificates/JavaScriptCertificate/certificate5.pdf" target="_blank">View</a>  
+Developed a deep understanding of JavaScript functions, including function declarations, expressions, arrow functions, and higher-order functions. This course emphasized the importance of functions in creating modular, reusable code.
+
 ### SSDLC Certificate
 **Institution:** Pluralsight  
 **Date:** 2020  
