@@ -99,6 +99,18 @@ Mastered object-oriented programming in JavaScript, including object creation, p
 #### [JavaScript: Functions](https://app.pluralsight.com/library/courses/javascript-functions/table-of-contents)
 **Certificate:** <a href="./resources/certificates/JavaScriptCertificate/certificate5.pdf" target="_blank">View</a>  
 Developed a deep understanding of JavaScript functions, including function declarations, expressions, arrow functions, and higher-order functions. This course emphasized the importance of functions in creating modular, reusable code.
+#### [JavaScript Arrays and Collections](https://app.pluralsight.com/library/courses/javascript-arrays-collections/table-of-contents)
+**Certificate:** <a href="./resources/certificates/JavaScriptCertificate/certificate6.pdf" target="_blank">View</a>  
+Acquired skills to work with arrays and collections in JavaScript, including advanced array methods, iteration, and manipulation techniques. This course focused on optimizing data handling and processing in JavaScript.
+#### [JavaScript Generators and Iterators](https://app.pluralsight.com/library/courses/javascript-generators-iterators/table-of-contents)
+**Certificate:** <a href="./resources/certificates/JavaScriptCertificate/certificate7.pdf" target="_blank">View</a>  
+Learned how to implement generators and iterators in JavaScript to create efficient, memory-conscious code. The course covered how these features can be used to handle asynchronous data streams and custom iteration.
+#### [Working with JavaScript Modules](https://app.pluralsight.com/library/courses/working-javascript-modules/table-of-contents)
+**Certificate:** <a href="./resources/certificates/JavaScriptCertificate/certificate8.pdf" target="_blank">View</a>  
+Gained proficiency in organizing JavaScript code using modules. This course covered the ES6 module system, including importing/exporting functions, classes, and variables, and how to structure applications for better maintainability.
+#### [JavaScript Promises and Async Programming](https://app.pluralsight.com/library/courses/javascript-promises-async-programming/table-of-contents)
+**Certificate:** <a href="./resources/certificates/JavaScriptCertificate/certificate9.pdf" target="_blank">View</a>  
+Mastered asynchronous programming in JavaScript using Promises and async/await. This course focused on handling asynchronous operations, managing promise chains, and implementing error handling in asynchronous workflows.
 
 ### SSDLC Certificate
 **Institution:** Pluralsight  
