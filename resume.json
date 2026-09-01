@@ -1,0 +1,374 @@
+{
+  "version": 5,
+  "picture": {
+    "hidden": false,
+    "url": "resources/logo/profile-image/logo.jpg"
+  },
+  "basics": {
+    "name": "Bhargav Kukadiya",
+    "headline": "Senior iOS & Apple Platforms Architect",
+    "email": "bhargavkukadiya007@gmail.com",
+    "phone": "+91 9374543494",
+    "location": "Surat, Gujarat, India",
+    "website": {
+      "url": "https://bhargavkukadiya.github.io/",
+      "label": "Portfolio"
+    },
+    "customFields": []
+  },
+  "summary": {
+    "title": "Summary",
+    "hidden": false,
+    "content": "Senior iOS Developer & Apple Platforms Architect with 10+ years of experience building scalable, high-performance applications using Swift, Objective-C, UIKit, and modern Swift 6 concurrency. Proven track record of delivering enterprise-grade products (Civica - Collect) and production platforms (Ezy Sign In) from architecture to App Store deployment. Experienced full-stack contributor with C#/.NET, Python, and JavaScript. Open-source author of 11 Swift packages, AI developer tools, and cloud engineering guides covering Passkeys, SwiftData, CoreData, PDFKit AcroForms, CoreLocation, and CI/CD pipelines. Adept at mentoring junior developers, conducting code reviews, and collaborating in cross-functional Agile teams."
+  },
+  "sections": {
+    "profiles": {
+      "title": "Profiles",
+      "hidden": false,
+      "items": [
+        {
+          "id": "6288140e-4de8-4531-9775-43fc0031348e",
+          "network": "LinkedIn",
+          "username": "bhargavkukadiya",
+          "website": {
+            "url": "https://linkedin.com/in/bhargavkukadiya",
+            "label": "LinkedIn Profile"
+          }
+        },
+        {
+          "id": "cf19c2bf-661d-4231-858f-f399de22986a",
+          "network": "GitHub",
+          "username": "bhargavkukadiya",
+          "website": {
+            "url": "https://github.com/bhargavkukadiya",
+            "label": "GitHub Profile"
+          }
+        },
+        {
+          "id": "upwork-profile-0165bba55cf266857d",
+          "network": "Upwork",
+          "username": "bhargavkukadiya",
+          "website": {
+            "url": "https://www.upwork.com/freelancers/~0165bba55cf266857d?mp_source=share",
+            "label": "Upwork Profile"
+          }
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experience",
+      "hidden": false,
+      "items": [
+        {
+          "id": "1e906a2d-54cd-406b-8c32-d5ef280cfd14",
+          "company": "Civica",
+          "position": "Software Engineer",
+          "location": "Vadodara, Gujarat",
+          "period": "March 2020 – Present",
+          "website": {
+            "url": "https://www.civica.com/en-in/",
+            "label": "civica.com"
+          },
+          "highlights": [
+            "Architected and delivered business-critical features across regular release trains for Civica - Collect, an enterprise debt recovery platform serving local government authorities and commercial enforcement agencies.",
+            "Conducted technical impact analysis and designed modular software components adhering to established design patterns (Repository, Factory, CQRS, Singleton, and MVVM).",
+            "Provided Tier-3 application support against agreed client Service Level Agreements (SLAs), resolving complex production defects, performance bottlenecks, and sync edge cases.",
+            "Delivered end-to-end full-stack capabilities across native iOS (Swift/Objective-C), modern web frontend (JavaScript, Cappuccino/Objective-J), and backend services (C#/.NET Core, MySQL).",
+            "Enforced strict ISO 9001 Quality Management standards through comprehensive multi-tier unit testing (XCTest for iOS, OJTest for Cappuccino web, and C# backend tests), peer PR code reviews, and Git version control hygiene.",
+            "Collaborated closely with Product Owners, Technical Architects, and Project Managers in an Agile scrum environment while automating CI/CD workflows with Azure DevOps, Azure Pipelines, and GitHub Actions."
+          ]
+        },
+        {
+          "id": "54495d43-012b-4ac5-8125-69d196af4dd3",
+          "company": "Narola Infotech",
+          "position": "Senior Consultant",
+          "location": "Surat, Gujarat",
+          "period": "January 2016 – March 2020",
+          "website": {
+            "url": "https://www.narolainfotech.com/",
+            "label": "narolainfotech.com"
+          },
+          "highlights": [
+            "Built and shipped multiple iOS applications in Swift and Objective-C across MVC, MVVM, and MVP architectures for clients in sports, training, and lifestyle domains.",
+            "Designed complex UI components using Auto Layout, Size Classes, and custom animations for iPhone and iPad.",
+            "Integrated REST APIs, in-app purchases, JSON/XML parsing, and Firebase push notifications.",
+            "Improved code quality by implementing Git-based workflows, code reviews, and reusable components.",
+            "Delivered apps live on the App Store with high ratings, collaborating with cross-functional teams."
+          ]
+        }
+      ]
+    },
+    "projects": {
+      "title": "Selected Projects",
+      "hidden": false,
+      "items": [
+        {
+          "id": "606cdaa7-336e-4e67-abcd-810d477e6826",
+          "name": "Civica - Collect",
+          "tagline": "Enterprise Debt Collection & Enforcement Platform",
+          "period": "Civica · March 2020 – Present",
+          "badge": "Enterprise Scale",
+          "featured": true,
+          "website": {
+            "url": "https://www.civica.com/en-in/product-pages/debt-collection-recovery-software/",
+            "label": "Product Info"
+          },
+          "description": "Enterprise debt recovery and enforcement platform serving local government authorities. Architected business-critical features, performed technical impact analysis, and led client ticket investigations against Tier-3 SLAs. Automated multi-stage CI/CD via Azure DevOps, Azure Pipelines, and GitHub Actions while driving comprehensive unit testing across iOS (XCTest), web (OJTest), and C# backend tests.",
+          "tech": ["Swift", "Objective-C", "C# / .NET", "JavaScript", "Cappuccino (Obj-J)", "Azure DevOps", "Azure Pipelines", "GitHub Actions", "XCTest", "OJTest", "C# Unit Tests", "Git / PR Reviews", "MySQL"]
+        },
+        {
+          "id": "d59bb1ed-cab4-4cb6-bd5d-cd221dd545d2",
+          "name": "Ezy Sign In",
+          "tagline": "Enterprise Visitor Management & Touchless Kiosk",
+          "period": "Production Release",
+          "badge": "App Store Live",
+          "featured": true,
+          "website": {
+            "url": "https://apps.apple.com/us/app/ezy-sign-in-new/id6771831157",
+            "label": "App Store (Swift 6 New)"
+          },
+          "legacyWebsite": {
+            "url": "https://apps.apple.com/in/app/ezy-signin/id1474146070",
+            "label": "App Store (Objective-C Legacy)"
+          },
+          "description": "Built the new Ezy Sign In app from scratch using Swift 6, UIKit, and MVVM-R (Router/Coordinator) architecture; also maintained legacy Objective-C version — both live on the App Store. Features touchless QR check-in, camera photo capture (AVFoundation), NDA signing (WebKit), and auto badge printing via Brother thermal printers (WiFi/Bluetooth).",
+          "tech": ["Swift 6", "UIKit", "MVVM-R", "Strict Concurrency", "Alamofire 5", "AVFoundation", "CoreImage", "Brother Printer SDK", "SPM", "XCTest", "XCUITest"]
+        },
+        {
+          "id": "866d125e-29af-4f87-9f82-31a264f6c5a0",
+          "name": "Skate to Ski",
+          "tagline": "Athletic Training & Motion Technique App",
+          "period": "Narola Infotech",
+          "badge": "App Store Live",
+          "featured": false,
+          "website": {
+            "url": "https://apps.apple.com/in/app/skate-to-ski/id1458606967",
+            "label": "App Store"
+          },
+          "description": "Implemented key UI flows, interactive video training modules, and onboarding experience; contributed to App Store release and resolved multi-device performance bottlenecks.",
+          "tech": ["Swift", "Objective-C", "Core Data", "Video Player", "Auto Layout", "REST APIs"]
+        },
+        {
+          "id": "3975c59e-ea62-4574-a392-50be5c115239",
+          "name": "My Board & Coaches",
+          "tagline": "Sports Coach Discovery & Session Booking",
+          "period": "Narola Infotech",
+          "badge": "App Store Live",
+          "featured": false,
+          "website": {
+            "url": "https://apps.apple.com/in/app/my-board-coaches/id1409779887",
+            "label": "App Store"
+          },
+          "description": "Developed coach discovery modules, real-time messaging, and robust offline caching using Core Data. Optimized cold-start time by 30% through cached image pipelines.",
+          "tech": ["Swift", "Objective-C", "Core Data", "Chat System", "Core PHP", "MySQL"]
+        }
+      ]
+    },
+    "openSource": {
+      "title": "Open-Source Swift Libraries",
+      "items": [
+        {
+          "name": "PasskeyManager",
+          "description": "Swift 6 zero-dependency wrapper for Apple Passkeys (WebAuthn/FIDO2) — async/await, task cancellation safety, cross-platform (iOS/macOS).",
+          "url": "https://github.com/bhargavkukadiya/PasskeyManager",
+          "spm": ".package(url: \"https://github.com/bhargavkukadiya/PasskeyManager\", from: \"1.0.0\")",
+          "tags": ["Swift 6", "Passkeys", "WebAuthn", "FIDO2", "iOS 16+"]
+        },
+        {
+          "name": "CoreDataManager",
+          "description": "Thread-safe Core Data singleton — batch updates/deletes, persistent history tracking, Combine publisher, multi-context architecture.",
+          "url": "https://github.com/bhargavkukadiya/CoreDataManager",
+          "spm": ".package(url: \"https://github.com/bhargavkukadiya/CoreDataManager\", from: \"1.0.0\")",
+          "tags": ["Core Data", "Combine", "Thread-Safe", "Batch Ops"]
+        },
+        {
+          "name": "SwiftDataManager",
+          "description": "Modern SwiftData persistence layer — @ModelActor for thread safety, generic repository pattern, in-memory testing support.",
+          "url": "https://github.com/bhargavkukadiya/SwiftDataManager",
+          "spm": ".package(url: \"https://github.com/bhargavkukadiya/SwiftDataManager\", from: \"1.0.0\")",
+          "tags": ["SwiftData", "@ModelActor", "Repository Pattern", "iOS 17+"]
+        },
+        {
+          "name": "LocationManager",
+          "description": "Production-ready CoreLocation wrapper — geofencing, geocoding, compass, visit monitoring; Combine + async/await + delegate APIs.",
+          "url": "https://github.com/bhargavkukadiya/LocationManager",
+          "spm": ".package(url: \"https://github.com/bhargavkukadiya/LocationManager\", from: \"1.0.0\")",
+          "tags": ["CoreLocation", "Geofencing", "async/await", "Combine"]
+        },
+        {
+          "name": "PhotoCaptureManager",
+          "description": "Camera & photo library manager — privacy-preserving PHPickerViewController, interactive dismissal safety, iPad popover support.",
+          "url": "https://github.com/bhargavkukadiya/PhotoCaptureManager",
+          "spm": ".package(url: \"https://github.com/bhargavkukadiya/PhotoCaptureManager\", from: \"1.0.0\")",
+          "tags": ["AVFoundation", "PhotoKit", "PHPicker", "iPad Support"]
+        },
+        {
+          "name": "FontManager",
+          "description": "Design system typography engine — 21 semantic tokens, Dynamic Type (UIFontMetrics), CoreText custom font registration, UIKit + SwiftUI.",
+          "url": "https://github.com/bhargavkukadiya/FontManager",
+          "spm": ".package(url: \"https://github.com/bhargavkukadiya/FontManager\", from: \"1.0.0\")",
+          "tags": ["Typography", "Dynamic Type", "CoreText", "Design Tokens"]
+        },
+        {
+          "name": "PDFFormHelper",
+          "description": "Production-ready PDFKit utility — AcroField form management, interactive checkbox/radio controls, signature stamping, draft persistence, rotation-aware flattening.",
+          "url": "https://github.com/bhargavkukadiya/PDFFormHelper",
+          "spm": ".package(url: \"https://github.com/bhargavkukadiya/PDFFormHelper\", from: \"1.0.0\")",
+          "tags": ["PDFKit", "AcroForms", "Signatures", "@MainActor", "iOS 15+"]
+        },
+        {
+          "name": "azure-pipelines-guide",
+          "description": "Comprehensive reference guide & Docsify documentation site for Azure DevOps Pipelines, Fastlane match, multi-stage YAML pipelines, and code signing.",
+          "url": "https://github.com/bhargavkukadiya/azure-pipelines-guide",
+          "docsUrl": "https://bhargavkukadiya.github.io/azure-pipelines-guide/",
+          "spm": null,
+          "tags": ["CI/CD", "Azure Pipelines", "Fastlane", "Docsify"]
+        },
+        {
+          "name": "aws-beginner-guide",
+          "description": "Comprehensive 16-module AWS cloud guide & Material for MkDocs documentation site covering EC2, Lambda, S3, VPC, RDS/DynamoDB, IAM, and cost control.",
+          "url": "https://github.com/bhargavkukadiya/aws-beginner-guide",
+          "docsUrl": "https://bhargavkukadiya.github.io/aws-beginner-guide/",
+          "spm": null,
+          "tags": ["AWS Cloud", "Cloud Architecture", "MkDocs", "DevOps"]
+        },
+        {
+          "name": "macos-dir-tools",
+          "description": "Zero-dependency CLI suite for macOS & Linux — 3-phase duplicate file hashing, O(1) AWK disk usage stats, recursive inventory scanning, and .DS_Store handling.",
+          "url": "https://github.com/bhargavkukadiya/macos-dir-tools",
+          "spm": null,
+          "tags": ["Python 3", "POSIX Bash", "CLI Suite", "macOS/Linux"]
+        },
+        {
+          "name": "photo-curator",
+          "description": "AI photo curation engine — OpenAI CLIP ViT-B/32 neural aesthetics, OpenCV sharpness, burst deduplication, Apple Silicon MPS, and two-phase transactional staging.",
+          "url": "https://github.com/bhargavkukadiya/photo-curator",
+          "spm": null,
+          "tags": ["Python 3.9+", "PyTorch", "OpenAI CLIP", "OpenCV", "Apple Silicon MPS"]
+        }
+      ]
+    },
+    "skills": {
+      "title": "Skills & Expertise",
+      "categories": [
+        {
+          "name": "iOS & Apple Platforms",
+          "keywords": ["Swift", "Objective-C", "UIKit", "SwiftUI", "Core Data", "SwiftData", "Xcode"]
+        },
+        {
+          "name": "Modern Swift",
+          "keywords": ["Swift 6 Concurrency", "async/await", "@MainActor", "Sendable", "Combine", "Actors"]
+        },
+        {
+          "name": "Architecture & Design",
+          "keywords": ["MVVM-R (Router/Coordinator)", "MVVM", "VIPER", "MVP", "MVC", "Protocol-Oriented Programming (POP)", "SOLID Principles", "Dependency Injection (DI)", "Design Systems", "Repository Pattern"]
+        },
+        {
+          "name": "Apple Frameworks",
+          "keywords": ["AVFoundation", "CoreImage", "CoreLocation", "Vision", "PhotoKit", "CoreText", "AuthenticationServices", "WebKit"]
+        },
+        {
+          "name": "Testing & CI/CD",
+          "keywords": ["XCTest", "XCUITest", "Azure Pipelines", "Fastlane", "Swift Package Manager", "Code Signing"]
+        },
+        {
+          "name": "Backend & Web",
+          "keywords": ["C# / .NET", "Python 3", "JavaScript", "MySQL", "REST APIs", "Alamofire", "Cappuccino (Objective-J)"]
+        },
+        {
+          "name": "Tools & DevOps",
+          "keywords": ["Git", "Azure DevOps", "Azure Pipelines", "Fastlane", "Bash Scripting", "AWS Cloud Architecture", "PyTorch / CLIP", "SPM", "Postman", "JIRA"]
+        }
+      ]
+    },
+    "education": {
+      "title": "Academic Degrees & Foundation",
+      "items": [
+        {
+          "school": "Sardar Patel University",
+          "department": "G.H. Patel P.G. Department of Computer Science & Technology",
+          "degree": "Master of Computer Applications (MCA)",
+          "area": "Computer Applications & Software Engineering",
+          "grade": "7.07 CGPA",
+          "location": "Vallabh Vidyanagar, Anand, Gujarat, India",
+          "period": "2013 – 2016",
+          "website": "https://www.spuvvn.edu/"
+        },
+        {
+          "school": "Maharaja Krishnakumarsinhji Bhavnagar University",
+          "college": "Swami Vivekanand College of Computer Science",
+          "degree": "Bachelor of Computer Applications (BCA)",
+          "area": "Computer Applications",
+          "location": "Bhavnagar, Gujarat, India",
+          "period": "2009 – 2012 (Conferred Dec 2013)",
+          "website": "https://www.mkbhavuni.edu.in/"
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certifications",
+      "items": [
+        {
+          "title": "Advanced C# and .NET Development",
+          "issuer": "PluralSight",
+          "date": "2023",
+          "modulesCount": 5,
+          "pdfList": [
+            "resources/certificates/DOT NET/certificate1.pdf",
+            "resources/certificates/DOT NET/certificate2.pdf",
+            "resources/certificates/DOT NET/certificate3.pdf",
+            "resources/certificates/DOT NET/certificate4.pdf",
+            "resources/certificates/DOT NET/certificate5.pdf"
+          ],
+          "topics": ["OOP in C#", "SOLID Principles", "ADO.NET", "LINQ", "ASP.NET Core"]
+        },
+        {
+          "title": "SQL Database Development",
+          "issuer": "PluralSight",
+          "date": "2023",
+          "modulesCount": 5,
+          "pdfList": [
+            "resources/certificates/SQL/certificate1.pdf",
+            "resources/certificates/SQL/certificate2.pdf",
+            "resources/certificates/SQL/certificate3.pdf",
+            "resources/certificates/SQL/certificate4.pdf",
+            "resources/certificates/SQL/certificate5.pdf"
+          ],
+          "topics": ["Table Design", "Stored Procedures", "Triggers & Functions", "Indexing"]
+        },
+        {
+          "title": "JavaScript Core Language",
+          "issuer": "PluralSight",
+          "date": "2020",
+          "modulesCount": 9,
+          "pdfList": [
+            "resources/certificates/JavaScriptCertificate/certificate1.pdf",
+            "resources/certificates/JavaScriptCertificate/certificate2.pdf",
+            "resources/certificates/JavaScriptCertificate/certificate3.pdf",
+            "resources/certificates/JavaScriptCertificate/certificate4.pdf",
+            "resources/certificates/JavaScriptCertificate/certificate5.pdf",
+            "resources/certificates/JavaScriptCertificate/certificate6.pdf",
+            "resources/certificates/JavaScriptCertificate/certificate7.pdf",
+            "resources/certificates/JavaScriptCertificate/certificate8.pdf",
+            "resources/certificates/JavaScriptCertificate/certificate9.pdf"
+          ],
+          "topics": ["ES6+ Syntax", "OOP & Prototypes", "Async Programming", "Modules"]
+        },
+        {
+          "title": "SSDLC (Secure Software Development Life Cycle)",
+          "issuer": "PluralSight",
+          "date": "2020",
+          "modulesCount": 5,
+          "pdfList": [
+            "resources/certificates/SSDLC Certificate/certificate1.pdf",
+            "resources/certificates/SSDLC Certificate/certificate2.pdf",
+            "resources/certificates/SSDLC Certificate/certificate3.pdf",
+            "resources/certificates/SSDLC Certificate/certificate4.pdf",
+            "resources/certificates/SSDLC Certificate/certificate5.pdf"
+          ],
+          "topics": ["OWASP Top 10", "Secure Coding Standards", "Vulnerability Mitigation"]
+        }
+      ]
+    }
+  }
+}

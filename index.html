@@ -1,327 +1,1697 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhargav Kukadiya | iOS Application Developer</title>
-    <meta name="description" content="Innovative Software Engineer with 8+ years of expertise in iOS application and front-end development. Specialized in Swift, Objective-C, and modern web technologies.">
-    <meta name="keywords" content="iOS Developer, Swift, Objective-C, Software Engineer, Mobile Development">
+    <title>Bhargav Kukadiya — Senior iOS & Apple Platforms Architect</title>
+    <meta name="description" content="Senior iOS Developer & Apple Platforms Architect with 10+ years of experience building scalable applications with Swift 6 Concurrency, UIKit, SwiftUI, and enterprise architectures.">
+    <meta name="keywords" content="Bhargav Kukadiya, iOS Developer, Apple Platforms Architect, Swift 6, UIKit, SwiftUI, MVVM-R, MVVM, VIPER, MVP, MVC, Clean Architecture, Civica - Collect, Ezy Sign In, PDFFormHelper, PasskeyManager, CoreDataManager, Swift Developer Surat">
     <meta name="author" content="Bhargav Kukadiya">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Bhargav Kukadiya | iOS Application Developer">
-    <meta property="og:description" content="iOS Application Developer with 8+ years of expertise">
+
+    <!-- Canonical URL & Open Graph -->
+    <link rel="canonical" href="https://bhargavkukadiya.github.io/">
     <meta property="og:type" content="website">
+    <meta property="og:title" content="Bhargav Kukadiya — Senior iOS & Apple Platforms Architect">
+    <meta property="og:description" content="10+ years building scalable, high-performance iOS apps, enterprise systems (CivicaCollect), and open-source Swift libraries.">
     <meta property="og:url" content="https://bhargavkukadiya.github.io/">
-    
+    <meta property="og:image" content="resources/logo/profile-image/logo.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bhargav Kukadiya — Senior iOS & Apple Platforms Architect">
+    <meta name="twitter:description" content="10+ years building scalable, high-performance iOS apps, enterprise systems, and open-source Swift libraries.">
+    <meta name="twitter:image" content="resources/logo/profile-image/logo.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="resources/logo/profile-image/logo.jpg">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">BK</a>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#certificates" class="nav-link">Certificates</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+    <!-- Grain Noise Texture Overlay -->
+    <div class="noise-overlay" aria-hidden="true"></div>
+
+    <!-- Floating Navigation Bar -->
+    <header class="header-nav-wrapper">
+        <nav class="nav-pill" id="navbar" aria-label="Main Navigation">
+            <a href="#home" class="nav-brand" aria-label="Bhargav Kukadiya Home">
+                <span class="nav-monogram">BK</span>
+                <span class="nav-name">Bhargav<span class="accent-dot">.</span></span>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#projects" class="nav-item">Works</a></li>
+                <li><a href="#opensource" class="nav-item">Open Source</a></li>
+                <li><a href="#experience" class="nav-item">Journey</a></li>
+                <li><a href="#skills" class="nav-item">Skills</a></li>
+                <li><a href="#certifications" class="nav-item">Credentials</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
             </ul>
-            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
+            <div class="nav-actions">
+                <!-- Theme Switcher Button -->
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <!-- Primary Action CTA -->
+                <a href="#contact" class="nav-cta-btn">
+                    <span>Let's Talk</span>
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 8h10M9 4l4 4-4 4"/>
+                    </svg>
+                </a>
+
+                <!-- Mobile Menu Hamburger -->
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+        <div class="drawer-content">
+            <ul class="drawer-links">
+                <li><a href="#about" class="drawer-link">About Me</a></li>
+                <li><a href="#projects" class="drawer-link">Selected Works</a></li>
+                <li><a href="#opensource" class="drawer-link">Open Source</a></li>
+                <li><a href="#experience" class="drawer-link">Career Journey</a></li>
+                <li><a href="#skills" class="drawer-link">Skills & Stack</a></li>
+                <li><a href="#certifications" class="drawer-link">Credentials</a></li>
+                <li><a href="#contact" class="drawer-link">Get In Touch</a></li>
+            </ul>
+            <div class="drawer-footer">
+                <div class="drawer-status">
+                    <span class="status-pulse"></span>
+                    <span>Available for iOS Architecture & Consulting</span>
+                </div>
+                <div class="drawer-socials">
+                    <a href="https://github.com/bhargavkukadiya" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+                    <a href="https://linkedin.com/in/bhargavkukadiya" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="https://www.upwork.com/freelancers/~0165bba55cf266857d?mp_source=share" target="_blank" rel="noopener" aria-label="Upwork">Upwork</a>
+                    <a href="mailto:bhargavkukadiya007@gmail.com" aria-label="Email">Email</a>
+                </div>
+            </div>
         </div>
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    Hi, I'm <span class="gradient-text">Bhargav Kukadiya</span>
-                </h1>
-                <p class="hero-subtitle">
-                    <span id="typed-text"></span><span class="cursor"></span>
+    </div>
+
+    <!-- Main Content Container -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <!-- Status Pill -->
+                <div class="status-badge fade-in">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Available for iOS Architecture & Consulting</span>
+                    <span class="status-divider">·</span>
+                    <span class="status-location">Surat, India · Remote/Hybrid</span>
+                </div>
+
+                <!-- Main Hero Headline -->
+                <div class="hero-header fade-in">
+                    <span class="hero-eyebrow">Hey, I'm</span>
+                    <h1 class="hero-title">
+                        Bhargav Kukadiya<span class="accent-period">.</span>
+                    </h1>
+                </div>
+
+                <!-- Animated Role Cycler -->
+                <div class="hero-role-wrapper fade-in">
+                    <div class="role-terminal">
+                        <span class="terminal-prefix">role:</span>
+                        <span class="typed-role" id="typed-role">Senior iOS Application Developer</span>
+                        <span class="terminal-cursor"></span>
+                    </div>
+                </div>
+
+                <!-- Punchy Bio Paragraph -->
+                <p class="hero-summary fade-in">
+                    Senior iOS Developer & Apple Platforms Architect with <strong>10+ years</strong> of experience crafting high-performance, resilient applications using <strong>Swift 6 Concurrency</strong>, <strong>UIKit</strong>, <strong>SwiftUI</strong>, and clean <strong>MVVM-R</strong> architecture. Delivered enterprise systems like <a href="https://www.civica.com/en-in/product-pages/debt-collection-recovery-software/" target="_blank" rel="noopener" class="hero-inline-link"><strong>Civica - Collect</strong></a> and platforms like <a href="https://apps.apple.com/us/app/ezy-sign-in-new/id6771831157" target="_blank" rel="noopener" class="hero-inline-link"><strong>Ezy Sign In</strong></a>.
                 </p>
-                <p class="hero-description">
-                    Innovative Software Engineer with 8+ years of expertise in iOS application and front-end development. 
-                    Passionate about creating exceptional user experiences and clean, efficient code.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#experience" class="btn btn-secondary">View Work</a>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="lead">
-                        Innovative and self-motivated Software Engineer offering 8+ years of expertise in iOS application 
-                        and front-end application development.
-                    </p>
-                    <p>
-                        Seasoned professional with a background in full software development lifecycle. 
-                        Quickly learns and masters new technologies while working in both team and self-directed settings.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat-card">
-                            <h3 class="stat-number">8+</h3>
-                            <p class="stat-label">Years Experience</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3 class="stat-number">50+</h3>
-                            <p class="stat-label">Projects Completed</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3 class="stat-number">25+</h3>
-                            <p class="stat-label">Certifications</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience section">
-        <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-period">March 2020 - Present</div>
-                        <h3 class="timeline-title">Software Engineer</h3>
-                        <h4 class="timeline-company">Civica</h4>
-                        <p class="timeline-location">Vadodara, GJ</p>
-                        <ul class="timeline-responsibilities">
-                            <li>Supported and improved the existing codebase by investigating, solving, and testing software problems, and coding new features</li>
-                            <li>Worked with the scrum team to communicate technical details, translate client requirements into user stories, and document tasks</li>
-                            <li>Enhanced product quality through code reviews, effective unit testing, collaboration with QA for automation testing, and integrating APIs</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-period">January 2016 - March 2020</div>
-                        <h3 class="timeline-title">Senior Consultant</h3>
-                        <h4 class="timeline-company">Narola Infotech</h4>
-                        <p class="timeline-location">Surat, GJ</p>
-                        <ul class="timeline-responsibilities">
-                            <li>Developed in-depth knowledge and experience with Objective-C and Swift, including UIKit, Cocoa Touch, and various iOS frameworks</li>
-                            <li>Familiar with MVC and MVVM architectures and proficient in using XCTest for unit testing</li>
-                            <li>Skilled in using SVN and GitHub for source code versioning, and experienced in working with auto-layout and size classes</li>
-                            <li>Experienced in web service integration using JSON, XML, and REST APIs</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Programming Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Swift</span>
-                        <span class="skill-tag">Objective-C</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">C#</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Web Technologies</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">HTML</span>
-                        <span class="skill-tag">CSS</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Core PHP</span>
-                        <span class="skill-tag">.NET</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Databases</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">MongoDB</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Tools & Platforms</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">DevOps</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Xcode</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3 class="skill-category-title">iOS Frameworks</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">UIKit</span>
-                        <span class="skill-tag">Core Data</span>
-                        <span class="skill-tag">Core Location</span>
-                        <span class="skill-tag">Core Animation</span>
-                        <span class="skill-tag">XCTest</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Soft Skills</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Problem-solving</span>
-                        <span class="skill-tag">Team Collaboration</span>
-                        <span class="skill-tag">Communication</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certificates Section -->
-    <section id="certificates" class="certificates section">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <div class="certificates-grid">
-                <!-- C# and .NET Certification -->
-                <div class="certificate-card">
-                    <div class="certificate-icon">.NET</div>
-                    <h3 class="certificate-title">Advanced C# and .NET Development</h3>
-                    <p class="certificate-institution">Pluralsight</p>
-                    <p class="certificate-date">2023</p>
-                    <div class="certificate-topics">
-                        <span class="topic-tag">OOP in C#</span>
-                        <span class="topic-tag">SOLID Principles</span>
-                        <span class="topic-tag">ADO.NET</span>
-                        <span class="topic-tag">LINQ</span>
-                        <span class="topic-tag">ASP.NET Core 6</span>
-                    </div>
-                </div>
-                
-                <!-- SQL Certification -->
-                <div class="certificate-card">
-                    <div class="certificate-icon">SQL</div>
-                    <h3 class="certificate-title">SQL Database Development</h3>
-                    <p class="certificate-institution">Pluralsight</p>
-                    <p class="certificate-date">2023</p>
-                    <div class="certificate-topics">
-                        <span class="topic-tag">Table Design</span>
-                        <span class="topic-tag">Stored Procedures</span>
-                        <span class="topic-tag">Triggers & Functions</span>
-                        <span class="topic-tag">Indexing</span>
-                    </div>
-                </div>
-                
-                <!-- JavaScript Certification -->
-                <div class="certificate-card">
-                    <div class="certificate-icon">JS</div>
-                    <h3 class="certificate-title">JavaScript Core Language</h3>
-                    <p class="certificate-institution">Pluralsight</p>
-                    <p class="certificate-date">2020</p>
-                    <div class="certificate-topics">
-                        <span class="topic-tag">ES7+ Syntax</span>
-                        <span class="topic-tag">OOP & Prototypes</span>
-                        <span class="topic-tag">Functions</span>
-                        <span class="topic-tag">Async Programming</span>
-                        <span class="topic-tag">Modules</span>
-                    </div>
-                </div>
-                
-                <!-- SSDLC Certification -->
-                <div class="certificate-card">
-                    <div class="certificate-icon">🔒</div>
-                    <h3 class="certificate-title">Secure Software Development</h3>
-                    <p class="certificate-institution">Pluralsight</p>
-                    <p class="certificate-date">2020</p>
-                    <div class="certificate-topics">
-                        <span class="topic-tag">OWASP Top 10</span>
-                        <span class="topic-tag">Secure Coding</span>
-                        <span class="topic-tag">Security Practices</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education section">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-card">
-                <div class="education-degree">Master of Computer Applications (MCA)</div>
-                <div class="education-institution">Sardar Patel University</div>
-                <div class="education-details">
-                    <span class="education-duration">2013 - 2016</span>
-                    <span class="education-gpa">CGPA: 7.07</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-subtitle">
-                Interested in working together? Let's connect!
-            </p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-icon">📧</div>
-                    <a href="mailto:bhargavkukadiya007@gmail.com" class="contact-link">
-                        bhargavkukadiya007@gmail.com
+                <!-- Hero Action Buttons -->
+                <div class="hero-actions fade-in">
+                    <a href="#projects" class="btn-minimal btn-primary">
+                        <span>Explore Selected Works</span>
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 3v10M3 9l5 5 5-5"/>
+                        </svg>
+                    </a>
+                    <a href="resources/Bhargav_Kukadiya_Senior_iOS_Architect_Resume.pdf" target="_blank" class="btn-minimal btn-secondary" title="View &amp; Download PDF Resume">
+                        <span>Resume (PDF)</span>
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 2v8M4 6l4 4 4-4M2 14h12"/>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn-minimal btn-secondary">
+                        <span>Get In Touch</span>
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 8h10M9 4l4 4-4 4"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/bhargavkukadiya" target="_blank" rel="noopener" class="btn-minimal btn-icon" title="View GitHub Profile">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/bhargavkukadiya" target="_blank" rel="noopener" class="btn-minimal btn-icon" title="View LinkedIn Profile">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.upwork.com/freelancers/~0165bba55cf266857d?mp_source=share" target="_blank" rel="noopener" class="btn-minimal btn-icon" title="View Upwork Profile">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076l.008-.042c.207-1.143.849-3.06 2.839-3.06a2.705 2.705 0 0 1 2.703 2.703a2.707 2.707 0 0 1-2.704 2.702m0-8.14c-2.539 0-4.51 1.649-5.31 4.366c-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112a2.55 2.55 0 0 1-2.547 2.548a2.55 2.55 0 0 1-2.545-2.548V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303c2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109c3 0 5.439-2.452 5.439-5.45c0-3-2.439-5.439-5.439-5.439"/>
+                        </svg>
                     </a>
                 </div>
-                <div class="contact-item">
-                    <div class="contact-icon">📍</div>
-                    <span class="contact-text">Surat, GJ 395009</span>
+
+                <!-- Bento Metrics Grid -->
+                <div class="metrics-grid fade-in">
+                    <div class="metric-card">
+                        <div class="metric-number">10<span class="metric-accent">+</span></div>
+                        <div class="metric-label">Years iOS Engineering</div>
+                        <div class="metric-sub">Swift · Objective-C · Swift 6</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">3<span class="metric-accent">+</span></div>
+                        <div class="metric-label">Years .NET &amp; C#</div>
+                        <div class="metric-sub">Backend APIs · Full-Stack</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">11<span class="metric-accent">+</span></div>
+                        <div class="metric-label">Open-Source Projects</div>
+                        <div class="metric-sub">Swift 6 · AI · DevOps · CLI</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">AI<span class="metric-accent">+</span></div>
+                        <div class="metric-label">AI-Augmented Delivery</div>
+                        <div class="metric-sub">Tooling Mastery · High Performance</div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- About & Philosophy Section -->
+        <section id="about" class="section-wrapper">
+            <div class="container">
+                <div class="section-label">
+                    <span class="section-tag">// 00. OVERVIEW</span>
+                    <h2 class="section-title">Architecture, Craft & Concurrency.</h2>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Left: Bio & Highlights -->
+                    <div class="about-narrative">
+                        <p class="about-lead">
+                            I build high-scale, production-ready iOS applications and developer tools with a relentless focus on clean architecture, deterministic concurrency, and fluid UX.
+                        </p>
+                        <p class="about-text">
+                            With over a decade across the full software lifecycle, I specialize in architecting complex, scalable iOS solutions using <strong>Swift 6 strict concurrency</strong> (<code class="inline-code">@MainActor</code>, <code class="inline-code">Sendable</code>, <code class="inline-code">async/await</code>), <strong>MVVM-R (Router/Coordinator)</strong>, <strong>VIPER</strong>, <strong>MVP</strong>, <strong>MVC</strong>, and <strong>Protocol-Oriented Programming</strong>.
+                        </p>
+                        <p class="about-text">
+                            Beyond native Apple platforms, I bring hands-on full-stack depth with <strong>C#/.NET</strong>, <strong>JavaScript</strong>, and <strong>MySQL</strong>, allowing me to bridge the gap between high-performance mobile clients, cloud microservices, and enterprise backends.
+                        </p>
+
+                        <!-- Engineering Pillars -->
+                        <div class="pillars-grid">
+                            <div class="pillar-item">
+                                <div class="pillar-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                    </svg>
+                                </div>
+                                <div class="pillar-content">
+                                    <h4>Clean &amp; Scalable Architectures</h4>
+                                    <p>Deep expertise across MVVM-R, VIPER, MVP, and MVC — strict separation of concerns, testable ViewModels/Presenters, and decoupled navigation.</p>
+                                </div>
+                            </div>
+                            <div class="pillar-item">
+                                <div class="pillar-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                                    </svg>
+                                </div>
+                                <div class="pillar-content">
+                                    <h4>Swift 6 Strict Concurrency</h4>
+                                    <p>Data-race safety by default, actor-isolated persistence layers, cancellation-aware task trees, and Sendable hygiene.</p>
+                                </div>
+                            </div>
+                            <div class="pillar-item">
+                                <div class="pillar-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <div class="pillar-content">
+                                    <h4>Robust Quality & CI/CD</h4>
+                                    <p>Comprehensive XCTest protocol mocks, XCUITest UI automation, and automated Azure Pipelines & Fastlane deployments.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Profile Card -->
+                    <div class="about-card-wrapper">
+                        <div class="profile-card">
+                            <div class="profile-image-container">
+                                <img src="resources/logo/profile-image/logo.jpg" alt="Bhargav Kukadiya" class="profile-img" loading="lazy">
+                                <div class="profile-badge-overlay">
+                                    <span class="badge-dot"></span>
+                                    <span>iOS Architect</span>
+                                </div>
+                            </div>
+                            <div class="profile-card-details">
+                                <h3 class="profile-card-name">Bhargav Kukadiya</h3>
+                                <p class="profile-card-title">Senior iOS & Apple Platforms Architect</p>
+
+                                <div class="profile-card-meta">
+                                    <div class="meta-row">
+                                        <span class="meta-key">Location</span>
+                                        <span class="meta-val">Surat, Gujarat, India</span>
+                                    </div>
+                                    <div class="meta-row">
+                                        <span class="meta-key">Experience</span>
+                                        <span class="meta-val">10+ Years (Since 2016)</span>
+                                    </div>
+                                    <div class="meta-row">
+                                        <span class="meta-key">Primary Stack</span>
+                                        <span class="meta-val">Swift 6, UIKit, SwiftUI, C#/.NET</span>
+                                    </div>
+                                    <div class="meta-row">
+                                        <span class="meta-key">Open Source</span>
+                                        <span class="meta-val">11+ Open-Source Projects</span>
+                                    </div>
+                                </div>
+
+                                <div class="profile-card-cta">
+                                    <button class="btn-copy-email" id="btn-copy-hero-email" title="Click to copy email address">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                        </svg>
+                                        <span>Copy Email</span>
+                                    </button>
+                                    <a href="https://linkedin.com/in/bhargavkukadiya" target="_blank" rel="noopener" class="btn-connect-linkedin">
+                                        LinkedIn →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Projects Section -->
+        <section id="projects" class="section-wrapper bg-subtle">
+            <div class="container">
+                <div class="section-label">
+                    <span class="section-tag">// 01. SELECTED WORKS</span>
+                    <h2 class="section-title">Enterprise Systems & Live Apps.</h2>
+                    <p class="section-desc">Production applications engineered for high reliability, performance, and seamless user experiences.</p>
+                </div>
+
+                <div class="projects-list">
+                    <!-- Project 1: Civica - Collect -->
+                    <article class="project-card featured">
+                        <div class="project-header">
+                            <div class="project-meta-top">
+                                <span class="project-tag-badge enterprise">Enterprise Scale · Public Sector</span>
+                                <span class="project-date">Civica · March 2020 – Present</span>
+                            </div>
+                            <h3 class="project-title">Civica - Collect — Enterprise Debt Collection & Enforcement Platform</h3>
+                            <p class="project-tagline">Mission-critical debt collection and field enforcement platform trusted by public sector authorities and enforcement agencies.</p>
+                        </div>
+
+                        <div class="project-body">
+                            <ul class="project-bullets">
+                                <li><strong>Enterprise Feature Delivery:</strong> Architected and delivered business-critical features across regular release trains for Civica - Collect, conducting technical impact analysis adhering to Repository, Factory, CQRS, and MVVM patterns.</li>
+                                <li><strong>Client Ticket Investigation & SLAs:</strong> Investigated complex production issues and client support tickets against strict Service Level Agreements (SLAs), authoring root-cause documentation and delivering verified hotfixes.</li>
+                                <li><strong>CI/CD Pipelines & DevOps Automation:</strong> Configured and automated multi-stage build, test, and release pipelines using <strong>Azure DevOps</strong>, <strong>Azure Pipelines</strong>, and <strong>GitHub Actions</strong> to ensure continuous deployment reliability.</li>
+                                <li><strong>Full-Stack Unit Testing & Quality Governance:</strong> Developed and maintained multi-tier unit test suites across layers using <strong>XCTest</strong> (iOS), <strong>OJTest</strong> (Cappuccino/Objective-J web frontend), and <strong>C# backend tests</strong> (.NET Core) under ISO 9001 quality standards and structured Git PR code reviews.</li>
+                            </ul>
+
+                            <div class="project-tech-stack">
+                                <span class="tech-chip">Swift</span>
+                                <span class="tech-chip">Objective-C</span>
+                                <span class="tech-chip">C# / .NET</span>
+                                <span class="tech-chip">JavaScript</span>
+                                <span class="tech-chip">Cappuccino (Obj-J)</span>
+                                <span class="tech-chip">Azure DevOps</span>
+                                <span class="tech-chip">Azure Pipelines</span>
+                                <span class="tech-chip">GitHub Actions</span>
+                                <span class="tech-chip">XCTest</span>
+                                <span class="tech-chip">OJTest</span>
+                                <span class="tech-chip">C# Unit Tests</span>
+                                <span class="tech-chip">Git / PR Reviews</span>
+                                <span class="tech-chip">MySQL</span>
+                            </div>
+
+                            <div class="project-footer">
+                                <a href="https://www.civica.com/en-in/product-pages/debt-collection-recovery-software/" target="_blank" rel="noopener" class="project-link-btn">
+                                    <span>Product Overview</span>
+                                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 12L12 4M12 4H6M12 4V10"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Ezy Sign In -->
+                    <article class="project-card featured">
+                        <div class="project-header">
+                            <div class="project-meta-top">
+                                <span class="project-tag-badge">App Store Live</span>
+                                <span class="project-date">Production Release</span>
+                            </div>
+                            <h3 class="project-title">Ezy Sign In — Enterprise Visitor Management & Touchless Kiosk</h3>
+                            <p class="project-tagline">Native iPad & iOS kiosk platform handling visitor registration, NDA signing, and automated thermal badge printing.</p>
+                        </div>
+
+                        <div class="project-body">
+                            <ul class="project-bullets">
+                                <li><strong>Swift 6 Re-architecture:</strong> Engineered the next-generation Ezy Sign In app from scratch using Swift 6, UIKit, and MVVM-R (Router/Coordinator) pattern with complete protocol-based dependency injection.</li>
+                                <li><strong>Hardware & Hardware Integration:</strong> Integrated Brother thermal printers (WiFi & Bluetooth SDK) for instantaneous visitor badge printing upon QR check-in.</li>
+                                <li><strong>Hardware-accelerated Photo & Legal:</strong> Implemented AVFoundation camera capture with real-time face alignment, WebKit-based NDA signature flows, and CoreImage optimizations.</li>
+                                <li><strong>Strict Concurrency & Test Automation:</strong> Zero data races with strict <code class="inline-code">@MainActor</code> and <code class="inline-code">Sendable</code> adherence; built comprehensive XCTest mock suites and XCUITest automated UI flows with multi-language localization (EN, FR, FR-CA).</li>
+                            </ul>
+
+                            <div class="project-tech-stack">
+                                <span class="tech-chip">Swift 6</span>
+                                <span class="tech-chip">UIKit</span>
+                                <span class="tech-chip">MVVM-R</span>
+                                <span class="tech-chip">Strict Concurrency</span>
+                                <span class="tech-chip">AVFoundation</span>
+                                <span class="tech-chip">Brother Printer SDK</span>
+                                <span class="tech-chip">Alamofire 5</span>
+                                <span class="tech-chip">WebKit</span>
+                                <span class="tech-chip">XCTest & XCUITest</span>
+                            </div>
+
+                            <div class="project-footer">
+                                <a href="https://apps.apple.com/us/app/ezy-sign-in-new/id6771831157" target="_blank" rel="noopener" class="project-link-btn" title="View Swift 6 New App on App Store">
+                                    <span>App Store (Swift 6 New)</span>
+                                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 12L12 4M12 4H6M12 4V10"/>
+                                    </svg>
+                                </a>
+                                <a href="https://apps.apple.com/in/app/ezy-signin/id1474146070" target="_blank" rel="noopener" class="project-link-btn secondary-link" title="View Objective-C Legacy App on App Store">
+                                    <span>App Store (Objective-C Legacy)</span>
+                                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 12L12 4M12 4H6M12 4V10"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projects Grid: Skate to Ski & My Board & Coaches -->
+                    <div class="projects-subgrid">
+                        <!-- Skate to Ski -->
+                        <article class="project-card compact">
+                            <div class="project-header">
+                                <div class="project-meta-top">
+                                    <span class="project-tag-badge">App Store Live</span>
+                                    <span class="project-date">Narola Infotech</span>
+                                </div>
+                                <h3 class="project-title">Skate to Ski</h3>
+                                <p class="project-tagline">Athletic cross-training mobile app featuring structured video curricula and interactive drills.</p>
+                            </div>
+                            <div class="project-body">
+                                <p class="project-summary-text">
+                                    Engineered custom video player pipelines, interactive workout flows, and responsive Auto Layout interfaces supporting all iPhone and iPad screen sizes.
+                                </p>
+                                <div class="project-tech-stack">
+                                    <span class="tech-chip">Swift</span>
+                                    <span class="tech-chip">Objective-C</span>
+                                    <span class="tech-chip">Core Data</span>
+                                    <span class="tech-chip">Video Streaming</span>
+                                </div>
+                                <div class="project-footer">
+                                    <a href="https://apps.apple.com/in/app/skate-to-ski/id1458606967" target="_blank" rel="noopener" class="project-link-btn">
+                                        <span>App Store</span>
+                                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12L12 4M12 4H6M12 4V10"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- My Board & Coaches -->
+                        <article class="project-card compact">
+                            <div class="project-header">
+                                <div class="project-meta-top">
+                                    <span class="project-tag-badge">App Store Live</span>
+                                    <span class="project-date">Narola Infotech</span>
+                                </div>
+                                <h3 class="project-title">My Board & Coaches</h3>
+                                <p class="project-tagline">Discovery and booking platform connecting athletes with certified sports coaches.</p>
+                            </div>
+                            <div class="project-body">
+                                <p class="project-summary-text">
+                                    Developed geo-based coach discovery, instant messaging, and local Core Data caching. Reduced cold-start time by 30% through proactive image caching.
+                                </p>
+                                <div class="project-tech-stack">
+                                    <span class="tech-chip">Swift</span>
+                                    <span class="tech-chip">Objective-C</span>
+                                    <span class="tech-chip">Core Data</span>
+                                    <span class="tech-chip">REST APIs</span>
+                                    <span class="tech-chip">MySQL</span>
+                                </div>
+                                <div class="project-footer">
+                                    <a href="https://apps.apple.com/in/app/my-board-coaches/id1409779887" target="_blank" rel="noopener" class="project-link-btn">
+                                        <span>App Store</span>
+                                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12L12 4M12 4H6M12 4V10"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Open Source Ecosystem Section -->
+        <section id="opensource" class="section-wrapper">
+            <div class="container">
+                <div class="section-label">
+                    <span class="section-tag">// 02. OPEN SOURCE ECOSYSTEM</span>
+                    <h2 class="section-title">Swift Packages, Developer Tools &amp; Cloud Guides.</h2>
+                    <p class="section-desc">Production-grade open-source libraries, AI tooling, systems CLI, and cloud architecture guides built for Swift 6, data persistence, and enterprise CI/CD.</p>
+                </div>
+
+                <div class="opensource-grid">
+                    <!-- Library 1: PasskeyManager -->
+                    <div class="os-card">
+                        <div class="os-card-header">
+                            <div class="os-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                </svg>
+                            </div>
+                            <div class="os-titles">
+                                <h3 class="os-name">PasskeyManager</h3>
+                                <span class="os-pill">Swift 6 · WebAuthn / FIDO2</span>
+                            </div>
+                        </div>
+                        <p class="os-desc">Zero-dependency wrapper for Apple Passkeys with async/await, task cancellation safety, and cross-platform iOS/macOS support.</p>
+                        <div class="os-tags">
+                            <span>Swift 6</span>
+                            <span>Passkeys</span>
+                            <span>AuthenticationServices</span>
+                            <span>iOS 16+</span>
+                        </div>
+                        <div class="os-actions">
+                            <button class="btn-copy-spm" data-spm='.package(url: "https://github.com/bhargavkukadiya/PasskeyManager", from: "1.0.0")' title="Copy Swift Package Manager dependency">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                <span>Copy SPM</span>
+                            </button>
+                            <a href="https://github.com/bhargavkukadiya/PasskeyManager" target="_blank" rel="noopener" class="os-github-link">
+                                GitHub →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Library 2: CoreDataManager -->
+                    <div class="os-card">
+                        <div class="os-card-header">
+                            <div class="os-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                </svg>
+                            </div>
+                            <div class="os-titles">
+                                <h3 class="os-name">CoreDataManager</h3>
+                                <span class="os-pill">Thread-Safe Persistence</span>
+                            </div>
+                        </div>
+                        <p class="os-desc">Production-grade Core Data singleton featuring batch updates/deletes, persistent history tracking, Combine publishers, and background concurrency.</p>
+                        <div class="os-tags">
+                            <span>Core Data</span>
+                            <span>Combine</span>
+                            <span>Thread Safety</span>
+                            <span>Batch Ops</span>
+                        </div>
+                        <div class="os-actions">
+                            <button class="btn-copy-spm" data-spm='.package(url: "https://github.com/bhargavkukadiya/CoreDataManager", from: "1.0.0")' title="Copy SPM dependency">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                <span>Copy SPM</span>
+                            </button>
+                            <a href="https://github.com/bhargavkukadiya/CoreDataManager" target="_blank" rel="noopener" class="os-github-link">
+                                GitHub →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Library 3: SwiftDataManager -->
+                    <div class="os-card">
+                        <div class="os-card-header">
+                            <div class="os-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                </svg>
+                            </div>
+                            <div class="os-titles">
+                                <h3 class="os-name">SwiftDataManager</h3>
+                                <span class="os-pill">@ModelActor · SwiftData</span>
+                            </div>
+                        </div>
+                        <p class="os-desc">Modern SwiftData persistence layer with isolated <code class="inline-code">@ModelActor</code> for thread safety, generic repository abstractions, and in-memory test fixtures.</p>
+                        <div class="os-tags">
+                            <span>SwiftData</span>
+                            <span>@ModelActor</span>
+                            <span>Generics</span>
+                            <span>iOS 17+</span>
+                        </div>
+                        <div class="os-actions">
+                            <button class="btn-copy-spm" data-spm='.package(url: "https://github.com/bhargavkukadiya/SwiftDataManager", from: "1.0.0")' title="Copy SPM dependency">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                <span>Copy SPM</span>
+                            </button>
+                            <a href="https://github.com/bhargavkukadiya/SwiftDataManager" target="_blank" rel="noopener" class="os-github-link">
+                                GitHub →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Library 4: LocationManager -->
+                    <div class="os-card">
+                        <div class="os-card-header">
+                            <div class="os-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                                </svg>
+                            </div>
+                            <div class="os-titles">
+                                <h3 class="os-name">LocationManager</h3>
+                                <span class="os-pill">CoreLocation Wrapper</span>
+                            </div>
+                        </div>
+                        <p class="os-desc">Enterprise CoreLocation manager with geofencing, reverse geocoding, heading compass, and visit monitoring across Combine and async/await APIs.</p>
+                        <div class="os-tags">
+                            <span>CoreLocation</span>
+                            <span>Geofencing</span>
+                            <span>async/await</span>
+                            <span>Combine</span>
+                        </div>
+                        <div class="os-actions">
+                            <button class="btn-copy-spm" data-spm='.package(url: "https://github.com/bhargavkukadiya/LocationManager", from: "1.0.0")' title="Copy SPM dependency">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                <span>Copy SPM</span>
+                            </button>
+                            <a href="https://github.com/bhargavkukadiya/LocationManager" target="_blank" rel="noopener" class="os-github-link">
+                                GitHub →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Library 5: PhotoCaptureManager -->
+                    <div class="os-card">
+                        <div class="os-card-header">
+                            <div class="os-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                                    <circle cx="12" cy="13" r="4"></circle>
+                                </svg>
+                            </div>
+                            <div class="os-titles">
+                                <h3 class="os-name">PhotoCaptureManager</h3>
+                                <span class="os-pill">Camera & PHPicker</span>
+                            </div>
+                        </div>
+                        <p class="os-desc">Privacy-preserving camera & photo library manager with PHPickerViewController, interactive dismissal safety, and iPad popover compliance.</p>
+                        <div class="os-tags">
+                            <span>AVFoundation</span>
+                            <span>PhotoKit</span>
+                            <span>PHPicker</span>
+                            <span>iPad Popover</span>
+                        </div>
+                        <div class="os-actions">
+                            <button class="btn-copy-spm" data-spm='.package(url: "https://github.com/bhargavkukadiya/PhotoCaptureManager", from: "1.0.0")' title="Copy SPM dependency">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                <span>Copy SPM</span>
+                            </button>
+                            <a href="https://github.com/bhargavkukadiya/PhotoCaptureManager" target="_blank" rel="noopener" class="os-github-link">
+                                GitHub →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Library 6: FontManager -->
+                    <div class="os-card">
+                        <div class="os-card-header">
+                            <div class="os-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="4 7 4 4 20 4 20 7"></polyline>
+                                    <line x1="9" y1="20" x2="15" y2="20"></line>
+                                    <line x1="12" y1="4" x2="12" y2="20"></line>
+                                </svg>
+                            </div>
+                            <div class="os-titles">
+                                <h3 class="os-name">FontManager</h3>
+                                <span class="os-pill">Design System Tokens</span>
+                            </div>
+                        </div>
+                        <p class="os-desc">Design system typography engine with 21 semantic tokens, Dynamic Type (UIFontMetrics), CoreText registration, and unified UIKit + SwiftUI APIs.</p>
+                        <div class="os-tags">
+                            <span>Dynamic Type</span>
+                            <span>Design Tokens</span>
+                            <span>CoreText</span>
+                            <span>UIKit + SwiftUI</span>
+                        </div>
+                        <div class="os-actions">
+                            <button class="btn-copy-spm" data-spm='.package(url: "https://github.com/bhargavkukadiya/FontManager", from: "1.0.0")' title="Copy SPM dependency">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                <span>Copy SPM</span>
+                            </button>
+                            <a href="https://github.com/bhargavkukadiya/FontManager" target="_blank" rel="noopener" class="os-github-link">
+                                GitHub →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Library 7: PDFFormHelper -->
+                    <div class="os-card">
+                        <div class="os-card-header">
+                            <div class="os-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <path d="M9 13h6"></path>
+                                    <path d="M9 17h6"></path>
+                                    <circle cx="15" cy="9" r="1"></circle>
+                                </svg>
+                            </div>
+                            <div class="os-titles">
+                                <h3 class="os-name">PDFFormHelper</h3>
+                                <span class="os-pill">PDFKit · AcroForms & Signing</span>
+                            </div>
+                        </div>
+                        <p class="os-desc">Production-grade PDFKit utility for AcroField form management, interactive checkbox/radio controls, signature stamping, draft sessions, and rotation-aware flattening.</p>
+                        <div class="os-tags">
+                            <span>PDFKit</span>
+                            <span>AcroForms</span>
+                            <span>Signatures</span>
+                            <span>@MainActor</span>
+                            <span>iOS 15+</span>
+                        </div>
+                        <div class="os-actions">
+                            <button class="btn-copy-spm" data-spm='.package(url: "https://github.com/bhargavkukadiya/PDFFormHelper", from: "1.0.0")' title="Copy SPM dependency">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                <span>Copy SPM</span>
+                            </button>
+                            <a href="https://github.com/bhargavkukadiya/PDFFormHelper" target="_blank" rel="noopener" class="os-github-link">
+                                GitHub →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Library 8: azure-pipelines-guide -->
+                    <div class="os-card">
+                        <div class="os-card-header">
+                            <div class="os-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                    <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                    <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                                </svg>
+                            </div>
+                            <div class="os-titles">
+                                <h3 class="os-name">azure-pipelines-guide</h3>
+                                <span class="os-pill">CI/CD &amp; Fastlane · Docsify</span>
+                            </div>
+                        </div>
+                        <p class="os-desc">Comprehensive reference guide and interactive Docsify site for Azure DevOps Pipelines, Fastlane match, multi-stage YAML pipelines, Apple Silicon runners, and secrets governance.</p>
+                        <div class="os-tags">
+                            <span>Azure DevOps</span>
+                            <span>Fastlane Match</span>
+                            <span>Code Signing</span>
+                            <span>CI/CD Automation</span>
+                        </div>
+                        <div class="os-actions">
+                            <a href="https://bhargavkukadiya.github.io/azure-pipelines-guide/" target="_blank" rel="noopener" class="os-live-link" title="Open Interactive Documentation Site">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                <span>Live Docs ↗</span>
+                            </a>
+                            <a href="https://github.com/bhargavkukadiya/azure-pipelines-guide" target="_blank" rel="noopener" class="os-github-link">
+                                GitHub →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Library 9: aws-beginner-guide -->
+                    <div class="os-card">
+                        <div class="os-card-header">
+                            <div class="os-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                                </svg>
+                            </div>
+                            <div class="os-titles">
+                                <h3 class="os-name">aws-beginner-guide</h3>
+                                <span class="os-pill">Cloud Architecture · MkDocs</span>
+                            </div>
+                        </div>
+                        <p class="os-desc">Practical, 16-module architectural reference and interactive Material for MkDocs documentation site covering EC2, Lambda, S3, VPC, RDS/DynamoDB, IAM security, and cost control.</p>
+                        <div class="os-tags">
+                            <span>AWS Cloud</span>
+                            <span>Architecture</span>
+                            <span>MkDocs</span>
+                            <span>Cloud Security</span>
+                        </div>
+                        <div class="os-actions">
+                            <a href="https://bhargavkukadiya.github.io/aws-beginner-guide/" target="_blank" rel="noopener" class="os-live-link" title="Open Interactive Documentation Site">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                <span>Live Docs ↗</span>
+                            </a>
+                            <a href="https://github.com/bhargavkukadiya/aws-beginner-guide" target="_blank" rel="noopener" class="os-github-link">
+                                GitHub →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Library 10: macos-dir-tools -->
+                    <div class="os-card">
+                        <div class="os-card-header">
+                            <div class="os-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="4 17 10 11 4 5"></polyline>
+                                    <line x1="12" y1="19" x2="20" y2="19"></line>
+                                </svg>
+                            </div>
+                            <div class="os-titles">
+                                <h3 class="os-name">macos-dir-tools</h3>
+                                <span class="os-pill">CLI Systems · Python &amp; Bash</span>
+                            </div>
+                        </div>
+                        <p class="os-desc">Zero-dependency CLI tool suite for macOS &amp; Linux featuring 3-phase duplicate file hashing, O(1) AWK disk usage stats, recursive inventory scanning, and .DS_Store metadata awareness.</p>
+                        <div class="os-tags">
+                            <span>Python 3</span>
+                            <span>POSIX / Bash</span>
+                            <span>Zero-Dependency</span>
+                            <span>CLI Suite</span>
+                        </div>
+                        <div class="os-actions">
+                            <button class="btn-copy-spm" data-spm="curl -fsSL https://raw.githubusercontent.com/bhargavkukadiya/macos-dir-tools/main/install.sh | bash" title="Copy One-Liner Curl Installer">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                <span>Copy Curl</span>
+                            </button>
+                            <a href="https://github.com/bhargavkukadiya/macos-dir-tools" target="_blank" rel="noopener" class="os-github-link">
+                                GitHub →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Library 11: photo-curator -->
+                    <div class="os-card">
+                        <div class="os-card-header">
+                            <div class="os-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                                    <circle cx="12" cy="13" r="4"></circle>
+                                </svg>
+                            </div>
+                            <div class="os-titles">
+                                <h3 class="os-name">photo-curator</h3>
+                                <span class="os-pill">PyTorch · CLIP · Vision AI</span>
+                            </div>
+                        </div>
+                        <p class="os-desc">AI photo curation engine combining OpenCV sharpness, OpenAI CLIP neural aesthetics, cosine similarity burst deduplication, transactional two-phase staging, and Apple Silicon MPS acceleration.</p>
+                        <div class="os-tags">
+                            <span>Python 3.9+</span>
+                            <span>PyTorch / CLIP</span>
+                            <span>OpenCV</span>
+                            <span>Apple Silicon MPS</span>
+                        </div>
+                        <div class="os-actions">
+                            <a href="https://github.com/bhargavkukadiya/photo-curator" target="_blank" rel="noopener" class="os-github-link full-width">
+                                View on GitHub →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Journey / Experience Section -->
+        <section id="experience" class="section-wrapper bg-subtle">
+            <div class="container">
+                <div class="section-label">
+                    <span class="section-tag">// 03. CAREER JOURNEY</span>
+                    <h2 class="section-title">Experience & Enterprise Impact.</h2>
+                    <p class="section-desc">A decade of engineering leadership, team mentoring, and shipping production software.</p>
+                </div>
+
+                <div class="timeline-container">
+                    <!-- Experience 1: Civica -->
+                    <div class="timeline-card">
+                        <div class="timeline-badge-year">2020 — PRESENT</div>
+                        <div class="timeline-header">
+                            <div class="timeline-company-info">
+                                <h3 class="timeline-role">Software Engineer</h3>
+                                <h4 class="timeline-company-name">
+                                    Civica
+                                    <a href="https://www.civica.com/en-in/" target="_blank" rel="noopener" class="timeline-ext-link">
+                                        civica.com ↗
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-period-pill">March 2020 – Present</span>
+                                <span class="timeline-location-pill">Vadodara, Gujarat</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-body">
+                            <ul class="timeline-points">
+                                <li>Architected and delivered business-critical features across regular release trains for <strong>Civica - Collect</strong>, an enterprise debt recovery platform serving local government authorities and commercial enforcement agencies.</li>
+                                <li>Conducted technical impact analysis and designed modular software components adhering to established design patterns (Repository, Factory, CQRS, Singleton, and MVVM).</li>
+                                <li>Provided Tier-3 application support against agreed client Service Level Agreements (SLAs), resolving complex production defects, performance bottlenecks, and client support tickets.</li>
+                                <li>Delivered end-to-end full-stack capabilities across native iOS (Swift/Objective-C), modern web frontend (JavaScript, Cappuccino/Objective-J), and backend services (C#/.NET Core, MySQL).</li>
+                                <li>Enforced strict ISO 9001 Quality Management standards through comprehensive multi-tier unit testing (<strong>XCTest</strong> for iOS, <strong>OJTest</strong> for Cappuccino web, and <strong>C# backend tests</strong>), peer PR code reviews, and Git version control hygiene.</li>
+                                <li>Collaborated closely with Product Owners, Technical Architects, and Project Managers in an Agile scrum environment while automating CI/CD workflows with Azure DevOps, Azure Pipelines, and GitHub Actions.</li>
+                            </ul>
+
+                            <div class="timeline-tech-tags">
+                                <span>Swift</span>
+                                <span>Objective-C</span>
+                                <span>C# / .NET</span>
+                                <span>JavaScript</span>
+                                <span>Cappuccino</span>
+                                <span>Azure DevOps</span>
+                                <span>Azure Pipelines</span>
+                                <span>GitHub Actions</span>
+                                <span>XCTest</span>
+                                <span>OJTest</span>
+                                <span>C# Unit Tests</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2: Narola Infotech -->
+                    <div class="timeline-card">
+                        <div class="timeline-badge-year">2016 — 2020</div>
+                        <div class="timeline-header">
+                            <div class="timeline-company-info">
+                                <h3 class="timeline-role">Senior Consultant</h3>
+                                <h4 class="timeline-company-name">
+                                    Narola Infotech
+                                    <a href="https://www.narolainfotech.com/" target="_blank" rel="noopener" class="timeline-ext-link">
+                                        narolainfotech.com ↗
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-period-pill">January 2016 – March 2020</span>
+                                <span class="timeline-location-pill">Surat, Gujarat</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-body">
+                            <ul class="timeline-points">
+                                <li>Architected and shipped multiple iOS applications in Swift and Objective-C across <strong>MVC, MVVM, and MVP</strong> architectures for international clients in sports, coaching, and lifestyle sectors.</li>
+                                <li>Designed sophisticated, responsive UI components using Auto Layout, Size Classes, and custom animation engines for iPhone and iPad form factors.</li>
+                                <li>Integrated secure REST APIs, in-app purchases, push notification pipelines (Firebase / APNs), and local SQLite/CoreData persistence.</li>
+                                <li>Instituted Git-based branching strategies, automated linting, and reusable component libraries that reduced team sprint cycles.</li>
+                                <li>Maintained high App Store user ratings and zero-crash release milestones through rigorous manual and automated test passes.</li>
+                            </ul>
+
+                            <div class="timeline-tech-tags">
+                                <span>Swift</span>
+                                <span>Objective-C</span>
+                                <span>MVC / MVVM / MVP</span>
+                                <span>UIKit</span>
+                                <span>Core Data</span>
+                                <span>Auto Layout</span>
+                                <span>REST APIs</span>
+                                <span>Firebase</span>
+                                <span>Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Stack Section -->
+        <section id="skills" class="section-wrapper">
+            <div class="container">
+                <div class="section-label">
+                    <span class="section-tag">// 04. EXPERTISE & STACK</span>
+                    <h2 class="section-title">Technical Mastery & Tooling.</h2>
+                    <p class="section-desc">Comprehensive toolkit across Apple platforms, modern language standards, testing frameworks, and full-stack systems.</p>
+                </div>
+
+                <!-- Skills Grid -->
+                <div class="skills-category-grid">
+                    <!-- Category 1 -->
+                    <div class="skill-category-card">
+                        <div class="cat-header">
+                            <div class="cat-icon">
+                <!-- Interactive Skills Filter Bar -->
+                <div class="skills-filter-bar" id="skills-filter-bar">
+                    <button class="skills-filter-btn active" data-filter="all">All Stack (7)</button>
+                    <button class="skills-filter-btn" data-filter="ios">iOS & Swift 6</button>
+                    <button class="skills-filter-btn" data-filter="arch">Architecture</button>
+                    <button class="skills-filter-btn" data-filter="frameworks">Apple Frameworks</button>
+                    <button class="skills-filter-btn" data-filter="testing">Testing & CI/CD</button>
+                    <button class="skills-filter-btn" data-filter="backend">Backend & Cloud</button>
+                </div>
+
+                <!-- Bento Skills Grid -->
+                <div class="skills-bento-grid" id="skills-bento-grid">
+                    <!-- Bento Hero: Swift 6 & Apple Platforms (Double Column) -->
+                    <div class="bento-card bento-hero" data-category="ios">
+                        <div class="bento-card-header">
+                            <div class="bento-header-left">
+                                <div class="bento-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="bento-title">Core Apple Platforms & Swift 6 Concurrency</h3>
+                                    <p class="bento-subtitle">Primary Domain · 10+ Years Building High-Performance Native Apps</p>
+                                </div>
+                            </div>
+                            <span class="bento-pill-badge primary">Strict Concurrency · Data-Race Safe</span>
+                        </div>
+                        <p class="bento-narrative">
+                            Architecting mission-critical iOS applications with Swift 6 strict concurrency runtime, actor isolation, and cancellation-aware task trees for guaranteed thread safety and fluid 120Hz UI performance.
+                        </p>
+                        <div class="bento-pill-list">
+                            <div class="skill-pill-proof highlight">
+                                <span class="skill-name">Swift 6 Concurrency</span>
+                                <span class="proof-tag">Ezy Sign In & Passkeys</span>
+                            </div>
+                            <div class="skill-pill-proof highlight">
+                                <span class="skill-name">async / await</span>
+                                <span class="proof-tag">Zero Data Races</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">@MainActor</span>
+                                <span class="proof-tag">Thread-Safe UI</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">Sendable Protocol</span>
+                                <span class="proof-tag">Type Safety</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">Actors & TaskGroups</span>
+                                <span class="proof-tag">Isolated State</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">UIKit & Auto Layout</span>
+                                <span class="proof-tag">10+ Yrs Production</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">SwiftUI</span>
+                                <span class="proof-tag">Modern Declarative</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">Objective-C</span>
+                                <span class="proof-tag">Enterprise Interop</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">Combine Framework</span>
+                                <span class="proof-tag">Reactive Streams</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">Xcode Instruments</span>
+                                <span class="proof-tag">Zero Leaks Profiling</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bento Card 2: Architecture & Design -->
+                    <div class="bento-card" data-category="arch">
+                        <div class="bento-card-header">
+                            <div class="bento-header-left">
+                                <div class="bento-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                        <polyline points="2 17 12 22 22 17"></polyline>
+                                        <polyline points="2 12 12 17 22 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="bento-title">Architecture & System Design</h3>
+                                    <p class="bento-subtitle">Clean Patterns & Long-Term Scalability</p>
+                                </div>
+                            </div>
+                            <span class="bento-pill-badge">Enterprise Standards</span>
+                        </div>
+                        <div class="bento-pill-list">
+                            <div class="skill-pill-proof highlight">
+                                <span class="skill-name">MVVM-R (Router/Coordinator)</span>
+                                <span class="proof-tag">Decoupled Nav</span>
+                            </div>
+                            <div class="skill-pill-proof highlight">
+                                <span class="skill-name">MVVM &amp; Data Binding</span>
+                                <span class="proof-tag">State Management</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">VIPER Architecture</span>
+                                <span class="proof-tag">Modular Systems</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">MVP &amp; MVC Patterns</span>
+                                <span class="proof-tag">Production Proven</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">Protocol-Oriented Design</span>
+                                <span class="proof-tag">POP Standards</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">Dependency Injection</span>
+                                <span class="proof-tag">Testable ViewModels</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">SOLID Principles</span>
+                                <span class="proof-tag">Code Review Core</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">Generic Repository Pattern</span>
+                                <span class="proof-tag">SwiftDataManager</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">Design Tokens Engine</span>
+                                <span class="proof-tag">FontManager</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bento Card 3: Apple Frameworks & Hardware SDKs -->
+                    <div class="bento-card" data-category="frameworks">
+                        <div class="bento-card-header">
+                            <div class="bento-header-left">
+                                <div class="bento-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                                        <rect x="9" y="9" width="6" height="6"></rect>
+                                        <line x1="9" y1="1" x2="9" y2="4"></line>
+                                        <line x1="15" y1="1" x2="15" y2="4"></line>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="bento-title">Native Frameworks & Hardware SDKs</h3>
+                                    <p class="bento-subtitle">Deep Hardware & System Integrations</p>
+                                </div>
+                            </div>
+                            <span class="bento-pill-badge">Hardware & OS</span>
+                        </div>
+                        <div class="bento-pill-list">
+                            <div class="skill-pill-proof highlight">
+                                <span class="skill-name">AVFoundation & Camera</span>
+                                <span class="proof-tag">Kiosk Photo Capture</span>
+                            </div>
+                            <div class="skill-pill-proof highlight">
+                                <span class="skill-name">Brother Thermal Printer SDK</span>
+                                <span class="proof-tag">WiFi/BT Printing</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">CoreImage &amp; Vision</span>
+                                <span class="proof-tag">Computer Vision</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">CoreLocation & Geofence</span>
+                                <span class="proof-tag">LocationManager</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">CoreData & SwiftData</span>
+                                <span class="proof-tag">CoreDataManager</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">PhotoKit & PHPicker</span>
+                                <span class="proof-tag">Privacy Camera</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">PDFKit & AcroForms</span>
+                                <span class="proof-tag">PDFFormHelper</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">AuthenticationServices</span>
+                                <span class="proof-tag">PasskeyManager</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">WebKit</span>
+                                <span class="proof-tag">NDA Signature Pad</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bento Card 4: Automated Testing & CI/CD -->
+                    <div class="bento-card" data-category="testing">
+                        <div class="bento-card-header">
+                            <div class="bento-header-left">
+                                <div class="bento-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="bento-title">Automated Testing & CI/CD Pipelines</h3>
+                                    <p class="bento-subtitle">High Confidence & Automated Quality</p>
+                                </div>
+                            </div>
+                            <span class="bento-pill-badge green">30% Bug Reduction</span>
+                        </div>
+                        <div class="bento-pill-list">
+                            <div class="skill-pill-proof highlight">
+                                <span class="skill-name">XCTest Protocol Mocks</span>
+                                <span class="proof-tag">Isolated Unit Tests</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">XCUITest UI Automation</span>
+                                <span class="proof-tag">Smoke & Regression</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">Azure Pipelines</span>
+                                <span class="proof-tag">Multi-Stage CI/CD</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">Fastlane Match</span>
+                                <span class="proof-tag">Auto Code Signing</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">Swift Package Manager</span>
+                                <span class="proof-tag">SPM Architecture</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">TestFlight Release Trains</span>
+                                <span class="proof-tag">Beta Testing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bento Card 5: Backend & Full-Stack Systems -->
+                    <div class="bento-card" data-category="backend">
+                        <div class="bento-card-header">
+                            <div class="bento-header-left">
+                                <div class="bento-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                        <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                        <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                        <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="bento-title">Full-Stack, Backend & Cloud</h3>
+                                    <p class="bento-subtitle">End-to-End Enterprise Depth</p>
+                                </div>
+                            </div>
+                            <span class="bento-pill-badge">Full-Stack Depth</span>
+                        </div>
+                        <div class="bento-pill-list">
+                            <div class="skill-pill-proof highlight">
+                                <span class="skill-name">C# / .NET Core</span>
+                                <span class="proof-tag">Civica - Collect APIs</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">JavaScript (ES6+)</span>
+                                <span class="proof-tag">Web Applications</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">MySQL Database</span>
+                                <span class="proof-tag">Stored Procedures</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">RESTful APIs & JSON</span>
+                                <span class="proof-tag">Alamofire 5</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">Cappuccino (Obj-J)</span>
+                                <span class="proof-tag">Civica Web</span>
+                            </div>
+                            <div class="skill-pill-proof highlight">
+                                <span class="skill-name">Python 3 &amp; PyTorch</span>
+                                <span class="proof-tag">photo-curator CLIP AI</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">Bash &amp; POSIX Shell</span>
+                                <span class="proof-tag">macos-dir-tools CLI</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">AWS Cloud Architecture</span>
+                                <span class="proof-tag">aws-beginner-guide</span>
+                            </div>
+                            <div class="skill-pill-proof">
+                                <span class="skill-name">Git &amp; JIRA Agile</span>
+                                <span class="proof-tag">Team Sprint Lead</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Education Section -->
+        <section id="certifications" class="section-wrapper bg-subtle">
+            <div class="container">
+                <div class="section-label">
+                    <span class="section-tag">// 05. CREDENTIALS</span>
+                    <h2 class="section-title">Certifications & Academic Foundation.</h2>
+                    <p class="section-desc">Verified technical certifications from PluralSight and formal academic computer science qualifications.</p>
+                </div>
+
+                <!-- Certifications Grid -->
+                <div class="credentials-layout">
+                    <!-- Certifications Column -->
+                    <div class="credentials-col">
+                        <h3 class="column-subtitle">Professional Certifications</h3>
+                        <div class="certifications-list">
+                            <!-- Cert 1: Advanced C# and .NET -->
+                            <div class="cert-card">
+                                <div class="cert-card-header">
+                                    <div class="cert-icon-badge">.NET</div>
+                                    <div class="cert-info">
+                                        <h4 class="cert-name">Advanced C# and .NET Development</h4>
+                                        <p class="cert-meta">PluralSight · 2023 · 5 Modules</p>
+                                    </div>
+                                    <button class="btn-view-pdf"
+                                            data-title="Advanced C# and .NET Development"
+                                            data-pdfs='["resources/certificates/DOT NET/certificate1.pdf","resources/certificates/DOT NET/certificate2.pdf","resources/certificates/DOT NET/certificate3.pdf","resources/certificates/DOT NET/certificate4.pdf","resources/certificates/DOT NET/certificate5.pdf"]'>
+                                        <span>View 5 PDFs ↗</span>
+                                    </button>
+                                </div>
+                                <div class="cert-module-pills">
+                                    <span class="cert-module-label">Modules:</span>
+                                    <button class="cert-pill-btn" data-cert-index="0" data-course="Advanced C# and .NET Development" data-pdfs='["resources/certificates/DOT NET/certificate1.pdf","resources/certificates/DOT NET/certificate2.pdf","resources/certificates/DOT NET/certificate3.pdf","resources/certificates/DOT NET/certificate4.pdf","resources/certificates/DOT NET/certificate5.pdf"]'>Part 1</button>
+                                    <button class="cert-pill-btn" data-cert-index="1" data-course="Advanced C# and .NET Development" data-pdfs='["resources/certificates/DOT NET/certificate1.pdf","resources/certificates/DOT NET/certificate2.pdf","resources/certificates/DOT NET/certificate3.pdf","resources/certificates/DOT NET/certificate4.pdf","resources/certificates/DOT NET/certificate5.pdf"]'>Part 2</button>
+                                    <button class="cert-pill-btn" data-cert-index="2" data-course="Advanced C# and .NET Development" data-pdfs='["resources/certificates/DOT NET/certificate1.pdf","resources/certificates/DOT NET/certificate2.pdf","resources/certificates/DOT NET/certificate3.pdf","resources/certificates/DOT NET/certificate4.pdf","resources/certificates/DOT NET/certificate5.pdf"]'>Part 3</button>
+                                    <button class="cert-pill-btn" data-cert-index="3" data-course="Advanced C# and .NET Development" data-pdfs='["resources/certificates/DOT NET/certificate1.pdf","resources/certificates/DOT NET/certificate2.pdf","resources/certificates/DOT NET/certificate3.pdf","resources/certificates/DOT NET/certificate4.pdf","resources/certificates/DOT NET/certificate5.pdf"]'>Part 4</button>
+                                    <button class="cert-pill-btn" data-cert-index="4" data-course="Advanced C# and .NET Development" data-pdfs='["resources/certificates/DOT NET/certificate1.pdf","resources/certificates/DOT NET/certificate2.pdf","resources/certificates/DOT NET/certificate3.pdf","resources/certificates/DOT NET/certificate4.pdf","resources/certificates/DOT NET/certificate5.pdf"]'>Part 5</button>
+                                </div>
+                                <div class="cert-topics">
+                                    <span>OOP in C#</span>
+                                    <span>SOLID Principles</span>
+                                    <span>ADO.NET</span>
+                                    <span>LINQ</span>
+                                    <span>ASP.NET Core</span>
+                                </div>
+                            </div>
+
+                            <!-- Cert 2: SQL Database Development -->
+                            <div class="cert-card">
+                                <div class="cert-card-header">
+                                    <div class="cert-icon-badge">SQL</div>
+                                    <div class="cert-info">
+                                        <h4 class="cert-name">SQL Database Development</h4>
+                                        <p class="cert-meta">PluralSight · 2023 · 5 Modules</p>
+                                    </div>
+                                    <button class="btn-view-pdf"
+                                            data-title="SQL Database Development"
+                                            data-pdfs='["resources/certificates/SQL/certificate1.pdf","resources/certificates/SQL/certificate2.pdf","resources/certificates/SQL/certificate3.pdf","resources/certificates/SQL/certificate4.pdf","resources/certificates/SQL/certificate5.pdf"]'>
+                                        <span>View 5 PDFs ↗</span>
+                                    </button>
+                                </div>
+                                <div class="cert-module-pills">
+                                    <span class="cert-module-label">Modules:</span>
+                                    <button class="cert-pill-btn" data-cert-index="0" data-course="SQL Database Development" data-pdfs='["resources/certificates/SQL/certificate1.pdf","resources/certificates/SQL/certificate2.pdf","resources/certificates/SQL/certificate3.pdf","resources/certificates/SQL/certificate4.pdf","resources/certificates/SQL/certificate5.pdf"]'>Part 1</button>
+                                    <button class="cert-pill-btn" data-cert-index="1" data-course="SQL Database Development" data-pdfs='["resources/certificates/SQL/certificate1.pdf","resources/certificates/SQL/certificate2.pdf","resources/certificates/SQL/certificate3.pdf","resources/certificates/SQL/certificate4.pdf","resources/certificates/SQL/certificate5.pdf"]'>Part 2</button>
+                                    <button class="cert-pill-btn" data-cert-index="2" data-course="SQL Database Development" data-pdfs='["resources/certificates/SQL/certificate1.pdf","resources/certificates/SQL/certificate2.pdf","resources/certificates/SQL/certificate3.pdf","resources/certificates/SQL/certificate4.pdf","resources/certificates/SQL/certificate5.pdf"]'>Part 3</button>
+                                    <button class="cert-pill-btn" data-cert-index="3" data-course="SQL Database Development" data-pdfs='["resources/certificates/SQL/certificate1.pdf","resources/certificates/SQL/certificate2.pdf","resources/certificates/SQL/certificate3.pdf","resources/certificates/SQL/certificate4.pdf","resources/certificates/SQL/certificate5.pdf"]'>Part 4</button>
+                                    <button class="cert-pill-btn" data-cert-index="4" data-course="SQL Database Development" data-pdfs='["resources/certificates/SQL/certificate1.pdf","resources/certificates/SQL/certificate2.pdf","resources/certificates/SQL/certificate3.pdf","resources/certificates/SQL/certificate4.pdf","resources/certificates/SQL/certificate5.pdf"]'>Part 5</button>
+                                </div>
+                                <div class="cert-topics">
+                                    <span>Table Design</span>
+                                    <span>Stored Procedures</span>
+                                    <span>Triggers & Functions</span>
+                                    <span>Indexing Optimization</span>
+                                </div>
+                            </div>
+
+                            <!-- Cert 3: JavaScript Core Language -->
+                            <div class="cert-card">
+                                <div class="cert-card-header">
+                                    <div class="cert-icon-badge">JS</div>
+                                    <div class="cert-info">
+                                        <h4 class="cert-name">JavaScript Core Language</h4>
+                                        <p class="cert-meta">PluralSight · 2020 · 9 Modules</p>
+                                    </div>
+                                    <button class="btn-view-pdf"
+                                            data-title="JavaScript Core Language"
+                                            data-pdfs='["resources/certificates/JavaScriptCertificate/certificate1.pdf","resources/certificates/JavaScriptCertificate/certificate2.pdf","resources/certificates/JavaScriptCertificate/certificate3.pdf","resources/certificates/JavaScriptCertificate/certificate4.pdf","resources/certificates/JavaScriptCertificate/certificate5.pdf","resources/certificates/JavaScriptCertificate/certificate6.pdf","resources/certificates/JavaScriptCertificate/certificate7.pdf","resources/certificates/JavaScriptCertificate/certificate8.pdf","resources/certificates/JavaScriptCertificate/certificate9.pdf"]'>
+                                        <span>View 9 PDFs ↗</span>
+                                    </button>
+                                </div>
+                                <div class="cert-module-pills">
+                                    <span class="cert-module-label">Modules:</span>
+                                    <button class="cert-pill-btn" data-cert-index="0" data-course="JavaScript Core Language" data-pdfs='["resources/certificates/JavaScriptCertificate/certificate1.pdf","resources/certificates/JavaScriptCertificate/certificate2.pdf","resources/certificates/JavaScriptCertificate/certificate3.pdf","resources/certificates/JavaScriptCertificate/certificate4.pdf","resources/certificates/JavaScriptCertificate/certificate5.pdf","resources/certificates/JavaScriptCertificate/certificate6.pdf","resources/certificates/JavaScriptCertificate/certificate7.pdf","resources/certificates/JavaScriptCertificate/certificate8.pdf","resources/certificates/JavaScriptCertificate/certificate9.pdf"]'>1</button>
+                                    <button class="cert-pill-btn" data-cert-index="1" data-course="JavaScript Core Language" data-pdfs='["resources/certificates/JavaScriptCertificate/certificate1.pdf","resources/certificates/JavaScriptCertificate/certificate2.pdf","resources/certificates/JavaScriptCertificate/certificate3.pdf","resources/certificates/JavaScriptCertificate/certificate4.pdf","resources/certificates/JavaScriptCertificate/certificate5.pdf","resources/certificates/JavaScriptCertificate/certificate6.pdf","resources/certificates/JavaScriptCertificate/certificate7.pdf","resources/certificates/JavaScriptCertificate/certificate8.pdf","resources/certificates/JavaScriptCertificate/certificate9.pdf"]'>2</button>
+                                    <button class="cert-pill-btn" data-cert-index="2" data-course="JavaScript Core Language" data-pdfs='["resources/certificates/JavaScriptCertificate/certificate1.pdf","resources/certificates/JavaScriptCertificate/certificate2.pdf","resources/certificates/JavaScriptCertificate/certificate3.pdf","resources/certificates/JavaScriptCertificate/certificate4.pdf","resources/certificates/JavaScriptCertificate/certificate5.pdf","resources/certificates/JavaScriptCertificate/certificate6.pdf","resources/certificates/JavaScriptCertificate/certificate7.pdf","resources/certificates/JavaScriptCertificate/certificate8.pdf","resources/certificates/JavaScriptCertificate/certificate9.pdf"]'>3</button>
+                                    <button class="cert-pill-btn" data-cert-index="3" data-course="JavaScript Core Language" data-pdfs='["resources/certificates/JavaScriptCertificate/certificate1.pdf","resources/certificates/JavaScriptCertificate/certificate2.pdf","resources/certificates/JavaScriptCertificate/certificate3.pdf","resources/certificates/JavaScriptCertificate/certificate4.pdf","resources/certificates/JavaScriptCertificate/certificate5.pdf","resources/certificates/JavaScriptCertificate/certificate6.pdf","resources/certificates/JavaScriptCertificate/certificate7.pdf","resources/certificates/JavaScriptCertificate/certificate8.pdf","resources/certificates/JavaScriptCertificate/certificate9.pdf"]'>4</button>
+                                    <button class="cert-pill-btn" data-cert-index="4" data-course="JavaScript Core Language" data-pdfs='["resources/certificates/JavaScriptCertificate/certificate1.pdf","resources/certificates/JavaScriptCertificate/certificate2.pdf","resources/certificates/JavaScriptCertificate/certificate3.pdf","resources/certificates/JavaScriptCertificate/certificate4.pdf","resources/certificates/JavaScriptCertificate/certificate5.pdf","resources/certificates/JavaScriptCertificate/certificate6.pdf","resources/certificates/JavaScriptCertificate/certificate7.pdf","resources/certificates/JavaScriptCertificate/certificate8.pdf","resources/certificates/JavaScriptCertificate/certificate9.pdf"]'>5</button>
+                                    <button class="cert-pill-btn" data-cert-index="5" data-course="JavaScript Core Language" data-pdfs='["resources/certificates/JavaScriptCertificate/certificate1.pdf","resources/certificates/JavaScriptCertificate/certificate2.pdf","resources/certificates/JavaScriptCertificate/certificate3.pdf","resources/certificates/JavaScriptCertificate/certificate4.pdf","resources/certificates/JavaScriptCertificate/certificate5.pdf","resources/certificates/JavaScriptCertificate/certificate6.pdf","resources/certificates/JavaScriptCertificate/certificate7.pdf","resources/certificates/JavaScriptCertificate/certificate8.pdf","resources/certificates/JavaScriptCertificate/certificate9.pdf"]'>6</button>
+                                    <button class="cert-pill-btn" data-cert-index="6" data-course="JavaScript Core Language" data-pdfs='["resources/certificates/JavaScriptCertificate/certificate1.pdf","resources/certificates/JavaScriptCertificate/certificate2.pdf","resources/certificates/JavaScriptCertificate/certificate3.pdf","resources/certificates/JavaScriptCertificate/certificate4.pdf","resources/certificates/JavaScriptCertificate/certificate5.pdf","resources/certificates/JavaScriptCertificate/certificate6.pdf","resources/certificates/JavaScriptCertificate/certificate7.pdf","resources/certificates/JavaScriptCertificate/certificate8.pdf","resources/certificates/JavaScriptCertificate/certificate9.pdf"]'>7</button>
+                                    <button class="cert-pill-btn" data-cert-index="7" data-course="JavaScript Core Language" data-pdfs='["resources/certificates/JavaScriptCertificate/certificate1.pdf","resources/certificates/JavaScriptCertificate/certificate2.pdf","resources/certificates/JavaScriptCertificate/certificate3.pdf","resources/certificates/JavaScriptCertificate/certificate4.pdf","resources/certificates/JavaScriptCertificate/certificate5.pdf","resources/certificates/JavaScriptCertificate/certificate6.pdf","resources/certificates/JavaScriptCertificate/certificate7.pdf","resources/certificates/JavaScriptCertificate/certificate8.pdf","resources/certificates/JavaScriptCertificate/certificate9.pdf"]'>8</button>
+                                    <button class="cert-pill-btn" data-cert-index="8" data-course="JavaScript Core Language" data-pdfs='["resources/certificates/JavaScriptCertificate/certificate1.pdf","resources/certificates/JavaScriptCertificate/certificate2.pdf","resources/certificates/JavaScriptCertificate/certificate3.pdf","resources/certificates/JavaScriptCertificate/certificate4.pdf","resources/certificates/JavaScriptCertificate/certificate5.pdf","resources/certificates/JavaScriptCertificate/certificate6.pdf","resources/certificates/JavaScriptCertificate/certificate7.pdf","resources/certificates/JavaScriptCertificate/certificate8.pdf","resources/certificates/JavaScriptCertificate/certificate9.pdf"]'>9</button>
+                                </div>
+                                <div class="cert-topics">
+                                    <span>ES6+ Syntax</span>
+                                    <span>OOP & Prototypes</span>
+                                    <span>Async Programming</span>
+                                    <span>Modules</span>
+                                </div>
+                            </div>
+
+                            <!-- Cert 4: SSDLC -->
+                            <div class="cert-card">
+                                <div class="cert-card-header">
+                                    <div class="cert-icon-badge">🔒</div>
+                                    <div class="cert-info">
+                                        <h4 class="cert-name">SSDLC (Secure Software Development Life Cycle)</h4>
+                                        <p class="cert-meta">PluralSight · 2020 · 5 Modules</p>
+                                    </div>
+                                    <button class="btn-view-pdf"
+                                            data-title="SSDLC (Secure Software Development Life Cycle)"
+                                            data-pdfs='["resources/certificates/SSDLC Certificate/certificate1.pdf","resources/certificates/SSDLC Certificate/certificate2.pdf","resources/certificates/SSDLC Certificate/certificate3.pdf","resources/certificates/SSDLC Certificate/certificate4.pdf","resources/certificates/SSDLC Certificate/certificate5.pdf"]'>
+                                        <span>View 5 PDFs ↗</span>
+                                    </button>
+                                </div>
+                                <div class="cert-module-pills">
+                                    <span class="cert-module-label">Modules:</span>
+                                    <button class="cert-pill-btn" data-cert-index="0" data-course="SSDLC (Secure Software Development Life Cycle)" data-pdfs='["resources/certificates/SSDLC Certificate/certificate1.pdf","resources/certificates/SSDLC Certificate/certificate2.pdf","resources/certificates/SSDLC Certificate/certificate3.pdf","resources/certificates/SSDLC Certificate/certificate4.pdf","resources/certificates/SSDLC Certificate/certificate5.pdf"]'>Part 1</button>
+                                    <button class="cert-pill-btn" data-cert-index="1" data-course="SSDLC (Secure Software Development Life Cycle)" data-pdfs='["resources/certificates/SSDLC Certificate/certificate1.pdf","resources/certificates/SSDLC Certificate/certificate2.pdf","resources/certificates/SSDLC Certificate/certificate3.pdf","resources/certificates/SSDLC Certificate/certificate4.pdf","resources/certificates/SSDLC Certificate/certificate5.pdf"]'>Part 2</button>
+                                    <button class="cert-pill-btn" data-cert-index="2" data-course="SSDLC (Secure Software Development Life Cycle)" data-pdfs='["resources/certificates/SSDLC Certificate/certificate1.pdf","resources/certificates/SSDLC Certificate/certificate2.pdf","resources/certificates/SSDLC Certificate/certificate3.pdf","resources/certificates/SSDLC Certificate/certificate4.pdf","resources/certificates/SSDLC Certificate/certificate5.pdf"]'>Part 3</button>
+                                    <button class="cert-pill-btn" data-cert-index="3" data-course="SSDLC (Secure Software Development Life Cycle)" data-pdfs='["resources/certificates/SSDLC Certificate/certificate1.pdf","resources/certificates/SSDLC Certificate/certificate2.pdf","resources/certificates/SSDLC Certificate/certificate3.pdf","resources/certificates/SSDLC Certificate/certificate4.pdf","resources/certificates/SSDLC Certificate/certificate5.pdf"]'>Part 4</button>
+                                    <button class="cert-pill-btn" data-cert-index="4" data-course="SSDLC (Secure Software Development Life Cycle)" data-pdfs='["resources/certificates/SSDLC Certificate/certificate1.pdf","resources/certificates/SSDLC Certificate/certificate2.pdf","resources/certificates/SSDLC Certificate/certificate3.pdf","resources/certificates/SSDLC Certificate/certificate4.pdf","resources/certificates/SSDLC Certificate/certificate5.pdf"]'>Part 5</button>
+                                </div>
+                                <div class="cert-topics">
+                                    <span>OWASP Top 10</span>
+                                    <span>Secure Coding</span>
+                                    <span>Threat Modeling</span>
+                                    <span>Mitigation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Column -->
+                    <div class="credentials-col">
+                        <h3 class="column-subtitle">Academic Degrees</h3>
+                        <div class="education-list">
+                            <!-- Degree 1: MCA -->
+                            <div class="edu-card">
+                                <div class="edu-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                    </svg>
+                                </div>
+                                <div class="edu-details">
+                                    <span class="edu-period">2013 – 2016</span>
+                                    <h4 class="edu-degree">Master of Computer Applications (MCA)</h4>
+                                    <p class="edu-college">G.H. Patel P.G. Department of Computer Science &amp; Technology</p>
+                                    <p class="edu-university">
+                                        Sardar Patel University
+                                        <a href="https://www.spuvvn.edu/" target="_blank" rel="noopener" class="edu-link">spuvvn.edu ↗</a>
+                                    </p>
+                                    <div class="edu-meta-badge">
+                                        <span>Vallabh Vidyanagar, Gujarat</span>
+                                        <span>·</span>
+                                        <span class="grade">CGPA: 7.07</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Degree 2: BCA -->
+                            <div class="edu-card">
+                                <div class="edu-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                    </svg>
+                                </div>
+                                <div class="edu-details">
+                                    <span class="edu-period">2009 – 2012 (Conferred 2013)</span>
+                                    <h4 class="edu-degree">Bachelor of Computer Applications (BCA)</h4>
+                                    <p class="edu-college">Swami Vivekanand College of Computer Science</p>
+                                    <p class="edu-university">
+                                        Maharaja Krishnakumarsinhji Bhavnagar University
+                                        <a href="https://www.mkbhavuni.edu.in/" target="_blank" rel="noopener" class="edu-link">mkbhavuni.edu.in ↗</a>
+                                    </p>
+                                    <div class="edu-meta-badge">
+                                        <span>Bhavnagar, Gujarat</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Quick Stats Card -->
+                            <div class="edu-quote-card">
+                                <div class="quote-icon">“</div>
+                                <p class="quote-text">
+                                    True architectural excellence is not about making systems complex — it is about making complex capabilities feel simple, robust, and effortless to maintain.
+                                </p>
+                                <span class="quote-author">— Bhargav Kukadiya</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-wrapper">
+            <div class="container">
+                <div class="section-label">
+                    <span class="section-tag">// 06. CONTACT</span>
+                    <h2 class="section-title">Let's Build Something Exceptional.</h2>
+                    <p class="section-desc">Have an iOS project, need architectural consulting, or want to collaborate on open-source tooling? Reach out directly.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Direct Info Cards -->
+                    <div class="contact-info-col">
+                        <!-- Direct Email Card -->
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="contact-card-content">
+                                <span class="contact-label">Email Address</span>
+                                <a href="mailto:bhargavkukadiya007@gmail.com" class="contact-value-link">bhargavkukadiya007@gmail.com</a>
+                            </div>
+                            <button class="btn-copy-contact" data-copy="bhargavkukadiya007@gmail.com" title="Copy email address">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                            </button>
+                        </div>
+
+                        <!-- Direct Phone Card -->
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div class="contact-card-content">
+                                <span class="contact-label">Phone & WhatsApp</span>
+                                <a href="tel:+919374543494" class="contact-value-link">+91 9374543494</a>
+                            </div>
+                            <button class="btn-copy-contact" data-copy="+919374543494" title="Copy phone number">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                            </button>
+                        </div>
+
+                        <!-- Direct Location Card -->
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="contact-card-content">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value-text">Surat, Gujarat, India (IST / UTC+5:30)</span>
+                            </div>
+                        </div>
+
+                        <!-- Social Profiles Row -->
+                        <div class="social-links-grid">
+                            <a href="https://linkedin.com/in/bhargavkukadiya" target="_blank" rel="noopener" class="social-link-box">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                                <span>LinkedIn</span>
+                                <span class="arrow">↗</span>
+                            </a>
+                            <a href="https://github.com/bhargavkukadiya" target="_blank" rel="noopener" class="social-link-box">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                                <span>GitHub</span>
+                                <span class="arrow">↗</span>
+                            </a>
+                            <a href="https://www.upwork.com/freelancers/~0165bba55cf266857d?mp_source=share" target="_blank" rel="noopener" class="social-link-box">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076l.008-.042c.207-1.143.849-3.06 2.839-3.06a2.705 2.705 0 0 1 2.703 2.703a2.707 2.707 0 0 1-2.704 2.702m0-8.14c-2.539 0-4.51 1.649-5.31 4.366c-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112a2.55 2.55 0 0 1-2.547 2.548a2.55 2.55 0 0 1-2.545-2.548V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303c2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109c3 0 5.439-2.452 5.439-5.45c0-3-2.439-5.439-5.439-5.439"/>
+                                </svg>
+                                <span>Upwork</span>
+                                <span class="arrow">↗</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Interactive Message Box -->
+                    <div class="contact-form-col">
+                        <form class="contact-inquiry-form" id="contact-form" onsubmit="handleContactSubmit(event)">
+                            <div class="form-group">
+                                <label for="form-name">Your Name</label>
+                                <input type="text" id="form-name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Your Email</label>
+                                <input type="email" id="form-email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-topic">Project Topic / Inquiry</label>
+                                <select id="form-topic">
+                                    <option value="iOS Architecture Consulting">iOS Architecture & Code Review</option>
+                                    <option value="Swift 6 App Development">Swift 6 App Development / Greenfield</option>
+                                    <option value="Enterprise Integration">Enterprise Integration / C# .NET Backend</option>
+                                    <option value="Open Source Collaboration">Open Source Library Collaboration</option>
+                                    <option value="General Inquiry">General Conversation</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message Details</label>
+                                <textarea id="form-message" rows="4" placeholder="Tell me about your project scope, timeline, or requirements..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit-message">
+                                <span>Send Direct Email</span>
+                                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 8h10M9 4l4 4-4 4"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Bhargav Kukadiya. All rights reserved.</p>
+    <footer class="footer-wrapper">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="footer-monogram">BK</span>
+                    <span class="footer-name">Bhargav Kukadiya</span>
+                    <p class="footer-headline">Senior iOS & Apple Platforms Architect</p>
+                </div>
+
+                <div class="footer-live-status">
+                    <div class="live-clock-card">
+                        <span class="clock-label">Local Time (Surat, India):</span>
+                        <span class="clock-time" id="local-time-clock">--:--:-- IST</span>
+                    </div>
+                </div>
+
+                <div class="footer-back-top">
+                    <a href="#home" class="btn-back-to-top" aria-label="Scroll back to top">
+                        <span>Back to top</span>
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 13V3M3 7l5-5 5 5"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copy">
+                    © 2026 Bhargav Kukadiya. Handcrafted with minimal aesthetics & pure static performance.
+                </p>
+                <div class="footer-links">
+                    <a href="https://github.com/bhargavkukadiya" target="_blank" rel="noopener">GitHub</a>
+                    <span class="divider">/</span>
+                    <a href="https://linkedin.com/in/bhargavkukadiya" target="_blank" rel="noopener">LinkedIn</a>
+                    <span class="divider">/</span>
+                    <a href="https://www.upwork.com/freelancers/~0165bba55cf266857d?mp_source=share" target="_blank" rel="noopener">Upwork</a>
+                    <span class="divider">/</span>
+                    <a href="mailto:bhargavkukadiya007@gmail.com">Email</a>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <!-- Certificate PDF Preview Modal -->
+    <div class="modal-backdrop" id="pdf-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-cert-title">
+        <div class="modal-window">
+            <div class="modal-header">
+                <div class="modal-title-group">
+                    <span class="modal-icon">📄</span>
+                    <h3 class="modal-title" id="modal-cert-title">Certificate Preview</h3>
+                </div>
+                <div class="modal-controls">
+                    <a href="#" id="modal-download-link" target="_blank" download class="btn-modal-action" title="Open PDF in new tab">
+                        Open Full PDF ↗
+                    </a>
+                    <button class="btn-modal-close" id="modal-close-btn" aria-label="Close modal">✕</button>
+                </div>
+            </div>
+
+            <!-- Multi-PDF Stepper / Pager Navigation Bar -->
+            <div class="modal-nav-bar" id="modal-nav-bar">
+                <button class="modal-nav-btn" id="modal-prev-btn" aria-label="Previous Certificate">
+                    <span>‹ Previous</span>
+                </button>
+                <div class="modal-pager-center">
+                    <span class="modal-pager-text" id="modal-pager-text">Certificate 1 of 5</span>
+                    <div class="modal-pill-nav" id="modal-pill-nav"></div>
+                </div>
+                <button class="modal-nav-btn" id="modal-next-btn" aria-label="Next Certificate">
+                    <span>Next ›</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <iframe id="modal-pdf-iframe" src="" title="Certificate Preview" loading="lazy"></iframe>
+                <img id="modal-img" class="modal-img" src="" alt="Document Preview" style="display:none;" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Temporary Local Evaluation Folder (1.6 GB)
+resources/Github/
+
+# Image drafts / unused variants
+resources/logo/profile-image/logo_old.jpg
+resources/logo/profile-image/profile.jpg
+
+# Temporary test files
+*.tmp
+test_*.pdf

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bhargav Kukadiya — Senior iOS Developer & Apple Platforms Architect</title>
+    <style>
+        @page {
+            size: letter;
+            margin: 10mm 14mm 10mm 14mm;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 8.9pt;
+            line-height: 1.36;
+            color: #1e293b;
+            background: #ffffff;
+            -webkit-font-smoothing: antialiased;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .resume-page {
+            width: 100%;
+            page-break-after: always;
+            box-sizing: border-box;
+        }
+
+        .resume-page:last-child {
+            page-break-after: auto;
+        }
+
+        /* --- Header (Page 1) --- */
+        .main-header {
+            text-align: center;
+            border-bottom: 2pt solid #2563eb;
+            padding-bottom: 5px;
+            margin-bottom: 8px;
+        }
+
+        .candidate-name {
+            font-size: 19pt;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #0f172a;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+            line-height: 1.1;
+        }
+
+        .candidate-title {
+            font-size: 10.6pt;
+            font-weight: 700;
+            color: #2563eb;
+            letter-spacing: 0.02em;
+            margin-bottom: 3px;
+        }
+
+        .contact-bar {
+            font-size: 8.4pt;
+            color: #475569;
+            text-align: center;
+        }
+
+        .contact-bar a {
+            color: #0f172a;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-bar .sep {
+            color: #94a3b8;
+            margin: 0 4px;
+        }
+
+        /* --- Running Header (Page 2) --- */
+        .running-header-table {
+            width: 100%;
+            border-collapse: collapse;
+            border-bottom: 1.2pt solid #cbd5e1;
+            padding-bottom: 4px;
+            margin-bottom: 9px;
+            font-size: 8.4pt;
+            color: #64748b;
+            font-weight: 600;
+        }
+
+        .running-header-table td {
+            padding: 0 0 4px 0;
+        }
+
+        .running-header-table .name-tag {
+            color: #0f172a;
+            font-weight: 700;
+        }
+
+        /* --- Section Titles --- */
+        .section {
+            margin-bottom: 8.5px;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 9.3pt;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: #0f172a;
+            border-bottom: 1pt solid #cbd5e1;
+            padding-bottom: 2px;
+            margin-bottom: 5px;
+        }
+
+        /* --- Summary --- */
+        .summary-text {
+            font-size: 8.6pt;
+            color: #334155;
+            text-align: justify;
+            line-height: 1.38;
+        }
+
+        /* --- Tables for ATS Sequential Parsing --- */
+        table.ats-row-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2px;
+        }
+
+        table.ats-row-table td {
+            padding: 0;
+            vertical-align: baseline;
+        }
+
+        .text-right {
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        /* --- Core Competencies Table --- */
+        table.skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 8.45pt;
+        }
+
+        table.skills-table td {
+            padding: 1.5px 0;
+            vertical-align: top;
+            line-height: 1.32;
+        }
+
+        .skill-label {
+            font-weight: 700;
+            color: #0f172a;
+            width: 165px;
+            padding-right: 6px;
+        }
+
+        .skill-val {
+            color: #334155;
+        }
+
+        /* --- Experience Item --- */
+        .job-item {
+            margin-bottom: 8px;
+        }
+
+        .job-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .job-company {
+            font-size: 9.3pt;
+            font-weight: 800;
+            color: #0f172a;
+        }
+
+        .job-company-tagline {
+            font-size: 8.1pt;
+            font-weight: 500;
+            color: #64748b;
+            font-style: italic;
+        }
+
+        .job-location-date {
+            font-size: 8.3pt;
+            font-weight: 700;
+            color: #475569;
+        }
+
+        .job-role {
+            font-size: 8.7pt;
+            font-weight: 700;
+            color: #2563eb;
+            margin-bottom: 2.5px;
+        }
+
+        ul.ats-bullets {
+            margin: 0;
+            padding-left: 14px;
+            list-style-type: disc;
+        }
+
+        ul.ats-bullets li {
+            margin-bottom: 2.5px;
+            font-size: 8.4pt;
+            color: #334155;
+            line-height: 1.34;
+            text-align: justify;
+        }
+
+        ul.ats-bullets li:last-child {
+            margin-bottom: 0;
+        }
+
+        ul.ats-bullets li strong {
+            color: #0f172a;
+            font-weight: 700;
+        }
+
+        /* --- Projects --- */
+        .project-item {
+            margin-bottom: 8px;
+        }
+
+        .project-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-title {
+            font-size: 9pt;
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        .project-links a {
+            font-size: 8pt;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+            margin-left: 7px;
+        }
+
+        .project-desc-text {
+            font-size: 8.4pt;
+            color: #334155;
+            line-height: 1.34;
+            margin-bottom: 2.5px;
+            text-align: justify;
+        }
+
+        /* --- Open Source & Certs Tables --- */
+        table.grid-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 8.3pt;
+        }
+
+        table.grid-table td {
+            width: 50%;
+            padding: 2.5px 8px 2.5px 0;
+            vertical-align: top;
+            line-height: 1.3;
+        }
+
+        .oss-name {
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        .oss-desc {
+            color: #475569;
+        }
+
+        /* --- Education --- */
+        .edu-item {
+            margin-bottom: 3.5px;
+            font-size: 8.45pt;
+        }
+
+        .edu-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .edu-degree {
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        .edu-school {
+            color: #334155;
+        }
+
+        .edu-date {
+            font-weight: 700;
+            color: #475569;
+        }
+
+        .cert-item strong {
+            color: #0f172a;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==================== PAGE 1 ==================== -->
+    <div class="resume-page">
+        <!-- Main Header -->
+        <header class="main-header">
+            <h1 class="candidate-name">Bhargav Kukadiya</h1>
+            <div class="candidate-title">Senior iOS Developer &amp; Apple Platforms Architect</div>
+            <div class="contact-bar">
+                <span>Surat, Gujarat, India</span>
+                <span class="sep">·</span>
+                <a href="tel:+919374543494">+91 9374543494</a>
+                <span class="sep">·</span>
+                <a href="mailto:bhargavkukadiya007@gmail.com">bhargavkukadiya007@gmail.com</a>
+                <span class="sep">·</span>
+                <a href="https://bhargavkukadiya.github.io/">bhargavkukadiya.github.io</a>
+                <span class="sep">·</span>
+                <a href="https://linkedin.com/in/bhargavkukadiya">linkedin.com/in/bhargavkukadiya</a>
+                <span class="sep">·</span>
+                <a href="https://github.com/bhargavkukadiya">github.com/bhargavkukadiya</a>
+            </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section class="section">
+            <h2 class="section-title">Professional Summary</h2>
+            <p class="summary-text">
+                <strong>Senior iOS Developer &amp; Apple Platforms Architect</strong> with <strong>10+ years</strong> of hands-on experience designing, architecting, and delivering high-performance, resilient applications across enterprise ecosystems and the App Store. Deep specialization in <strong>Swift 6 Strict Concurrency</strong> (<code>@MainActor</code>, <code>Sendable</code>, <code>async/await</code>), modern Apple UI frameworks (<strong>UIKit, SwiftUI</strong>), and decoupled architectures (<strong>MVVM-R, VIPER, MVP, MVC, POP</strong>). Proven track record engineering business-critical public sector enterprise platforms (<strong>Civica - Collect</strong>) and high-throughput production kiosk platforms (<strong>Ezy Sign In</strong>). Versatile full-stack contributor with <strong>C#/.NET Core</strong>, <strong>Python</strong>, modern web frontend (<strong>JavaScript, Cappuccino</strong>), and SQL backends. Author of <strong>11 open-source Swift packages, AI developer tools &amp; cloud architecture guides</strong>.
+            </p>
+        </section>
+
+        <!-- Core Technical Competencies -->
+        <section class="section">
+            <h2 class="section-title">Core Technical Competencies</h2>
+            <table class="skills-table">
+                <tr>
+                    <td class="skill-label">Languages &amp; Standards:</td>
+                    <td class="skill-val">Swift 6 (Strict Concurrency, async/await, Actor Model), Objective-C, C# (.NET Core), Python 3, JavaScript (ES6+, Cappuccino), Shell/Bash, SQL</td>
+                </tr>
+                <tr>
+                    <td class="skill-label">Apple SDKs &amp; Hardware:</td>
+                    <td class="skill-val">UIKit, SwiftUI, AVFoundation (Camera/Media), Core Data, SwiftData, CoreLocation, Vision AI, WebKit, Passkeys, Brother SDK</td>
+                </tr>
+                <tr>
+                    <td class="skill-label">Architecture &amp; Design:</td>
+                    <td class="skill-val">MVVM-R (Router/Coordinator), VIPER, MVVM, MVP, MVC, Protocol-Oriented Programming (POP), Dependency Injection, SOLID, Repository</td>
+                </tr>
+                <tr>
+                    <td class="skill-label">Testing &amp; Quality:</td>
+                    <td class="skill-val">XCTest (Protocol Mocks &amp; Unit Testing), XCUITest (UI Automation), Performance Profiling (Instruments), ISO 9001 QMS Compliance</td>
+                </tr>
+                <tr>
+                    <td class="skill-label">CI/CD, DevOps &amp; Cloud:</td>
+                    <td class="skill-val">Azure DevOps / Pipelines, Fastlane (Match / Deployment Automation), Swift Package Manager (SPM), AWS Cloud Architecture, PyTorch / CLIP, Git, Postman</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Professional Experience -->
+        <section class="section" style="margin-bottom: 0;">
+            <h2 class="section-title">Professional Experience</h2>
+
+            <!-- Civica -->
+            <div class="job-item">
+                <table class="ats-row-table">
+                    <tr>
+                        <td>
+                            <span class="job-company">CIVICA</span>
+                            <span class="job-company-tagline"> — Enterprise Software for Public Sector &amp; Regulated Markets</span>
+                        </td>
+                        <td class="job-location-date text-right">Vadodara, India | March 2020 – Present</td>
+                    </tr>
+                </table>
+                <div class="job-role">Software Engineer (Senior iOS &amp; Full-Stack Track)</div>
+                <ul class="ats-bullets">
+                    <li><strong>Architectural Delivery:</strong> Architected and delivered core modules across regular release trains for <strong>Civica - Collect</strong>, an enterprise debt collection and field recovery platform serving public sector local government authorities and commercial enforcement agencies.</li>
+                    <li><strong>Technical Impact Analysis:</strong> Conducted technical impact analysis and authored robust system designs for complex customer requirements, engineering modular components adhering to Repository, Factory, Singleton, CQRS, and MVVM design patterns.</li>
+                    <li><strong>Full-Stack Ownership:</strong> Delivered full-stack features spanning native iOS (Swift, Objective-C), modern web frontend (JavaScript, Cappuccino / Objective-J), and backend services (C#/.NET Core, MySQL).</li>
+                    <li><strong>Tier-3 Production Support:</strong> Provided 3rd-line application support against strict client Service Level Agreements (SLAs), diagnosing and resolving complex production defects, performance bottlenecks, and background data synchronization edge cases.</li>
+                    <li><strong>ISO 9001 Quality Governance:</strong> Enforced rigorous quality standards adhering to ISO 9001 through multi-tier automated unit testing (<strong>XCTest</strong> for iOS, <strong>OJTest</strong> for Cappuccino web, and <strong>C# backend tests</strong>), peer PR reviews, and Git branching hygiene.</li>
+                    <li><strong>Agile Leadership &amp; Mentorship:</strong> Collaborated closely with Product Owners, Technical Architects, and Project Managers in Scrum workflows while onboarding and mentoring junior engineers in Swift concurrency and production debugging.</li>
+                </ul>
+            </div>
+
+            <!-- Narola Infotech -->
+            <div class="job-item">
+                <table class="ats-row-table">
+                    <tr>
+                        <td>
+                            <span class="job-company">NAROLA INFOTECH</span>
+                            <span class="job-company-tagline"> — Global IT Consulting &amp; Mobile Software Engineering</span>
+                        </td>
+                        <td class="job-location-date text-right">Surat, India | January 2016 – March 2020</td>
+                    </tr>
+                </table>
+                <div class="job-role">Senior Consultant / iOS Developer</div>
+                <ul class="ats-bullets">
+                    <li><strong>Multi-App Architecture:</strong> Architected, built, and shipped 10+ production iOS applications on the App Store using Swift and Objective-C across <strong>MVC, MVVM, and MVP</strong> design patterns for international clients in sports, coaching, and lifestyle sectors.</li>
+                    <li><strong>Custom UI &amp; Animation Engines:</strong> Engineered responsive, pixel-perfect user interfaces using Auto Layout, Size Classes, and custom animation engines optimized for all iPhone and iPad screen dimensions.</li>
+                    <li><strong>Backend &amp; Media Integration:</strong> Integrated secure RESTful APIs, in-app purchases (StoreKit), real-time push notification pipelines (Firebase / APNs), and local persistence layers (Core Data / SQLite).</li>
+                    <li><strong>Engineering Standards:</strong> Instituted Git-based branching strategies, automated linting, and reusable component libraries that accelerated sprint velocity across client engagements.</li>
+                    <li><strong>App Store Lifecycle:</strong> Managed end-to-end code signing, provisioning profiles, TestFlight beta distribution, and App Store production releases maintaining high user ratings and 99.9% crash-free stability.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==================== PAGE 2 ==================== -->
+    <div class="resume-page">
+        <!-- Running Header -->
+        <table class="running-header-table">
+            <tr>
+                <td><span class="name-tag">Bhargav Kukadiya</span> · Senior iOS Developer &amp; Apple Platforms Architect</td>
+                <td class="text-right">bhargavkukadiya007@gmail.com · +91 9374543494</td>
+            </tr>
+        </table>
+
+        <!-- Featured Production Applications -->
+        <section class="section">
+            <h2 class="section-title">Featured Production Applications</h2>
+
+            <!-- Civica Collect -->
+            <div class="project-item">
+                <table class="ats-row-table">
+                    <tr>
+                        <td><span class="project-title"><strong>Civica - Collect</strong> — Enterprise Debt Collection &amp; Enforcement Platform</span></td>
+                        <td class="project-links text-right">
+                            <a href="https://www.civica.com/en-in/product-pages/debt-collection-recovery-software/">Product Overview ↗</a>
+                        </td>
+                    </tr>
+                </table>
+                <p class="project-desc-text">
+                    Mission-critical field debt collection and recovery platform trusted by public sector local authorities and commercial enforcement agencies.
+                </p>
+                <ul class="ats-bullets">
+                    <li>Architected and shipped business-critical features across release trains; performed impact analysis using Repository, Factory, CQRS, and MVVM patterns.</li>
+                    <li>Investigated complex production issues and client support tickets against Tier-3 SLAs, authoring root-cause documentation and technical hotfixes.</li>
+                    <li>Automated CI/CD build/release workflows via <strong>Azure DevOps</strong>, <strong>Azure Pipelines</strong>, and <strong>GitHub Actions</strong>; engineered multi-tier unit test suites across <strong>XCTest</strong> (iOS), <strong>OJTest</strong> (web), and <strong>C# backend tests</strong> under ISO 9001 quality compliance.</li>
+                </ul>
+            </div>
+
+            <!-- Ezy Sign In -->
+            <div class="project-item">
+                <table class="ats-row-table">
+                    <tr>
+                        <td><span class="project-title"><strong>Ezy Sign In</strong> — Enterprise Visitor Management &amp; Touchless Kiosk</span></td>
+                        <td class="project-links text-right">
+                            <a href="https://apps.apple.com/us/app/ezy-sign-in-new/id6771831157">App Store (Swift 6 New) ↗</a>
+                            <a href="https://apps.apple.com/in/app/ezy-signin/id1474146070">App Store (Obj-C Legacy) ↗</a>
+                        </td>
+                    </tr>
+                </table>
+                <p class="project-desc-text">
+                    Engineered next-generation iPad &amp; iOS kiosk platform from scratch using <strong>Swift 6 Strict Concurrency</strong>, <strong>UIKit</strong>, and <strong>MVVM-R (Router/Coordinator)</strong> with complete protocol-based dependency injection; also maintained legacy Objective-C production kiosk.
+                </p>
+                <ul class="ats-bullets">
+                    <li>Integrated <strong>Brother thermal printer SDK</strong> (WiFi/Bluetooth) for real-time visitor badge printing and <strong>AVFoundation</strong> for high-resolution camera photo capture with automated face framing.</li>
+                    <li>Implemented WebKit-based digital NDA legal signature flows, full XCTest protocol mock suites, XCUITest automated UI flows, and multi-language localization (EN, FR, FR-CA).</li>
+                </ul>
+            </div>
+
+            <!-- Skate to Ski & My Board -->
+            <div class="project-item">
+                <table class="ats-row-table">
+                    <tr>
+                        <td><span class="project-title"><strong>Skate to Ski &amp; My Board &amp; Coaches</strong> — Athletic Training &amp; Video Technique Platforms</span></td>
+                        <td class="project-links text-right">
+                            <a href="https://apps.apple.com/in/app/skate-to-ski/id1458606967">Skate to Ski on App Store ↗</a>
+                        </td>
+                    </tr>
+                </table>
+                <p class="project-desc-text">
+                    Production athletic training and coaching mobile applications designed for professional sports technique analysis and structured training curricula.
+                </p>
+                <ul class="ats-bullets">
+                    <li>Architected custom video playback pipelines, interactive drill flows, and dynamic Auto Layout interfaces supporting all iPhone and iPad screen sizes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Open-Source Packages & Developer Tooling -->
+        <section class="section">
+            <h2 class="section-title">Open-Source Packages, Developer Tools &amp; Cloud Guides</h2>
+            <table class="grid-table">
+                <tr>
+                    <td><span class="oss-name">PasskeyManager:</span> <span class="oss-desc">Apple Passkeys (WebAuthn / ASAuthorizationController) for Swift 6</span></td>
+                    <td><span class="oss-name">CoreDataManager:</span> <span class="oss-desc">Thread-safe Core Data singleton with auto migrations &amp; background queues</span></td>
+                </tr>
+                <tr>
+                    <td><span class="oss-name">SwiftDataManager:</span> <span class="oss-desc">iOS 17+ SwiftData persistence layer with @ModelActor background threading</span></td>
+                    <td><span class="oss-name">LocationManager:</span> <span class="oss-desc">Async/await CoreLocation manager with geofencing &amp; continuous tracking</span></td>
+                </tr>
+                <tr>
+                    <td><span class="oss-name">PhotoCaptureManager:</span> <span class="oss-desc">Privacy-preserving camera &amp; PhotosUI (PHPicker) capture engine</span></td>
+                    <td><span class="oss-name">FontManager:</span> <span class="oss-desc">Typography design tokens engine with Dynamic Type accessibility scaling</span></td>
+                </tr>
+                <tr>
+                    <td><span class="oss-name">PDFFormHelper:</span> <span class="oss-desc">Production-grade PDFKit engine for AcroForms, signatures &amp; flattening</span></td>
+                    <td><span class="oss-name">photo-curator:</span> <span class="oss-desc">AI photo curation engine using PyTorch, OpenAI CLIP aesthetics &amp; MPS</span></td>
+                </tr>
+                <tr>
+                    <td><span class="oss-name">macos-dir-tools:</span> <span class="oss-desc">Zero-dependency POSIX Bash &amp; Python CLI toolkit with fast duplicate hashing</span></td>
+                    <td><span class="oss-name">azure-pipelines-guide:</span> <span class="oss-desc">Production YAML CI/CD automation templates for iOS &amp; .NET multi-stage</span></td>
+                </tr>
+                <tr>
+                    <td><span class="oss-name">aws-beginner-guide:</span> <span class="oss-desc">Comprehensive 16-module practical AWS architectural reference &amp; MkDocs site</span></td>
+                    <td><span class="oss-name">Open-Source Ecosystem:</span> <span class="oss-desc">All 7 Swift packages released under SPM v1.0.0 with dedicated XCTest suites</span></td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Education -->
+        <section class="section">
+            <h2 class="section-title">Academic Degrees &amp; Foundation</h2>
+
+            <div class="edu-item">
+                <table class="ats-row-table">
+                    <tr>
+                        <td><span class="edu-degree">Master of Computer Applications (MCA)</span> — <span class="edu-school">G.H. Patel P.G. Department of Computer Science &amp; Technology, Sardar Patel University</span></td>
+                        <td class="edu-date text-right">2013 – 2016 | CGPA: 7.07</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="edu-item">
+                <table class="ats-row-table">
+                    <tr>
+                        <td><span class="edu-degree">Bachelor of Computer Applications (BCA)</span> — <span class="edu-school">Swami Vivekanand College of Computer Science, MK Bhavnagar University</span></td>
+                        <td class="edu-date text-right">2009 – 2012</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Professional Certifications -->
+        <section class="section" style="margin-bottom: 0;">
+            <h2 class="section-title">Professional Certifications &amp; Continuous Learning</h2>
+            <table class="grid-table">
+                <tr>
+                    <td><strong>Advanced C# &amp; .NET Development:</strong> 5 Modules (OOP, SOLID, ADO.NET, LINQ, ASP.NET Core) · <em>PluralSight</em></td>
+                    <td><strong>SQL Database Development:</strong> 5 Modules (Query Optimization, Indexes, Stored Procedures) · <em>PluralSight</em></td>
+                </tr>
+                <tr>
+                    <td><strong>Secure Software Development (SSDLC):</strong> OWASP Top 10, Security Controls &amp; Defensive Coding · <em>PluralSight</em></td>
+                    <td><strong>JavaScript Language &amp; Functions:</strong> Modern ES6+ Architecture, Prototypes &amp; Async Flow · <em>PluralSight</em></td>
+                </tr>
+            </table>
+        </section>
+    </div>
+
+</body>
+</html>
