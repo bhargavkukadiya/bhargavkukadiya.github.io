@@ -11,7 +11,7 @@
     "phone": "+91 9374543494",
     "location": "Surat, Gujarat, India",
     "website": {
-      "url": "https://bhargavkukadiya.github.io/",
+      "url": "https://bhargavkukadiya.in/",
       "label": "Portfolio"
     },
     "customFields": []
@@ -220,7 +220,7 @@
           "name": "azure-pipelines-guide",
           "description": "Comprehensive reference guide & Docsify documentation site for Azure DevOps Pipelines, Fastlane match, multi-stage YAML pipelines, and code signing.",
           "url": "https://github.com/bhargavkukadiya/azure-pipelines-guide",
-          "docsUrl": "https://bhargavkukadiya.github.io/azure-pipelines-guide/",
+          "docsUrl": "https://bhargavkukadiya.in/azure-pipelines-guide/",
           "spm": null,
           "tags": ["CI/CD", "Azure Pipelines", "Fastlane", "Docsify"]
         },
@@ -228,7 +228,7 @@
           "name": "aws-beginner-guide",
           "description": "Comprehensive 16-module AWS cloud guide & Material for MkDocs documentation site covering EC2, Lambda, S3, VPC, RDS/DynamoDB, IAM, and cost control.",
           "url": "https://github.com/bhargavkukadiya/aws-beginner-guide",
-          "docsUrl": "https://bhargavkukadiya.github.io/aws-beginner-guide/",
+          "docsUrl": "https://bhargavkukadiya.in/aws-beginner-guide/",
           "spm": null,
           "tags": ["AWS Cloud", "Cloud Architecture", "MkDocs", "DevOps"]
         },

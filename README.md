@@ -1,6 +1,6 @@
 # Bhargav Kukadiya
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-bhargavkukadiya.github.io-blue?style=flat-square&logo=safari)](https://bhargavkukadiya.github.io/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-bhargavkukadiya.in-blue?style=flat-square&logo=safari)](https://bhargavkukadiya.in/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-bhargavkukadiya-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/bhargavkukadiya)
 [![GitHub](https://img.shields.io/badge/GitHub-bhargavkukadiya-181717?style=flat-square&logo=github)](https://github.com/bhargavkukadiya)
 [![Swift 6](https://img.shields.io/badge/Swift-6.0%20Ready-F05138?style=flat-square&logo=swift)](https://swift.org)
@@ -59,8 +59,8 @@
 
 ### ☁️ Cloud & CI/CD Architecture Guides (Live on GitHub Pages)
 
-- **[azure-pipelines-guide](https://github.com/bhargavkukadiya/azure-pipelines-guide)** ([Live Documentation](https://bhargavkukadiya.github.io/azure-pipelines-guide/)): Comprehensive 1,450-line production guide and interactive Docsify site for Azure DevOps Pipelines, multi-stage YAML pipelines, Fastlane match, and Apple Silicon agents.
-- **[aws-beginner-guide](https://github.com/bhargavkukadiya/aws-beginner-guide)** ([Live Documentation](https://bhargavkukadiya.github.io/aws-beginner-guide/)): Practical 16-module AWS architectural reference and interactive Material for MkDocs documentation site covering Compute, Storage, VPC, Databases, IAM security, and cost control.
+- **[azure-pipelines-guide](https://github.com/bhargavkukadiya/azure-pipelines-guide)** ([Live Documentation](https://bhargavkukadiya.in/azure-pipelines-guide/)): Comprehensive 1,450-line production guide and interactive Docsify site for Azure DevOps Pipelines, multi-stage YAML pipelines, Fastlane match, and Apple Silicon agents.
+- **[aws-beginner-guide](https://github.com/bhargavkukadiya/aws-beginner-guide)** ([Live Documentation](https://bhargavkukadiya.in/aws-beginner-guide/)): Practical 16-module AWS architectural reference and interactive Material for MkDocs documentation site covering Compute, Storage, VPC, Databases, IAM security, and cost control.
 
 ### ⚡ AI & Systems Developer Tooling
 
@@ -98,7 +98,7 @@
 
 ## 📫 Contact & Connect
 
-- **Portfolio Website:** [bhargavkukadiya.github.io](https://bhargavkukadiya.github.io/)
+- **Portfolio Website:** [bhargavkukadiya.in](https://bhargavkukadiya.in/)
 - **Email:** [bhargavkukadiya007@gmail.com](mailto:bhargavkukadiya007@gmail.com)
 - **LinkedIn:** [linkedin.com/in/bhargavkukadiya](https://linkedin.com/in/bhargavkukadiya)
 - **GitHub:** [github.com/bhargavkukadiya](https://github.com/bhargavkukadiya)

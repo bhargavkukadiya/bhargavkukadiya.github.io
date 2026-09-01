@@ -1,7 +1,7 @@
 # BHARGAV KUKADIYA
 **Senior iOS Developer & Apple Platforms Architect**
 Surat, Gujarat, India · [+91 9374543494](tel:+919374543494) · [bhargavkukadiya007@gmail.com](mailto:bhargavkukadiya007@gmail.com)
-[Portfolio](https://bhargavkukadiya.github.io/) · [LinkedIn](https://linkedin.com/in/bhargavkukadiya) · [GitHub](https://github.com/bhargavkukadiya) · [Upwork](https://www.upwork.com/freelancers/~0165bba55cf266857d?mp_source=share)
+[Portfolio](https://bhargavkukadiya.in/) · [LinkedIn](https://linkedin.com/in/bhargavkukadiya) · [GitHub](https://github.com/bhargavkukadiya) · [Upwork](https://www.upwork.com/freelancers/~0165bba55cf266857d?mp_source=share)
 
 ---
 
@@ -76,8 +76,8 @@ Surat, Gujarat, India · [+91 9374543494](tel:+919374543494) · [bhargavkukadiya
 * **PhotoCaptureManager** *(v1.0.0 · Swift 6)*: Privacy-preserving camera capture engine built on `AVFoundation` and modern `PhotosUI` (`PHPickerViewController`) with iPad popover anchor protection.
 * **FontManager** *(v1.0.0 · Swift 6)*: Design system typography engine supporting 21 semantic style tokens, Dynamic Type accessibility scaling (`UIFontMetrics`), and dynamic CoreText font registration.
 * **PDFFormHelper** *(v1.0.0 · Swift 6)*: Enterprise `PDFKit` utility for AcroField form management, interactive checkbox/radio controls, vector signature stamping, session recovery, and rotation-safe flattening.
-* **azure-pipelines-guide** *(CI/CD Reference)*: Comprehensive 1,450-line production guide and interactive Docsify site for Azure DevOps Pipelines, multi-stage YAML pipelines, Fastlane match, and Apple Silicon agents. [Live Documentation](https://bhargavkukadiya.github.io/azure-pipelines-guide/)
-* **aws-beginner-guide** *(Cloud Reference)*: 16-module practical AWS architectural reference and interactive Material for MkDocs documentation site covering Compute, Storage, VPC, Databases, IAM, and cost control. [Live Documentation](https://bhargavkukadiya.github.io/aws-beginner-guide/)
+* **azure-pipelines-guide** *(CI/CD Reference)*: Comprehensive 1,450-line production guide and interactive Docsify site for Azure DevOps Pipelines, multi-stage YAML pipelines, Fastlane match, and Apple Silicon agents. [Live Documentation](https://bhargavkukadiya.in/azure-pipelines-guide/)
+* **aws-beginner-guide** *(Cloud Reference)*: 16-module practical AWS architectural reference and interactive Material for MkDocs documentation site covering Compute, Storage, VPC, Databases, IAM, and cost control. [Live Documentation](https://bhargavkukadiya.in/aws-beginner-guide/)
 * **macos-dir-tools** *(Systems CLI Tool)*: Zero-dependency CLI developer tool suite for macOS & Linux in Python 3 and POSIX Bash — 3-phase duplicate file hashing, $O(1)$ AWK disk statistics, recursive inventory scanning, and automated curl installer.
 * **photo-curator** *(AI / Computer Vision CLI)*: Multi-signal AI photo curation engine built with Python 3.9+, PyTorch, and OpenAI CLIP (`ViT-B/32`) neural aesthetics, OpenCV Laplacian sharpness, burst deduplication, Apple Silicon MPS acceleration, and two-phase transactional staging.
 

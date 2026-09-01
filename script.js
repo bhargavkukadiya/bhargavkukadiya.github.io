@@ -638,7 +638,7 @@ window.handleContactSubmit = function(event) {
 
     const subject = encodeURIComponent(`[${topic}] Inquiry from ${name}`);
     const body = encodeURIComponent(
-        `Hi Bhargav,\n\nName: ${name}\nEmail: ${email}\nTopic: ${topic}\n\nMessage:\n${message}\n\nSent via bhargavkukadiya.github.io`
+        `Hi Bhargav,\n\nName: ${name}\nEmail: ${email}\nTopic: ${topic}\n\nMessage:\n${message}\n\nSent via bhargavkukadiya.in`
     );
 
     showToast('Launching email client...');
