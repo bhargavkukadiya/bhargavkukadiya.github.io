@@ -14,24 +14,27 @@
     <meta property="og:title" content="Bhargav Kukadiya — Senior iOS & Apple Platforms Architect">
     <meta property="og:description" content="10+ years building scalable, high-performance iOS apps, enterprise systems (CivicaCollect), and open-source Swift libraries.">
     <meta property="og:url" content="https://bhargavkukadiya.in/">
-    <meta property="og:image" content="resources/logo/profile-image/logo.jpg">
+    <meta property="og:image" content="https://bhargavkukadiya.in/assets/images/profile.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Bhargav Kukadiya — Senior iOS & Apple Platforms Architect">
     <meta name="twitter:description" content="10+ years building scalable, high-performance iOS apps, enterprise systems, and open-source Swift libraries.">
-    <meta name="twitter:image" content="resources/logo/profile-image/logo.jpg">
+    <meta name="twitter:image" content="https://bhargavkukadiya.in/assets/images/profile.jpg">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="resources/logo/profile-image/logo.jpg">
+    <link rel="icon" type="image/jpeg" href="assets/images/profile.jpg">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
+    <!-- Skip to Main Content Link (WCAG 2.4.1) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Grain Noise Texture Overlay -->
     <div class="noise-overlay" aria-hidden="true"></div>
 
@@ -159,7 +162,7 @@
                             <path d="M8 3v10M3 9l5 5 5-5"/>
                         </svg>
                     </a>
-                    <a href="resources/Bhargav_Kukadiya_Senior_iOS_Architect_Resume.pdf" target="_blank" class="btn-minimal btn-secondary" title="View &amp; Download PDF Resume">
+                    <a href="assets/documents/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-minimal btn-secondary" title="View &amp; Download PDF Resume">
                         <span>Resume (PDF)</span>
                         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M8 2v8M4 6l4 4 4-4M2 14h12"/>
@@ -244,7 +247,7 @@
                                     </svg>
                                 </div>
                                 <div class="pillar-content">
-                                    <h4>Clean &amp; Scalable Architectures</h4>
+                                    <h3>Clean &amp; Scalable Architectures</h3>
                                     <p>Deep expertise across MVVM-R, VIPER, MVP, and MVC — strict separation of concerns, testable ViewModels/Presenters, and decoupled navigation.</p>
                                 </div>
                             </div>
@@ -255,7 +258,7 @@
                                     </svg>
                                 </div>
                                 <div class="pillar-content">
-                                    <h4>Swift 6 Strict Concurrency</h4>
+                                    <h3>Swift 6 Strict Concurrency</h3>
                                     <p>Data-race safety by default, actor-isolated persistence layers, cancellation-aware task trees, and Sendable hygiene.</p>
                                 </div>
                             </div>
@@ -266,7 +269,7 @@
                                     </svg>
                                 </div>
                                 <div class="pillar-content">
-                                    <h4>Robust Quality & CI/CD</h4>
+                                    <h3>Robust Quality &amp; CI/CD</h3>
                                     <p>Comprehensive XCTest protocol mocks, XCUITest UI automation, and automated Azure Pipelines & Fastlane deployments.</p>
                                 </div>
                             </div>
@@ -277,7 +280,7 @@
                     <div class="about-card-wrapper">
                         <div class="profile-card">
                             <div class="profile-image-container">
-                                <img src="resources/logo/profile-image/logo.jpg" alt="Bhargav Kukadiya" class="profile-img" loading="lazy">
+                                <img src="assets/images/profile.jpg" alt="Bhargav Kukadiya" class="profile-img" loading="lazy">
                                 <div class="profile-badge-overlay">
                                     <span class="badge-dot"></span>
                                     <span>iOS Architect</span>
@@ -973,20 +976,15 @@
                     <p class="section-desc">Comprehensive toolkit across Apple platforms, modern language standards, testing frameworks, and full-stack systems.</p>
                 </div>
 
-                <!-- Skills Grid -->
-                <div class="skills-category-grid">
-                    <!-- Category 1 -->
-                    <div class="skill-category-card">
-                        <div class="cat-header">
-                            <div class="cat-icon">
+
                 <!-- Interactive Skills Filter Bar -->
-                <div class="skills-filter-bar" id="skills-filter-bar">
-                    <button class="skills-filter-btn active" data-filter="all">All Stack (7)</button>
-                    <button class="skills-filter-btn" data-filter="ios">iOS & Swift 6</button>
-                    <button class="skills-filter-btn" data-filter="arch">Architecture</button>
-                    <button class="skills-filter-btn" data-filter="frameworks">Apple Frameworks</button>
-                    <button class="skills-filter-btn" data-filter="testing">Testing & CI/CD</button>
-                    <button class="skills-filter-btn" data-filter="backend">Backend & Cloud</button>
+                <div class="skills-filter-bar" id="skills-filter-bar" role="group" aria-label="Filter skills by domain">
+                    <button class="skills-filter-btn active" data-filter="all" aria-pressed="true">All Stack (7)</button>
+                    <button class="skills-filter-btn" data-filter="ios" aria-pressed="false">iOS & Swift 6</button>
+                    <button class="skills-filter-btn" data-filter="arch" aria-pressed="false">Architecture</button>
+                    <button class="skills-filter-btn" data-filter="frameworks" aria-pressed="false">Apple Frameworks</button>
+                    <button class="skills-filter-btn" data-filter="testing" aria-pressed="false">Testing & CI/CD</button>
+                    <button class="skills-filter-btn" data-filter="backend" aria-pressed="false">Backend & Cloud</button>
                 </div>
 
                 <!-- Bento Skills Grid -->
@@ -1303,17 +1301,17 @@
                                     </div>
                                     <button class="btn-view-pdf"
                                             data-title="Advanced C# and .NET Development"
-                                            data-pdfs='["resources/certificates/DOT NET/certificate1.pdf","resources/certificates/DOT NET/certificate2.pdf","resources/certificates/DOT NET/certificate3.pdf","resources/certificates/DOT NET/certificate4.pdf","resources/certificates/DOT NET/certificate5.pdf"]'>
+                                            data-pdfs='["assets/documents/certificates/dotnet/01-csharp-oop.pdf","assets/documents/certificates/dotnet/02-solid-principles.pdf","assets/documents/certificates/dotnet/03-adonet.pdf","assets/documents/certificates/dotnet/04-linq.pdf","assets/documents/certificates/dotnet/05-aspnet-core.pdf"]'>
                                         <span>View 5 PDFs ↗</span>
                                     </button>
                                 </div>
                                 <div class="cert-module-pills">
                                     <span class="cert-module-label">Modules:</span>
-                                    <button class="cert-pill-btn" data-cert-index="0" data-course="Advanced C# and .NET Development" data-pdfs='["resources/certificates/DOT NET/certificate1.pdf","resources/certificates/DOT NET/certificate2.pdf","resources/certificates/DOT NET/certificate3.pdf","resources/certificates/DOT NET/certificate4.pdf","resources/certificates/DOT NET/certificate5.pdf"]'>Part 1</button>
-                                    <button class="cert-pill-btn" data-cert-index="1" data-course="Advanced C# and .NET Development" data-pdfs='["resources/certificates/DOT NET/certificate1.pdf","resources/certificates/DOT NET/certificate2.pdf","resources/certificates/DOT NET/certificate3.pdf","resources/certificates/DOT NET/certificate4.pdf","resources/certificates/DOT NET/certificate5.pdf"]'>Part 2</button>
-                                    <button class="cert-pill-btn" data-cert-index="2" data-course="Advanced C# and .NET Development" data-pdfs='["resources/certificates/DOT NET/certificate1.pdf","resources/certificates/DOT NET/certificate2.pdf","resources/certificates/DOT NET/certificate3.pdf","resources/certificates/DOT NET/certificate4.pdf","resources/certificates/DOT NET/certificate5.pdf"]'>Part 3</button>
-                                    <button class="cert-pill-btn" data-cert-index="3" data-course="Advanced C# and .NET Development" data-pdfs='["resources/certificates/DOT NET/certificate1.pdf","resources/certificates/DOT NET/certificate2.pdf","resources/certificates/DOT NET/certificate3.pdf","resources/certificates/DOT NET/certificate4.pdf","resources/certificates/DOT NET/certificate5.pdf"]'>Part 4</button>
-                                    <button class="cert-pill-btn" data-cert-index="4" data-course="Advanced C# and .NET Development" data-pdfs='["resources/certificates/DOT NET/certificate1.pdf","resources/certificates/DOT NET/certificate2.pdf","resources/certificates/DOT NET/certificate3.pdf","resources/certificates/DOT NET/certificate4.pdf","resources/certificates/DOT NET/certificate5.pdf"]'>Part 5</button>
+                                    <button class="cert-pill-btn" data-cert-index="0" data-course="Advanced C# and .NET Development" data-pdfs='["assets/documents/certificates/dotnet/01-csharp-oop.pdf","assets/documents/certificates/dotnet/02-solid-principles.pdf","assets/documents/certificates/dotnet/03-adonet.pdf","assets/documents/certificates/dotnet/04-linq.pdf","assets/documents/certificates/dotnet/05-aspnet-core.pdf"]'>Part 1</button>
+                                    <button class="cert-pill-btn" data-cert-index="1" data-course="Advanced C# and .NET Development" data-pdfs='["assets/documents/certificates/dotnet/01-csharp-oop.pdf","assets/documents/certificates/dotnet/02-solid-principles.pdf","assets/documents/certificates/dotnet/03-adonet.pdf","assets/documents/certificates/dotnet/04-linq.pdf","assets/documents/certificates/dotnet/05-aspnet-core.pdf"]'>Part 2</button>
+                                    <button class="cert-pill-btn" data-cert-index="2" data-course="Advanced C# and .NET Development" data-pdfs='["assets/documents/certificates/dotnet/01-csharp-oop.pdf","assets/documents/certificates/dotnet/02-solid-principles.pdf","assets/documents/certificates/dotnet/03-adonet.pdf","assets/documents/certificates/dotnet/04-linq.pdf","assets/documents/certificates/dotnet/05-aspnet-core.pdf"]'>Part 3</button>
+                                    <button class="cert-pill-btn" data-cert-index="3" data-course="Advanced C# and .NET Development" data-pdfs='["assets/documents/certificates/dotnet/01-csharp-oop.pdf","assets/documents/certificates/dotnet/02-solid-principles.pdf","assets/documents/certificates/dotnet/03-adonet.pdf","assets/documents/certificates/dotnet/04-linq.pdf","assets/documents/certificates/dotnet/05-aspnet-core.pdf"]'>Part 4</button>
+                                    <button class="cert-pill-btn" data-cert-index="4" data-course="Advanced C# and .NET Development" data-pdfs='["assets/documents/certificates/dotnet/01-csharp-oop.pdf","assets/documents/certificates/dotnet/02-solid-principles.pdf","assets/documents/certificates/dotnet/03-adonet.pdf","assets/documents/certificates/dotnet/04-linq.pdf","assets/documents/certificates/dotnet/05-aspnet-core.pdf"]'>Part 5</button>
                                 </div>
                                 <div class="cert-topics">
                                     <span>OOP in C#</span>
@@ -1334,17 +1332,17 @@
                                     </div>
                                     <button class="btn-view-pdf"
                                             data-title="SQL Database Development"
-                                            data-pdfs='["resources/certificates/SQL/certificate1.pdf","resources/certificates/SQL/certificate2.pdf","resources/certificates/SQL/certificate3.pdf","resources/certificates/SQL/certificate4.pdf","resources/certificates/SQL/certificate5.pdf"]'>
+                                            data-pdfs='["assets/documents/certificates/sql/01-table-view-design.pdf","assets/documents/certificates/sql/02-stored-procedures.pdf","assets/documents/certificates/sql/03-sql-fundamentals.pdf","assets/documents/certificates/sql/04-triggers-functions.pdf","assets/documents/certificates/sql/05-indexing-strategies.pdf"]'>
                                         <span>View 5 PDFs ↗</span>
                                     </button>
                                 </div>
                                 <div class="cert-module-pills">
                                     <span class="cert-module-label">Modules:</span>
-                                    <button class="cert-pill-btn" data-cert-index="0" data-course="SQL Database Development" data-pdfs='["resources/certificates/SQL/certificate1.pdf","resources/certificates/SQL/certificate2.pdf","resources/certificates/SQL/certificate3.pdf","resources/certificates/SQL/certificate4.pdf","resources/certificates/SQL/certificate5.pdf"]'>Part 1</button>
-                                    <button class="cert-pill-btn" data-cert-index="1" data-course="SQL Database Development" data-pdfs='["resources/certificates/SQL/certificate1.pdf","resources/certificates/SQL/certificate2.pdf","resources/certificates/SQL/certificate3.pdf","resources/certificates/SQL/certificate4.pdf","resources/certificates/SQL/certificate5.pdf"]'>Part 2</button>
-                                    <button class="cert-pill-btn" data-cert-index="2" data-course="SQL Database Development" data-pdfs='["resources/certificates/SQL/certificate1.pdf","resources/certificates/SQL/certificate2.pdf","resources/certificates/SQL/certificate3.pdf","resources/certificates/SQL/certificate4.pdf","resources/certificates/SQL/certificate5.pdf"]'>Part 3</button>
-                                    <button class="cert-pill-btn" data-cert-index="3" data-course="SQL Database Development" data-pdfs='["resources/certificates/SQL/certificate1.pdf","resources/certificates/SQL/certificate2.pdf","resources/certificates/SQL/certificate3.pdf","resources/certificates/SQL/certificate4.pdf","resources/certificates/SQL/certificate5.pdf"]'>Part 4</button>
-                                    <button class="cert-pill-btn" data-cert-index="4" data-course="SQL Database Development" data-pdfs='["resources/certificates/SQL/certificate1.pdf","resources/certificates/SQL/certificate2.pdf","resources/certificates/SQL/certificate3.pdf","resources/certificates/SQL/certificate4.pdf","resources/certificates/SQL/certificate5.pdf"]'>Part 5</button>
+                                    <button class="cert-pill-btn" data-cert-index="0" data-course="SQL Database Development" data-pdfs='["assets/documents/certificates/sql/01-table-view-design.pdf","assets/documents/certificates/sql/02-stored-procedures.pdf","assets/documents/certificates/sql/03-sql-fundamentals.pdf","assets/documents/certificates/sql/04-triggers-functions.pdf","assets/documents/certificates/sql/05-indexing-strategies.pdf"]'>Part 1</button>
+                                    <button class="cert-pill-btn" data-cert-index="1" data-course="SQL Database Development" data-pdfs='["assets/documents/certificates/sql/01-table-view-design.pdf","assets/documents/certificates/sql/02-stored-procedures.pdf","assets/documents/certificates/sql/03-sql-fundamentals.pdf","assets/documents/certificates/sql/04-triggers-functions.pdf","assets/documents/certificates/sql/05-indexing-strategies.pdf"]'>Part 2</button>
+                                    <button class="cert-pill-btn" data-cert-index="2" data-course="SQL Database Development" data-pdfs='["assets/documents/certificates/sql/01-table-view-design.pdf","assets/documents/certificates/sql/02-stored-procedures.pdf","assets/documents/certificates/sql/03-sql-fundamentals.pdf","assets/documents/certificates/sql/04-triggers-functions.pdf","assets/documents/certificates/sql/05-indexing-strategies.pdf"]'>Part 3</button>
+                                    <button class="cert-pill-btn" data-cert-index="3" data-course="SQL Database Development" data-pdfs='["assets/documents/certificates/sql/01-table-view-design.pdf","assets/documents/certificates/sql/02-stored-procedures.pdf","assets/documents/certificates/sql/03-sql-fundamentals.pdf","assets/documents/certificates/sql/04-triggers-functions.pdf","assets/documents/certificates/sql/05-indexing-strategies.pdf"]'>Part 4</button>
+                                    <button class="cert-pill-btn" data-cert-index="4" data-course="SQL Database Development" data-pdfs='["assets/documents/certificates/sql/01-table-view-design.pdf","assets/documents/certificates/sql/02-stored-procedures.pdf","assets/documents/certificates/sql/03-sql-fundamentals.pdf","assets/documents/certificates/sql/04-triggers-functions.pdf","assets/documents/certificates/sql/05-indexing-strategies.pdf"]'>Part 5</button>
                                 </div>
                                 <div class="cert-topics">
                                     <span>Table Design</span>
@@ -1364,21 +1362,21 @@
                                     </div>
                                     <button class="btn-view-pdf"
                                             data-title="JavaScript Core Language"
-                                            data-pdfs='["resources/certificates/JavaScriptCertificate/certificate1.pdf","resources/certificates/JavaScriptCertificate/certificate2.pdf","resources/certificates/JavaScriptCertificate/certificate3.pdf","resources/certificates/JavaScriptCertificate/certificate4.pdf","resources/certificates/JavaScriptCertificate/certificate5.pdf","resources/certificates/JavaScriptCertificate/certificate6.pdf","resources/certificates/JavaScriptCertificate/certificate7.pdf","resources/certificates/JavaScriptCertificate/certificate8.pdf","resources/certificates/JavaScriptCertificate/certificate9.pdf"]'>
+                                            data-pdfs='["assets/documents/certificates/javascript/01-es6-syntax.pdf","assets/documents/certificates/javascript/02-variables-types.pdf","assets/documents/certificates/javascript/03-oop-prototypes.pdf","assets/documents/certificates/javascript/04-functions.pdf","assets/documents/certificates/javascript/05-arrays.pdf","assets/documents/certificates/javascript/06-generators-iterators.pdf","assets/documents/certificates/javascript/07-modules.pdf","assets/documents/certificates/javascript/08-promises.pdf","assets/documents/certificates/javascript/09-async-await.pdf"]'>
                                         <span>View 9 PDFs ↗</span>
                                     </button>
                                 </div>
                                 <div class="cert-module-pills">
                                     <span class="cert-module-label">Modules:</span>
-                                    <button class="cert-pill-btn" data-cert-index="0" data-course="JavaScript Core Language" data-pdfs='["resources/certificates/JavaScriptCertificate/certificate1.pdf","resources/certificates/JavaScriptCertificate/certificate2.pdf","resources/certificates/JavaScriptCertificate/certificate3.pdf","resources/certificates/JavaScriptCertificate/certificate4.pdf","resources/certificates/JavaScriptCertificate/certificate5.pdf","resources/certificates/JavaScriptCertificate/certificate6.pdf","resources/certificates/JavaScriptCertificate/certificate7.pdf","resources/certificates/JavaScriptCertificate/certificate8.pdf","resources/certificates/JavaScriptCertificate/certificate9.pdf"]'>1</button>
-                                    <button class="cert-pill-btn" data-cert-index="1" data-course="JavaScript Core Language" data-pdfs='["resources/certificates/JavaScriptCertificate/certificate1.pdf","resources/certificates/JavaScriptCertificate/certificate2.pdf","resources/certificates/JavaScriptCertificate/certificate3.pdf","resources/certificates/JavaScriptCertificate/certificate4.pdf","resources/certificates/JavaScriptCertificate/certificate5.pdf","resources/certificates/JavaScriptCertificate/certificate6.pdf","resources/certificates/JavaScriptCertificate/certificate7.pdf","resources/certificates/JavaScriptCertificate/certificate8.pdf","resources/certificates/JavaScriptCertificate/certificate9.pdf"]'>2</button>
-                                    <button class="cert-pill-btn" data-cert-index="2" data-course="JavaScript Core Language" data-pdfs='["resources/certificates/JavaScriptCertificate/certificate1.pdf","resources/certificates/JavaScriptCertificate/certificate2.pdf","resources/certificates/JavaScriptCertificate/certificate3.pdf","resources/certificates/JavaScriptCertificate/certificate4.pdf","resources/certificates/JavaScriptCertificate/certificate5.pdf","resources/certificates/JavaScriptCertificate/certificate6.pdf","resources/certificates/JavaScriptCertificate/certificate7.pdf","resources/certificates/JavaScriptCertificate/certificate8.pdf","resources/certificates/JavaScriptCertificate/certificate9.pdf"]'>3</button>
-                                    <button class="cert-pill-btn" data-cert-index="3" data-course="JavaScript Core Language" data-pdfs='["resources/certificates/JavaScriptCertificate/certificate1.pdf","resources/certificates/JavaScriptCertificate/certificate2.pdf","resources/certificates/JavaScriptCertificate/certificate3.pdf","resources/certificates/JavaScriptCertificate/certificate4.pdf","resources/certificates/JavaScriptCertificate/certificate5.pdf","resources/certificates/JavaScriptCertificate/certificate6.pdf","resources/certificates/JavaScriptCertificate/certificate7.pdf","resources/certificates/JavaScriptCertificate/certificate8.pdf","resources/certificates/JavaScriptCertificate/certificate9.pdf"]'>4</button>
-                                    <button class="cert-pill-btn" data-cert-index="4" data-course="JavaScript Core Language" data-pdfs='["resources/certificates/JavaScriptCertificate/certificate1.pdf","resources/certificates/JavaScriptCertificate/certificate2.pdf","resources/certificates/JavaScriptCertificate/certificate3.pdf","resources/certificates/JavaScriptCertificate/certificate4.pdf","resources/certificates/JavaScriptCertificate/certificate5.pdf","resources/certificates/JavaScriptCertificate/certificate6.pdf","resources/certificates/JavaScriptCertificate/certificate7.pdf","resources/certificates/JavaScriptCertificate/certificate8.pdf","resources/certificates/JavaScriptCertificate/certificate9.pdf"]'>5</button>
-                                    <button class="cert-pill-btn" data-cert-index="5" data-course="JavaScript Core Language" data-pdfs='["resources/certificates/JavaScriptCertificate/certificate1.pdf","resources/certificates/JavaScriptCertificate/certificate2.pdf","resources/certificates/JavaScriptCertificate/certificate3.pdf","resources/certificates/JavaScriptCertificate/certificate4.pdf","resources/certificates/JavaScriptCertificate/certificate5.pdf","resources/certificates/JavaScriptCertificate/certificate6.pdf","resources/certificates/JavaScriptCertificate/certificate7.pdf","resources/certificates/JavaScriptCertificate/certificate8.pdf","resources/certificates/JavaScriptCertificate/certificate9.pdf"]'>6</button>
-                                    <button class="cert-pill-btn" data-cert-index="6" data-course="JavaScript Core Language" data-pdfs='["resources/certificates/JavaScriptCertificate/certificate1.pdf","resources/certificates/JavaScriptCertificate/certificate2.pdf","resources/certificates/JavaScriptCertificate/certificate3.pdf","resources/certificates/JavaScriptCertificate/certificate4.pdf","resources/certificates/JavaScriptCertificate/certificate5.pdf","resources/certificates/JavaScriptCertificate/certificate6.pdf","resources/certificates/JavaScriptCertificate/certificate7.pdf","resources/certificates/JavaScriptCertificate/certificate8.pdf","resources/certificates/JavaScriptCertificate/certificate9.pdf"]'>7</button>
-                                    <button class="cert-pill-btn" data-cert-index="7" data-course="JavaScript Core Language" data-pdfs='["resources/certificates/JavaScriptCertificate/certificate1.pdf","resources/certificates/JavaScriptCertificate/certificate2.pdf","resources/certificates/JavaScriptCertificate/certificate3.pdf","resources/certificates/JavaScriptCertificate/certificate4.pdf","resources/certificates/JavaScriptCertificate/certificate5.pdf","resources/certificates/JavaScriptCertificate/certificate6.pdf","resources/certificates/JavaScriptCertificate/certificate7.pdf","resources/certificates/JavaScriptCertificate/certificate8.pdf","resources/certificates/JavaScriptCertificate/certificate9.pdf"]'>8</button>
-                                    <button class="cert-pill-btn" data-cert-index="8" data-course="JavaScript Core Language" data-pdfs='["resources/certificates/JavaScriptCertificate/certificate1.pdf","resources/certificates/JavaScriptCertificate/certificate2.pdf","resources/certificates/JavaScriptCertificate/certificate3.pdf","resources/certificates/JavaScriptCertificate/certificate4.pdf","resources/certificates/JavaScriptCertificate/certificate5.pdf","resources/certificates/JavaScriptCertificate/certificate6.pdf","resources/certificates/JavaScriptCertificate/certificate7.pdf","resources/certificates/JavaScriptCertificate/certificate8.pdf","resources/certificates/JavaScriptCertificate/certificate9.pdf"]'>9</button>
+                                    <button class="cert-pill-btn" data-cert-index="0" data-course="JavaScript Core Language" data-pdfs='["assets/documents/certificates/javascript/01-es6-syntax.pdf","assets/documents/certificates/javascript/02-variables-types.pdf","assets/documents/certificates/javascript/03-oop-prototypes.pdf","assets/documents/certificates/javascript/04-functions.pdf","assets/documents/certificates/javascript/05-arrays.pdf","assets/documents/certificates/javascript/06-generators-iterators.pdf","assets/documents/certificates/javascript/07-modules.pdf","assets/documents/certificates/javascript/08-promises.pdf","assets/documents/certificates/javascript/09-async-await.pdf"]'>1</button>
+                                    <button class="cert-pill-btn" data-cert-index="1" data-course="JavaScript Core Language" data-pdfs='["assets/documents/certificates/javascript/01-es6-syntax.pdf","assets/documents/certificates/javascript/02-variables-types.pdf","assets/documents/certificates/javascript/03-oop-prototypes.pdf","assets/documents/certificates/javascript/04-functions.pdf","assets/documents/certificates/javascript/05-arrays.pdf","assets/documents/certificates/javascript/06-generators-iterators.pdf","assets/documents/certificates/javascript/07-modules.pdf","assets/documents/certificates/javascript/08-promises.pdf","assets/documents/certificates/javascript/09-async-await.pdf"]'>2</button>
+                                    <button class="cert-pill-btn" data-cert-index="2" data-course="JavaScript Core Language" data-pdfs='["assets/documents/certificates/javascript/01-es6-syntax.pdf","assets/documents/certificates/javascript/02-variables-types.pdf","assets/documents/certificates/javascript/03-oop-prototypes.pdf","assets/documents/certificates/javascript/04-functions.pdf","assets/documents/certificates/javascript/05-arrays.pdf","assets/documents/certificates/javascript/06-generators-iterators.pdf","assets/documents/certificates/javascript/07-modules.pdf","assets/documents/certificates/javascript/08-promises.pdf","assets/documents/certificates/javascript/09-async-await.pdf"]'>3</button>
+                                    <button class="cert-pill-btn" data-cert-index="3" data-course="JavaScript Core Language" data-pdfs='["assets/documents/certificates/javascript/01-es6-syntax.pdf","assets/documents/certificates/javascript/02-variables-types.pdf","assets/documents/certificates/javascript/03-oop-prototypes.pdf","assets/documents/certificates/javascript/04-functions.pdf","assets/documents/certificates/javascript/05-arrays.pdf","assets/documents/certificates/javascript/06-generators-iterators.pdf","assets/documents/certificates/javascript/07-modules.pdf","assets/documents/certificates/javascript/08-promises.pdf","assets/documents/certificates/javascript/09-async-await.pdf"]'>4</button>
+                                    <button class="cert-pill-btn" data-cert-index="4" data-course="JavaScript Core Language" data-pdfs='["assets/documents/certificates/javascript/01-es6-syntax.pdf","assets/documents/certificates/javascript/02-variables-types.pdf","assets/documents/certificates/javascript/03-oop-prototypes.pdf","assets/documents/certificates/javascript/04-functions.pdf","assets/documents/certificates/javascript/05-arrays.pdf","assets/documents/certificates/javascript/06-generators-iterators.pdf","assets/documents/certificates/javascript/07-modules.pdf","assets/documents/certificates/javascript/08-promises.pdf","assets/documents/certificates/javascript/09-async-await.pdf"]'>5</button>
+                                    <button class="cert-pill-btn" data-cert-index="5" data-course="JavaScript Core Language" data-pdfs='["assets/documents/certificates/javascript/01-es6-syntax.pdf","assets/documents/certificates/javascript/02-variables-types.pdf","assets/documents/certificates/javascript/03-oop-prototypes.pdf","assets/documents/certificates/javascript/04-functions.pdf","assets/documents/certificates/javascript/05-arrays.pdf","assets/documents/certificates/javascript/06-generators-iterators.pdf","assets/documents/certificates/javascript/07-modules.pdf","assets/documents/certificates/javascript/08-promises.pdf","assets/documents/certificates/javascript/09-async-await.pdf"]'>6</button>
+                                    <button class="cert-pill-btn" data-cert-index="6" data-course="JavaScript Core Language" data-pdfs='["assets/documents/certificates/javascript/01-es6-syntax.pdf","assets/documents/certificates/javascript/02-variables-types.pdf","assets/documents/certificates/javascript/03-oop-prototypes.pdf","assets/documents/certificates/javascript/04-functions.pdf","assets/documents/certificates/javascript/05-arrays.pdf","assets/documents/certificates/javascript/06-generators-iterators.pdf","assets/documents/certificates/javascript/07-modules.pdf","assets/documents/certificates/javascript/08-promises.pdf","assets/documents/certificates/javascript/09-async-await.pdf"]'>7</button>
+                                    <button class="cert-pill-btn" data-cert-index="7" data-course="JavaScript Core Language" data-pdfs='["assets/documents/certificates/javascript/01-es6-syntax.pdf","assets/documents/certificates/javascript/02-variables-types.pdf","assets/documents/certificates/javascript/03-oop-prototypes.pdf","assets/documents/certificates/javascript/04-functions.pdf","assets/documents/certificates/javascript/05-arrays.pdf","assets/documents/certificates/javascript/06-generators-iterators.pdf","assets/documents/certificates/javascript/07-modules.pdf","assets/documents/certificates/javascript/08-promises.pdf","assets/documents/certificates/javascript/09-async-await.pdf"]'>8</button>
+                                    <button class="cert-pill-btn" data-cert-index="8" data-course="JavaScript Core Language" data-pdfs='["assets/documents/certificates/javascript/01-es6-syntax.pdf","assets/documents/certificates/javascript/02-variables-types.pdf","assets/documents/certificates/javascript/03-oop-prototypes.pdf","assets/documents/certificates/javascript/04-functions.pdf","assets/documents/certificates/javascript/05-arrays.pdf","assets/documents/certificates/javascript/06-generators-iterators.pdf","assets/documents/certificates/javascript/07-modules.pdf","assets/documents/certificates/javascript/08-promises.pdf","assets/documents/certificates/javascript/09-async-await.pdf"]'>9</button>
                                 </div>
                                 <div class="cert-topics">
                                     <span>ES6+ Syntax</span>
@@ -1398,17 +1396,17 @@
                                     </div>
                                     <button class="btn-view-pdf"
                                             data-title="SSDLC (Secure Software Development Life Cycle)"
-                                            data-pdfs='["resources/certificates/SSDLC Certificate/certificate1.pdf","resources/certificates/SSDLC Certificate/certificate2.pdf","resources/certificates/SSDLC Certificate/certificate3.pdf","resources/certificates/SSDLC Certificate/certificate4.pdf","resources/certificates/SSDLC Certificate/certificate5.pdf"]'>
+                                            data-pdfs='["assets/documents/certificates/secure-development/01-ssdlc-overview.pdf","assets/documents/certificates/secure-development/02-threat-modeling.pdf","assets/documents/certificates/secure-development/03-web-security-owasp.pdf","assets/documents/certificates/secure-development/04-insecure-deserialization.pdf","assets/documents/certificates/secure-development/05-defensive-coding.pdf"]'>
                                         <span>View 5 PDFs ↗</span>
                                     </button>
                                 </div>
                                 <div class="cert-module-pills">
                                     <span class="cert-module-label">Modules:</span>
-                                    <button class="cert-pill-btn" data-cert-index="0" data-course="SSDLC (Secure Software Development Life Cycle)" data-pdfs='["resources/certificates/SSDLC Certificate/certificate1.pdf","resources/certificates/SSDLC Certificate/certificate2.pdf","resources/certificates/SSDLC Certificate/certificate3.pdf","resources/certificates/SSDLC Certificate/certificate4.pdf","resources/certificates/SSDLC Certificate/certificate5.pdf"]'>Part 1</button>
-                                    <button class="cert-pill-btn" data-cert-index="1" data-course="SSDLC (Secure Software Development Life Cycle)" data-pdfs='["resources/certificates/SSDLC Certificate/certificate1.pdf","resources/certificates/SSDLC Certificate/certificate2.pdf","resources/certificates/SSDLC Certificate/certificate3.pdf","resources/certificates/SSDLC Certificate/certificate4.pdf","resources/certificates/SSDLC Certificate/certificate5.pdf"]'>Part 2</button>
-                                    <button class="cert-pill-btn" data-cert-index="2" data-course="SSDLC (Secure Software Development Life Cycle)" data-pdfs='["resources/certificates/SSDLC Certificate/certificate1.pdf","resources/certificates/SSDLC Certificate/certificate2.pdf","resources/certificates/SSDLC Certificate/certificate3.pdf","resources/certificates/SSDLC Certificate/certificate4.pdf","resources/certificates/SSDLC Certificate/certificate5.pdf"]'>Part 3</button>
-                                    <button class="cert-pill-btn" data-cert-index="3" data-course="SSDLC (Secure Software Development Life Cycle)" data-pdfs='["resources/certificates/SSDLC Certificate/certificate1.pdf","resources/certificates/SSDLC Certificate/certificate2.pdf","resources/certificates/SSDLC Certificate/certificate3.pdf","resources/certificates/SSDLC Certificate/certificate4.pdf","resources/certificates/SSDLC Certificate/certificate5.pdf"]'>Part 4</button>
-                                    <button class="cert-pill-btn" data-cert-index="4" data-course="SSDLC (Secure Software Development Life Cycle)" data-pdfs='["resources/certificates/SSDLC Certificate/certificate1.pdf","resources/certificates/SSDLC Certificate/certificate2.pdf","resources/certificates/SSDLC Certificate/certificate3.pdf","resources/certificates/SSDLC Certificate/certificate4.pdf","resources/certificates/SSDLC Certificate/certificate5.pdf"]'>Part 5</button>
+                                    <button class="cert-pill-btn" data-cert-index="0" data-course="SSDLC (Secure Software Development Life Cycle)" data-pdfs='["assets/documents/certificates/secure-development/01-ssdlc-overview.pdf","assets/documents/certificates/secure-development/02-threat-modeling.pdf","assets/documents/certificates/secure-development/03-web-security-owasp.pdf","assets/documents/certificates/secure-development/04-insecure-deserialization.pdf","assets/documents/certificates/secure-development/05-defensive-coding.pdf"]'>Part 1</button>
+                                    <button class="cert-pill-btn" data-cert-index="1" data-course="SSDLC (Secure Software Development Life Cycle)" data-pdfs='["assets/documents/certificates/secure-development/01-ssdlc-overview.pdf","assets/documents/certificates/secure-development/02-threat-modeling.pdf","assets/documents/certificates/secure-development/03-web-security-owasp.pdf","assets/documents/certificates/secure-development/04-insecure-deserialization.pdf","assets/documents/certificates/secure-development/05-defensive-coding.pdf"]'>Part 2</button>
+                                    <button class="cert-pill-btn" data-cert-index="2" data-course="SSDLC (Secure Software Development Life Cycle)" data-pdfs='["assets/documents/certificates/secure-development/01-ssdlc-overview.pdf","assets/documents/certificates/secure-development/02-threat-modeling.pdf","assets/documents/certificates/secure-development/03-web-security-owasp.pdf","assets/documents/certificates/secure-development/04-insecure-deserialization.pdf","assets/documents/certificates/secure-development/05-defensive-coding.pdf"]'>Part 3</button>
+                                    <button class="cert-pill-btn" data-cert-index="3" data-course="SSDLC (Secure Software Development Life Cycle)" data-pdfs='["assets/documents/certificates/secure-development/01-ssdlc-overview.pdf","assets/documents/certificates/secure-development/02-threat-modeling.pdf","assets/documents/certificates/secure-development/03-web-security-owasp.pdf","assets/documents/certificates/secure-development/04-insecure-deserialization.pdf","assets/documents/certificates/secure-development/05-defensive-coding.pdf"]'>Part 4</button>
+                                    <button class="cert-pill-btn" data-cert-index="4" data-course="SSDLC (Secure Software Development Life Cycle)" data-pdfs='["assets/documents/certificates/secure-development/01-ssdlc-overview.pdf","assets/documents/certificates/secure-development/02-threat-modeling.pdf","assets/documents/certificates/secure-development/03-web-security-owasp.pdf","assets/documents/certificates/secure-development/04-insecure-deserialization.pdf","assets/documents/certificates/secure-development/05-defensive-coding.pdf"]'>Part 5</button>
                                 </div>
                                 <div class="cert-topics">
                                     <span>OWASP Top 10</span>
@@ -1600,6 +1598,7 @@
                                     <path d="M3 8h10M9 4l4 4-4 4"/>
                                 </svg>
                             </button>
+                            <p class="form-microcopy">Launches your default email client with your message pre-filled.</p>
                         </form>
                     </div>
                 </div>
@@ -1660,7 +1659,7 @@
                     <h3 class="modal-title" id="modal-cert-title">Certificate Preview</h3>
                 </div>
                 <div class="modal-controls">
-                    <a href="#" id="modal-download-link" target="_blank" download class="btn-modal-action" title="Open PDF in new tab">
+                    <a href="#" id="modal-download-link" target="_blank" rel="noopener noreferrer" download class="btn-modal-action" title="Open PDF in new tab">
                         Open Full PDF ↗
                     </a>
                     <button class="btn-modal-close" id="modal-close-btn" aria-label="Close modal">✕</button>
@@ -1682,8 +1681,8 @@
             </div>
 
             <div class="modal-body">
-                <iframe id="modal-pdf-iframe" src="" title="Certificate Preview" loading="lazy"></iframe>
-                <img id="modal-img" class="modal-img" src="" alt="Document Preview" style="display:none;" />
+                <iframe id="modal-pdf-iframe" src="about:blank" title="Certificate Preview" loading="lazy"></iframe>
+                <img id="modal-img" class="modal-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Document Preview" style="display:none;" />
             </div>
         </div>
     </div>
@@ -1692,6 +1691,6 @@
     <div class="toast-container" id="toast-container" aria-live="polite"></div>
 
     <!-- Scripts -->
-    <script src="script.js"></script>
+    <script src="assets/js/site.js"></script>
 </body>
 </html>

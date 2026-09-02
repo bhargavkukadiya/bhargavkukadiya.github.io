@@ -96,6 +96,53 @@
 
 ---
 
+## 🛠️ Architecture & Automation Tooling
+
+This repository follows a decoupled architecture separating source content, public deployment assets, build tools, and test suites:
+
+```
+├── content/           # Print resume source template (resume.html)
+├── public/            # Interactive portfolio & deployable site (index.html, assets/, CNAME)
+│   └── assets/        # css/site.css, js/site.js, images/, documents/
+├── tools/             # Deterministic PDF generator & verification scripts
+└── tests/             # HTML tag balance, asset integrity & JS syntax suite
+```
+
+### Local Development & Build Commands
+
+Build and verify the site locally using `make` shortcuts:
+
+```bash
+# Generate the deterministic resume PDF
+make pdf
+
+# Run the PDF integrity verification test suite
+make verify
+
+# Run the frontend markup & asset verification suite
+make verify-site
+
+# Build PDF, normalize metadata, and verify the entire site
+make all
+
+# Launch local preview server for public/ on http://localhost:8000
+make serve
+```
+
+> [!NOTE]
+> **Authoritative PDF Environment:** The GitHub Actions runner (`ubuntu-latest`) serves as the single authoritative environment for compiling and synchronizing the canonical `resume.pdf`. Local execution (`make pdf`) provides fast visual feedback on your local OS font stack, while the automated CI pipeline ensures cross-platform font metrics and byte hashes remain 100% stable in the repository.
+
+### Automated CI/CD Pipeline (`.github/workflows/pages.yml`)
+
+The repository includes a unified GitHub Actions pipeline that builds, validates, and deploys the entire website along with the latest resume PDF in a single atomic run:
+1. **Trigger:** Runs automatically on `push` to `main`, on PRs (read-only verification of `content/`, `public/`, `tools/`, and `tests/`), or via manual `workflow_dispatch`.
+2. **Build & Verify:** Launches headless Chrome on Ubuntu, compiles `content/resume.html` into `public/assets/documents/resume.pdf`, and validates page count (exactly 2 pages), deterministic metadata, and content tokens via `pypdf`.
+3. **Frontend Quality Suite:** Validates HTML tag balance, external link safety, asset existence, and JavaScript syntax on `public/index.html` and `content/resume.html`.
+4. **Auto-Sync to Git:** If `content/resume.html` was edited without updating the PDF locally, commits and pushes the updated PDF back to `main` using native Git credentials (`[skip ci]`).
+5. **Deploy to GitHub Pages:** Deploys exclusively the `public/` directory (including `CNAME`, `index.html`, and `assets/`) directly to GitHub Pages (`actions/deploy-pages`), ensuring the live website at [bhargavkukadiya.in](https://bhargavkukadiya.in) stays updated without exposing repository tooling or markdown sources.
+
+---
+
 ## 📫 Contact & Connect
 
 - **Portfolio Website:** [bhargavkukadiya.in](https://bhargavkukadiya.in/)

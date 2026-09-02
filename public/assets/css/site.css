@@ -44,7 +44,7 @@
 
     --text-primary: #f8fafc;
     --text-secondary: #94a3b8;
-    --text-muted: #64748b;
+    --text-muted: #8fa0b5;
     --text-inverse: #0c0d10;
 
     --accent-blue: #3b82f6;
@@ -77,18 +77,18 @@
 
     --text-primary: #121316;
     --text-secondary: #525866;
-    --text-muted: #798194;
+    --text-muted: #596070;
     --text-inverse: #ffffff;
 
     --accent-blue: #2563eb;
     --accent-blue-subtle: rgba(37, 99, 235, 0.08);
     --accent-blue-hover: #1d4ed8;
 
-    --status-green: #059669;
-    --status-green-bg: rgba(5, 150, 105, 0.1);
-    --accent-green: #059669;
-    --badge-bg: rgba(5, 150, 105, 0.1);
-    --badge-border: rgba(5, 150, 105, 0.25);
+    --status-green: #047857;
+    --status-green-bg: rgba(4, 120, 87, 0.1);
+    --accent-green: #047857;
+    --badge-bg: rgba(4, 120, 87, 0.1);
+    --badge-border: rgba(4, 120, 87, 0.25);
 
     --tag-bg: rgba(0, 0, 0, 0.04);
     --tag-hover: rgba(0, 0, 0, 0.08);
@@ -169,6 +169,15 @@ button {
     cursor: pointer;
     border: none;
     background: none;
+}
+
+:focus-visible {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 2px;
+}
+
+button:focus:not(:focus-visible),
+a:focus:not(:focus-visible) {
     outline: none;
 }
 
@@ -180,6 +189,29 @@ button {
     padding: 0.15em 0.4em;
     border-radius: var(--radius-sm);
     color: var(--accent-blue-hover);
+}
+
+/* Accessible Skip-to-Content Link */
+.skip-link {
+    position: fixed;
+    top: -100px;
+    left: 20px;
+    background: var(--accent-blue);
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 0.9rem;
+    z-index: 99999;
+    text-decoration: none;
+    transition: top 0.2s ease-in-out;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.skip-link:focus {
+    top: 20px;
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
 }
 
 /* ==========================================================================
@@ -831,6 +863,7 @@ button {
     height: 20px;
 }
 
+.pillar-content h3,
 .pillar-content h4 {
     font-size: 0.95rem;
     font-weight: 600;
@@ -2170,6 +2203,13 @@ button {
 .btn-submit-message svg {
     width: 16px;
     height: 16px;
+}
+
+.form-microcopy {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 8px;
+    line-height: 1.4;
 }
 
 /* ==========================================================================

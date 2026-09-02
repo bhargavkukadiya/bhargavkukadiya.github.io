@@ -2,13 +2,7 @@
 .DS_Store
 **/.DS_Store
 
-# Temporary Local Evaluation Folder (1.6 GB)
-resources/Github/
-
-# Image drafts / unused variants
-resources/logo/profile-image/logo_old.jpg
-resources/logo/profile-image/profile.jpg
-
-# Temporary test files
+# Temporary build & test artifacts
 *.tmp
+*.tmp_norm
 test_*.pdf

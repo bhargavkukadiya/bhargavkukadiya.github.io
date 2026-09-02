@@ -685,9 +685,13 @@ function initSkillsFilter() {
         btn.addEventListener('click', () => {
             const filter = btn.getAttribute('data-filter');
 
-            // Toggle active state on buttons
-            filterBtns.forEach(b => b.classList.remove('active'));
+            // Toggle active and aria-pressed state on buttons
+            filterBtns.forEach(b => {
+                b.classList.remove('active');
+                b.setAttribute('aria-pressed', 'false');
+            });
             btn.classList.add('active');
+            btn.setAttribute('aria-pressed', 'true');
 
             // Filter bento cards
             bentoCards.forEach(card => {
