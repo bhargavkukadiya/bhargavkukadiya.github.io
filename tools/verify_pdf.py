@@ -112,6 +112,7 @@ def verify_pdf(pdf_path: str, normalize: bool = False) -> bool:
         "photo-curator",
         "aws-beginner-guide",
         "macos-dir-tools",
+        "Beam",
     ]
 
     missing_tokens = []

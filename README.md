@@ -7,14 +7,14 @@
 [![Experience](https://img.shields.io/badge/Experience-10%2B%20Years-success?style=flat-square)]()
 [![Location](https://img.shields.io/badge/Location-Gujarat%2C%20India-informational?style=flat-square)]()
 
-> **Senior iOS Developer & Apple Platforms Architect** with **10+ years** of hands-on experience designing, architecting, and shipping high-performance, resilient applications across enterprise ecosystems and the App Store. Deep expertise in **Swift 6 Strict Concurrency** (`@MainActor`, `Sendable`, `async/await`), modern UI frameworks (**UIKit, SwiftUI**), and decoupled architectural design patterns (**MVVM-R, VIPER, MVP, MVC, POP**). Proven track record delivering mission-critical public sector enterprise platforms (**Civica - Collect**) and high-throughput production kiosk platforms (**Ezy Sign In**). Versatile full-stack contributor with **C#/.NET Core**, **Python**, modern web frontend (**JavaScript, Cappuccino**), and SQL backends. Author of **11 open-source Swift packages, AI developer tools & cloud architecture guides**.
+> **Senior iOS Developer & Apple Platforms Architect** with **10+ years** of hands-on experience designing, architecting, and shipping high-performance, resilient applications across enterprise ecosystems and the App Store. Deep expertise in **Swift 6 Strict Concurrency** (`@MainActor`, `Sendable`, `async/await`), modern UI frameworks (**UIKit, SwiftUI**), and decoupled architectural design patterns (**MVVM-R, VIPER, MVP, MVC, POP**). Proven track record delivering mission-critical public sector enterprise platforms (**Civica - Collect**) and high-throughput production kiosk platforms (**Ezy Sign In**). Versatile full-stack contributor with **C#/.NET Core**, **Python**, modern web frontend (**JavaScript, Cappuccino**), and SQL backends. Author of **12 open-source Swift packages, macOS utilities, AI developer tools & cloud architecture guides**.
 
 ---
 
 ## 🛠️ Core Technical Competencies
 
 - **Languages & Standards:** Swift 6 (Strict Concurrency, Structured Concurrency, Actor Model), Objective-C, C# (.NET Core), Python 3, JavaScript (ES6+, Cappuccino / Objective-J), Shell/Bash, SQL.
-- **Apple Platforms & SDKs:** UIKit, SwiftUI, AVFoundation (Camera / Media Capture), Core Data, SwiftData, CoreLocation, CoreImage, Vision AI, WebKit, AuthenticationServices (Passkeys / WebAuthn), Brother Thermal Printer SDK.
+- **Apple Platforms & SDKs:** UIKit, SwiftUI, AppKit, ScreenCaptureKit, AVFoundation (Camera / Media Capture), Core Data, SwiftData, CoreLocation, CoreImage, Vision AI, WebKit, AuthenticationServices (Passkeys / WebAuthn), Brother Thermal Printer SDK.
 - **Architecture & System Design:** MVVM-R (Router / Coordinator), VIPER, MVVM, MVP, MVC, Protocol-Oriented Programming (POP), Dependency Injection (DI), SOLID Principles, Repository Pattern, CQRS, Design Tokens & Systems.
 - **Testing & Quality Assurance:** XCTest (Unit / Integration / Protocol Mocking), XCUITest (UI Automation), Performance Profiling (Xcode Instruments / Memory Leaks / Time Profiler), ISO 9001 QMS Compliance.
 - **DevOps, CI/CD, Cloud & Systems:** Azure DevOps / Pipelines, Fastlane (Match / Build Automation), Swift Package Manager (SPM), AWS Cloud Architecture (EC2, S3, Lambda, VPC), PyTorch / OpenAI CLIP, Git, Postman, Xcode Cloud.
@@ -43,7 +43,14 @@
 
 ---
 
-## 📦 Open-Source Ecosystem (11 Public Repositories)
+## 📦 Open-Source Ecosystem (12 Public Repositories)
+
+### 🖥️ Native macOS Applications & Menu Bar Utilities
+
+- **[Beam — Native macOS Screen QR Code Scanner & Recognition Utility](https://github.com/bhargavkukadiya/beam)** ([Releases](https://github.com/bhargavkukadiya/beam/releases)): Fast, unobtrusive macOS menu bar utility for scanning QR codes directly from your screen. Built with pure Swift (Swift 5.9 / 6), AppKit, ScreenCaptureKit, and Apple's Vision framework. Requires **zero third-party dependencies** and runs **100% offline**.
+  - **Core Capabilities:** Global Carbon hotkey (<kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>2</kbd>), multi-monitor crosshair selection overlay, on-device Vision recognition, and Apple Hardened Runtime.
+  - **Contextual Actions:** Web URLs, Wi-Fi passwords, vCard/MECARD contacts, Two-Factor Auth (OTP/TOTP), formatted JSON tree viewer, and clipboard copy.
+  - **Privacy Architecture:** Opt-in scan history (disabled by default), automated credential masking (`••••••••`), and strict URL scheme allowlisting. Includes the standalone `BeamCore` SwiftPM library target.
 
 ### 🚀 Swift 6 Production Packages (All Tagged v1.0.0 with XCTest Suites)
 
@@ -52,23 +59,23 @@
 | [PasskeyManager](https://github.com/bhargavkukadiya/PasskeyManager) | `1.0.0` | Zero-dependency Apple Passkeys (`AuthenticationServices`, WebAuthn / FIDO2) with async/await & Task cancellation safety. | `.package(url: "https://github.com/bhargavkukadiya/PasskeyManager", from: "1.0.0")` |
 | [CoreDataManager](https://github.com/bhargavkukadiya/CoreDataManager) | `1.0.0` | Thread-safe `NSPersistentContainer` singleton with batch operations, `NSPersistentHistoryTracking`, and Combine publishers. | `.package(url: "https://github.com/bhargavkukadiya/CoreDataManager", from: "1.0.0")` |
 | [SwiftDataManager](https://github.com/bhargavkukadiya/SwiftDataManager) | `1.0.0` | Modern iOS 17+ SwiftData engine featuring isolated `@ModelActor` background threading & generic `ModelRepository`. | `.package(url: "https://github.com/bhargavkukadiya/SwiftDataManager", from: "1.0.0")` |
-| [LocationManager](https://github.com/bhargavkukadiya/LocationManager) | `1.0.0` | Enterprise CoreLocation manager with async/await, reverse geocoding, Combine streams, and precision geofencing. | `.package(url: "https://github.com/bhargavkukadiya/LocationManager", from: "1.0.0")` |
 | [PhotoCaptureManager](https://github.com/bhargavkukadiya/PhotoCaptureManager) | `1.0.0` | Privacy-preserving camera capture engine built on `AVFoundation` and modern `PhotosUI` (`PHPickerViewController`). | `.package(url: "https://github.com/bhargavkukadiya/PhotoCaptureManager", from: "1.0.0")` |
-| [FontManager](https://github.com/bhargavkukadiya/FontManager) | `1.0.0` | Design system typography engine with 21 semantic tokens, Dynamic Type scaling (`UIFontMetrics`), and CoreText font registration. | `.package(url: "https://github.com/bhargavkukadiya/FontManager", from: "1.0.0")` |
 | [PDFFormHelper](https://github.com/bhargavkukadiya/PDFFormHelper) | `1.0.0` | Enterprise `PDFKit` utility for AcroField form management, interactive checkbox/radio controls, signatures, and rotation-safe flattening. | `.package(url: "https://github.com/bhargavkukadiya/PDFFormHelper", from: "1.0.0")` |
+| [FontManager](https://github.com/bhargavkukadiya/FontManager) | `1.0.0` | Design system typography engine with 21 semantic tokens, Dynamic Type scaling (`UIFontMetrics`), and CoreText font registration. | `.package(url: "https://github.com/bhargavkukadiya/FontManager", from: "1.0.0")` |
+| [LocationManager](https://github.com/bhargavkukadiya/LocationManager) | `1.0.0` | Enterprise CoreLocation manager with async/await, reverse geocoding, Combine streams, and precision geofencing. | `.package(url: "https://github.com/bhargavkukadiya/LocationManager", from: "1.0.0")` |
 
-### ☁️ Cloud & CI/CD Architecture Guides (Live on GitHub Pages)
-
-- **[azure-pipelines-guide](https://github.com/bhargavkukadiya/azure-pipelines-guide)** ([Live Documentation](https://bhargavkukadiya.in/azure-pipelines-guide/)): Comprehensive 1,450-line production guide and interactive Docsify site for Azure DevOps Pipelines, multi-stage YAML pipelines, Fastlane match, and Apple Silicon agents.
-- **[aws-beginner-guide](https://github.com/bhargavkukadiya/aws-beginner-guide)** ([Live Documentation](https://bhargavkukadiya.in/aws-beginner-guide/)): Practical 16-module AWS architectural reference and interactive Material for MkDocs documentation site covering Compute, Storage, VPC, Databases, IAM security, and cost control.
-
-### ⚡ AI & Systems Developer Tooling
+### 🤖 Vision AI & Systems Developer Tooling
 
 - **[photo-curator](https://github.com/bhargavkukadiya/photo-curator)**: AI-powered photo curation engine built with Python 3.9+, PyTorch, and OpenAI CLIP (`ViT-B/32`) neural aesthetics, OpenCV Laplacian sharpness, burst deduplication, Apple Silicon MPS hardware acceleration, and two-phase transactional staging with 80+ unit tests.
 - **[macos-dir-tools](https://github.com/bhargavkukadiya/macos-dir-tools)**: Zero-dependency CLI developer tool suite for macOS & Linux in Python 3 and POSIX Bash — 3-phase duplicate file hashing, $O(1)$ AWK disk usage statistics, recursive inventory scanning, and automated one-line curl installer:
   ```bash
   curl -fsSL https://raw.githubusercontent.com/bhargavkukadiya/macos-dir-tools/main/install.sh | bash
   ```
+
+### ☁️ Cloud & CI/CD Architecture Guides (Live on GitHub Pages)
+
+- **[azure-pipelines-guide](https://github.com/bhargavkukadiya/azure-pipelines-guide)** ([Live Documentation](https://bhargavkukadiya.in/azure-pipelines-guide/)): Comprehensive 1,450-line production guide and interactive Docsify site for Azure DevOps Pipelines, multi-stage YAML pipelines, Fastlane match, and Apple Silicon agents.
+- **[aws-beginner-guide](https://github.com/bhargavkukadiya/aws-beginner-guide)** ([Live Documentation](https://bhargavkukadiya.in/aws-beginner-guide/)): Practical 16-module AWS architectural reference and interactive Material for MkDocs documentation site covering Compute, Storage, VPC, Databases, IAM security, and cost control.
 
 ---
 
