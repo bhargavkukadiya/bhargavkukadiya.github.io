@@ -102,10 +102,11 @@ This repository follows a decoupled architecture separating source content, publ
 
 ```
 ├── content/           # Print resume source template (resume.html)
-├── public/            # Interactive portfolio & deployable site (index.html, assets/, CNAME)
+├── public/            # Interactive portfolio & deployable site (index.html, assets/)
 │   └── assets/        # css/site.css, js/site.js, images/, documents/
 ├── tools/             # Deterministic PDF generator & verification scripts
-└── tests/             # HTML tag balance, asset integrity & JS syntax suite
+├── tests/             # HTML tag balance, asset integrity & JS syntax suite
+└── CNAME              # Canonical custom domain configuration (bhargavkukadiya.in)
 ```
 
 ### Local Development & Build Commands
@@ -139,7 +140,7 @@ The repository includes a unified GitHub Actions pipeline that builds, validates
 2. **Build & Verify:** Launches headless Chrome on Ubuntu, compiles `content/resume.html` into `public/assets/documents/resume.pdf`, and validates page count (exactly 2 pages), deterministic metadata, and content tokens via `pypdf`.
 3. **Frontend Quality Suite:** Validates HTML tag balance, external link safety, asset existence, and JavaScript syntax on `public/index.html` and `content/resume.html`.
 4. **Auto-Sync to Git:** If `content/resume.html` was edited without updating the PDF locally, commits and pushes the updated PDF back to `main` using native Git credentials (`[skip ci]`).
-5. **Deploy to GitHub Pages:** Deploys exclusively the `public/` directory (including `CNAME`, `index.html`, and `assets/`) directly to GitHub Pages (`actions/deploy-pages`), ensuring the live website at [bhargavkukadiya.in](https://bhargavkukadiya.in) stays updated without exposing repository tooling or markdown sources.
+5. **Deploy to GitHub Pages:** Deploys exclusively the `public/` directory (including `index.html` and `assets/`) directly to GitHub Pages (`actions/deploy-pages`), ensuring the live website at [bhargavkukadiya.in](https://bhargavkukadiya.in) stays updated without exposing repository tooling or markdown sources.
 
 ---
 
